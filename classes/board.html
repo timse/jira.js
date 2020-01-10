@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Board | jira.js - v1.0.1</title>
+	<title>Board | jira.js - v1.0.3</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">jira.js - v1.0.1</a>
+					<a href="../index.html" class="title">jira.js - v1.0.3</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -136,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L4">api/board.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L4">api/board.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -158,7 +158,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="../globals.html#sender" class="tsd-signature-type">Sender</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L5">api/board.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L5">api/board.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L49">api/board.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L51">api/board.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,8 +183,25 @@
 								<li>
 									<h5>params: <span class="tsd-signature-type">object</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-index-signature">
-											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+										<li class="tsd-parameter">
+											<h5>filter<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> location<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+											<ul class="tsd-parameters">
+												<li class="tsd-parameter">
+													<h5>project<wbr>Key<wbr>OrId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+												</li>
+												<li class="tsd-parameter">
+													<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+												</li>
+											</ul>
+										</li>
+										<li class="tsd-parameter">
+											<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"scrum"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"kanban"</span></h5>
 										</li>
 									</ul>
 								</li>
@@ -206,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L95">api/board.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L103">api/board.ts:103</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -237,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L367">api/board.ts:367</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L383">api/board.ts:383</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -265,19 +282,19 @@
 					<a name="getallboards" class="tsd-anchor"></a>
 					<h3>get<wbr>All<wbr>Boards</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Boards<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Boards<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L7">api/board.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L7">api/board.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>params: <span class="tsd-signature-type">object</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">object</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5><span class="tsd-flag ts-flagOptional">Optional</span> account<wbr>IdLocation<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
@@ -341,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L381">api/board.ts:381</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L397">api/board.ts:397</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -378,7 +395,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L427">api/board.ts:427</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L443">api/board.ts:443</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -418,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L476">api/board.ts:476</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L492">api/board.ts:492</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -458,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L82">api/board.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L90">api/board.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -489,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L63">api/board.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L71">api/board.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -526,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L339">api/board.ts:339</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L355">api/board.ts:355</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -560,7 +577,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L326">api/board.ts:326</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L342">api/board.ts:342</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -591,7 +608,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L135">api/board.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L143">api/board.ts:143</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -622,7 +639,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L148">api/board.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L156">api/board.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -662,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L224">api/board.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L232">api/board.ts:232</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -693,7 +710,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L108">api/board.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L116">api/board.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -742,7 +759,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L252">api/board.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L265">api/board.ts:265</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -791,7 +808,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L196">api/board.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L204">api/board.ts:204</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -843,7 +860,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L448">api/board.ts:448</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L464">api/board.ts:464</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -895,7 +912,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L169">api/board.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L177">api/board.ts:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -944,7 +961,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L294">api/board.ts:294</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L310">api/board.ts:310</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -981,7 +998,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L313">api/board.ts:313</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L329">api/board.ts:329</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1012,7 +1029,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L400">api/board.ts:400</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L416">api/board.ts:416</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1046,7 +1063,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L414">api/board.ts:414</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L430">api/board.ts:430</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1077,7 +1094,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L279">api/board.ts:279</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L292">api/board.ts:292</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1085,11 +1102,20 @@
 								<li>
 									<h5>params: <span class="tsd-signature-type">object</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-index-signature">
-											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
-										</li>
 										<li class="tsd-parameter">
 											<h5>board<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>issues<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> rank<wbr>After<wbr>Issue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> rank<wbr>Before<wbr>Issue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> rank<wbr>Custom<wbr>Field<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 									</ul>
 								</li>
@@ -1111,7 +1137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L353">api/board.ts:353</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L369">api/board.ts:369</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1145,7 +1171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/4719834/src/api/board.ts#L237">api/board.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/d4e1751/src/api/board.ts#L245">api/board.ts:245</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1158,6 +1184,20 @@
 										</li>
 										<li class="tsd-parameter">
 											<h5>board<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> body<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+											<ul class="tsd-parameters">
+												<li class="tsd-parameter">
+													<h5>board<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+												</li>
+												<li class="tsd-parameter">
+													<h5><span class="tsd-flag ts-flagOptional">Optional</span> enabling<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+												</li>
+												<li class="tsd-parameter">
+													<h5><span class="tsd-flag ts-flagOptional">Optional</span> feature<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+												</li>
+											</ul>
 										</li>
 									</ul>
 								</li>
