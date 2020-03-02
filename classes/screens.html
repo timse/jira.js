@@ -103,6 +103,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#getallscreens" class="tsd-kind-icon">get<wbr>All<wbr>Screens</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#getavailablescreenfields" class="tsd-kind-icon">get<wbr>Available<wbr>Screen<wbr>Fields</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#getissuetypescreenschemeitems" class="tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Scheme<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#getissuetypescreenschemesforprojects" class="tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Schemes<wbr>For<wbr>Projects</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#getscreensforafield" class="tsd-kind-icon">get<wbr>Screens<wbr>ForAField</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#movescreentab" class="tsd-kind-icon">move<wbr>Screen<wbr>Tab</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="screens.html#movescreentabfield" class="tsd-kind-icon">move<wbr>Screen<wbr>Tab<wbr>Field</a></li>
@@ -125,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L4">api/screens.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L4">api/screens.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -147,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="../globals.html#sender" class="tsd-signature-type">Sender</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L5">api/screens.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L5">api/screens.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L66">api/screens.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L89">api/screens.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -195,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L180">api/screens.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L203">api/screens.ts:203</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -232,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L109">api/screens.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L132">api/screens.ts:132</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -269,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L148">api/screens.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L171">api/screens.ts:171</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -297,27 +298,19 @@
 					<a name="getallscreenschemes" class="tsd-anchor"></a>
 					<h3>get<wbr>All<wbr>Screen<wbr>Schemes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Screen<wbr>Schemes<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Screen<wbr>Schemes<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L249">api/screens.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L272">api/screens.ts:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>params: <span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Results<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>At<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#callback" class="tsd-signature-type">Callback</a></h5>
@@ -337,7 +330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L162">api/screens.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L185">api/screens.ts:185</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -374,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L92">api/screens.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L115">api/screens.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -402,27 +395,19 @@
 					<a name="getallscreens" class="tsd-anchor"></a>
 					<h3>get<wbr>All<wbr>Screens</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Screens<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Screens<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L48">api/screens.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L70">api/screens.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>params: <span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Results<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>At<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#callback" class="tsd-signature-type">Callback</a></h5>
@@ -442,7 +427,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L79">api/screens.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L102">api/screens.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -467,30 +452,45 @@
 					<a name="getissuetypescreenschemeitems" class="tsd-anchor"></a>
 					<h3>get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Scheme<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Scheme<wbr>Items<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>issueTypeScreenSchemeId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Scheme<wbr>Items<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>issueTypeScreenSchemeId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L26">api/screens.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L26">api/screens.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>params: <span class="tsd-signature-symbol">{ </span>issueTypeScreenSchemeId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> issue<wbr>Type<wbr>Screen<wbr>Scheme<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Results<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>At<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-										</li>
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>issueTypeScreenSchemeId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#callback" class="tsd-signature-type">Callback</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getissuetypescreenschemesforprojects" class="tsd-anchor"></a>
+					<h3>get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Schemes<wbr>For<wbr>Projects</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Schemes<wbr>For<wbr>Projects<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>projectId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L49">api/screens.ts:49</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>projectId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#callback" class="tsd-signature-type">Callback</a></h5>
@@ -510,7 +510,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L7">api/screens.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L7">api/screens.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -547,7 +547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L234">api/screens.ts:234</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L257">api/screens.ts:257</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -584,7 +584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L213">api/screens.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L236">api/screens.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -627,7 +627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L198">api/screens.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L221">api/screens.ts:221</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -664,7 +664,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e9516af/src/api/screens.ts#L128">api/screens.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/aa2d308/src/api/screens.ts#L151">api/screens.ts:151</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -746,6 +746,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="screens.html#getissuetypescreenschemeitems" class="tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Scheme<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="screens.html#getissuetypescreenschemesforprojects" class="tsd-kind-icon">get<wbr>Issue<wbr>Type<wbr>Screen<wbr>Schemes<wbr>For<wbr>Projects</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="screens.html#getscreensforafield" class="tsd-kind-icon">get<wbr>Screens<wbr>ForAField</a>

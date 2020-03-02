@@ -73,6 +73,7 @@
 					<a href="https://david-dm.org/mrrefactoring/jira.js"><img src="https://david-dm.org/mrrefactoring/jira.js/status.svg?style=flat-square" alt="dependencies Status"></a>
 					<a href="https://david-dm.org/mrrefactoring/jira.js?type=dev"><img src="https://david-dm.org/mrrefactoring/jira.js/dev-status.svg?style=flat-square" alt="devDependencies Status"></a>
 				<a href="https://travis-ci.org/MrRefactoring/jira.js"><img src="https://img.shields.io/travis/mrrefactoring/jira.js/master.svg?style=flat-square" alt="Build Status"></a></p>
+				<p>A JavaScript wrapper for the JIRA REST API</p>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
@@ -163,6 +164,22 @@ client.projects
 				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
 					<h2>Changelog</h2>
 				</a>
+				<a href="#140" id="140" style="color: inherit; text-decoration: none;">
+					<h3>1.4.0</h3>
+				</a>
+				<ul>
+					<li>FEATURE: Now that all parameters are optional, there is no need to pass an empty object</li>
+					<li>FEATURE: <code>dashboards.createDashboard</code> was added</li>
+					<li>FEATURE: <code>dashboards.updateDashboard</code> was added</li>
+					<li>FEATURE: <code>dashboards.deleteDashboard</code> was added</li>
+					<li>FEATURE: <code>dashboards.copyDashboard</code> was added</li>
+					<li>FEATURE: <code>screens.getIssueTypeScreenSchemesForProjects</code> was added</li>
+					<li>FEATURE: <code>issueFieldConfigurations.getAllFieldConfiguration</code> was added</li>
+					<li>FEATURE: <code>issueFieldConfigurations.getFieldConfigurationItems</code> was added</li>
+					<li>FEATURE: <code>issueFieldConfigurations.getFieldConfigurationIssueTypeItems</code> was added</li>
+					<li>FEATURE: In <code>issues.getTransitions</code> was added <code>includeUnavailableTransitions</code> property</li>
+					<li>DEPRECATION: <code>issueFields.getFieldConfigurationItems</code> are deprecated (Removed from official API, use <code>issueFieldConfigurations.getFieldConfigurationItems</code>). Will be removed in next major version</li>
+				</ul>
 				<a href="#130" id="130" style="color: inherit; text-decoration: none;">
 					<h3>1.3.0</h3>
 				</a>
@@ -309,6 +326,9 @@ client.projects
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/issuecustomfieldoptionsapps.html" class="tsd-kind-icon">Issue<wbr>Custom<wbr>Field<wbr>Options<wbr>Apps</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/issuefieldconfigurations.html" class="tsd-kind-icon">Issue<wbr>Field<wbr>Configurations</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/issuefields.html" class="tsd-kind-icon">Issue<wbr>Fields</a>
