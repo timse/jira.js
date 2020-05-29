@@ -164,11 +164,26 @@ client.projects
 				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
 					<h2>Changelog</h2>
 				</a>
+				<a href="#150" id="150" style="color: inherit; text-decoration: none;">
+					<h3>1.5.0</h3>
+				</a>
+				<ul>
+					<li>FEATURE: Method <code>getAllFieldConfigurationSchemes</code> added to <code>IssueFieldConfigurations</code></li>
+					<li>FEATURE: Method <code>getFieldConfigurationSchemesForProjects</code> added to <code>IssueFieldConfigurations</code></li>
+					<li>FEATURE: Property <code>fieldConfigurationSchemeId</code> added to <code>issueFieldConfigurations.getFieldConfigurationIssueTypeItems</code></li>
+					<li>FEATURE: Method <code>getIssueSecurityLevelMembers</code> added to <code>IssueSecurityLevel</code></li>
+					<li>FEATURE: Issue type schemes API added</li>
+					<li>FEATURE: Method <code>getLicensedProjectTypes</code> added to <code>ProjectTypes</code></li>
+					<li>FEATURE: Method <code>deleteProjectAsynchronously</code> added to <code>Projects</code></li>
+					<li>FEATURE: Method <code>getIssueTypeScreenSchemes</code> added to <code>Screens</code></li>
+					<li>FEATURE: Method <code>getAllScreenSchemes</code> renamed to <code>getScreenSchemes</code></li>
+					<li>DEPRECATION: <code>getAllScreenSchemes</code> are deprecated (Renamed to <code>getScreenSchemes</code>)</li>
+				</ul>
 				<a href="#140" id="140" style="color: inherit; text-decoration: none;">
 					<h3>1.4.0</h3>
 				</a>
 				<ul>
-					<li>FEATURE: Now that all parameters are optional, there is no need to pass an empty object</li>
+					<li>FEATURE: Now requests where there are no required parameters do not have to pass an empty object to make a request</li>
 					<li>FEATURE: <code>dashboards.createDashboard</code> was added</li>
 					<li>FEATURE: <code>dashboards.updateDashboard</code> was added</li>
 					<li>FEATURE: <code>dashboards.deleteDashboard</code> was added</li>
@@ -368,6 +383,9 @@ client.projects
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/issuetypeproperties.html" class="tsd-kind-icon">Issue<wbr>Type<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/issuetypeschemes.html" class="tsd-kind-icon">Issue<wbr>Type<wbr>Schemes</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/issuetypes.html" class="tsd-kind-icon">Issue<wbr>Types</a>
