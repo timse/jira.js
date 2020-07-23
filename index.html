@@ -67,13 +67,13 @@
 				<a href="#javascript-jira-api-client" id="javascript-jira-api-client" style="color: inherit; text-decoration: none;">
 					<h1>JavaScript JIRA API Client</h1>
 				</a>
+				<p>A JavaScript/TypeScript wrapper for the JIRA REST API</p>
 				<p><a href="https://www.npmjs.com/package/jira.js"><img src="https://img.shields.io/npm/v/jira.js.svg?style=flat-square" alt="npm"></a>
 					<a href="https://npmjs.com/jira.js"><img src="https://img.shields.io/npm/dm/jira.js.svg?style=flat-square" alt="Downloads"></a>
 					<a href="https://bundlephobia.com/result?p=jira.js"><img src="https://badgen.net/bundlephobia/minzip/jira.js?style=flat-square" alt="Minizipped size"></a>
 					<a href="https://david-dm.org/mrrefactoring/jira.js"><img src="https://david-dm.org/mrrefactoring/jira.js/status.svg?style=flat-square" alt="dependencies Status"></a>
 					<a href="https://david-dm.org/mrrefactoring/jira.js?type=dev"><img src="https://david-dm.org/mrrefactoring/jira.js/dev-status.svg?style=flat-square" alt="devDependencies Status"></a>
 				<a href="https://travis-ci.org/MrRefactoring/jira.js"><img src="https://img.shields.io/travis/mrrefactoring/jira.js/master.svg?style=flat-square" alt="Build Status"></a></p>
-				<p>A JavaScript wrapper for the JIRA REST API</p>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
@@ -88,14 +88,14 @@
 					<h3>Create the JIRA client</h3>
 				</a>
 				<pre><code class="language-js"><span class="hljs-comment">// ES5</span>
-<span class="hljs-keyword">var</span> { Client } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"jira.js"</span>);
+<span class="hljs-keyword">var</span> { Client } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;jira.js&quot;</span>);
 
 <span class="hljs-comment">// ES6</span>
-<span class="hljs-keyword">import</span> { Client } <span class="hljs-keyword">from</span> <span class="hljs-string">"jira.js"</span>;
+<span class="hljs-keyword">import</span> { Client } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;jira.js&quot;</span>;
 
 <span class="hljs-comment">// Initialize</span>
 <span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> Client({
-  <span class="hljs-attr">host</span>: <span class="hljs-string">"https://jira.somehost.com"</span>
+  <span class="hljs-attr">host</span>: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>
 });</code></pre>
 				<a href="#get-all-projects" id="get-all-projects" style="color: inherit; text-decoration: none;">
 					<h3>Get all projects</h3>
@@ -121,11 +121,11 @@ client.projects
 					<h3>Basic authorization</h3>
 				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
-  <span class="hljs-attr">host</span>: <span class="hljs-string">"https://jira.somehost.com"</span>,
+  <span class="hljs-attr">host</span>: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>,
   <span class="hljs-attr">authentication</span>: {
     <span class="hljs-attr">basic</span>: {
-      <span class="hljs-attr">username</span>: <span class="hljs-string">"MyUsername"</span>,
-      <span class="hljs-attr">apiToken</span>: <span class="hljs-string">"My Password or API Token"</span>
+      <span class="hljs-attr">username</span>: <span class="hljs-string">&quot;MyUsername&quot;</span>,
+      <span class="hljs-attr">apiToken</span>: <span class="hljs-string">&quot;My Password or API Token&quot;</span>
     }
   }
 });</code></pre>
@@ -133,11 +133,11 @@ client.projects
 					<h3>JWT authentication</h3>
 				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
-  <span class="hljs-attr">host</span>: <span class="hljs-string">'https://jira.somehost.com'</span>,
+  <span class="hljs-attr">host</span>: <span class="hljs-string">&#x27;https://jira.somehost.com&#x27;</span>,
   <span class="hljs-attr">authentication</span>: {
     <span class="hljs-attr">jwt</span>: {
-      <span class="hljs-attr">iss</span>: <span class="hljs-string">'id'</span>;
-      secret: <span class="hljs-string">'secret key'</span>;
+      <span class="hljs-attr">iss</span>: <span class="hljs-string">&#x27;id&#x27;</span>;
+      secret: <span class="hljs-string">&#x27;secret key&#x27;</span>;
     }
   }
 });</code></pre>
@@ -145,9 +145,9 @@ client.projects
 					<h3>OAuth2.0 authentication</h3>
 				</a>
 				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
-  <span class="hljs-attr">host</span>: <span class="hljs-string">"https://jira.somehost.com"</span>,
+  <span class="hljs-attr">host</span>: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>,
   <span class="hljs-attr">authentication</span>: {
-    <span class="hljs-attr">accessToken</span>: <span class="hljs-string">"my access token"</span>
+    <span class="hljs-attr">accessToken</span>: <span class="hljs-string">&quot;my access token&quot;</span>
   }
 });</code></pre>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
@@ -164,6 +164,36 @@ client.projects
 				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
 					<h2>Changelog</h2>
 				</a>
+				<a href="#160" id="160" style="color: inherit; text-decoration: none;">
+					<h3>1.6.0</h3>
+				</a>
+				<ul>
+					<li>FEATURE: New API <code>IssueTypeScreenSchemes</code> added</li>
+					<li>FEATURE: New API <code>ProjectEmail</code> added</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>FEATURE: Method <code>bulkGetGroups</code> added to <code>Groups</code></li>
+					<li>FEATURE: Method <code>restoreDeletedProject</code> added to <code>Projects</code></li>
+					<li>FEATURE: Method <code>createIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
+					<li>FEATURE: Method <code>deleteIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
+					<li>FEATURE: Method <code>updateIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
+					<li>FEATURE: Method <code>addIssueTypesToIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
+					<li>FEATURE: Method <code>deleteIssueTypeFromIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
+				</ul>
+				<hr>
+				<ul>
+					<li>FEATURE: Property <code>id</code> added to <code>IssueFieldConfigurations.getAllFieldConfigurations</code></li>
+					<li>FEATURE: Property <code>sortByOpsBarAndStatus</code> added to <code>Issues.getTransitions</code></li>
+					<li>FEATURE: Property <code>accountId</code> added to <code>Permissions.getBulkPermissions</code></li>
+				</ul>
+				<hr>
+				<ul>
+					<li>DEPRECATION: Method <code>getIssueTypeScreenSchemes</code> are deprecated in <code>Screens</code></li>
+					<li>DEPRECATION: Method <code>getIssueTypeScreenSchemeItems</code> are deprecated in <code>Screens</code></li>
+					<li>DEPRECATION: Method <code>getIssueTypeScreenSchemesForProjects</code> are deprecated in <code>Screens</code></li>
+				</ul>
+				<hr>
 				<a href="#150" id="150" style="color: inherit; text-decoration: none;">
 					<h3>1.5.0</h3>
 				</a>
@@ -388,6 +418,9 @@ client.projects
 						<a href="classes/issuetypeschemes.html" class="tsd-kind-icon">Issue<wbr>Type<wbr>Schemes</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/issuetypescreenschemes.html" class="tsd-kind-icon">Issue<wbr>Type<wbr>Screen<wbr>Schemes</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/issuetypes.html" class="tsd-kind-icon">Issue<wbr>Types</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -434,6 +467,9 @@ client.projects
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/projectcomponents.html" class="tsd-kind-icon">Project<wbr>Components</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/projectemail.html" class="tsd-kind-icon">Project<wbr>Email</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/projectkeyandnamevalidation.html" class="tsd-kind-icon">Project<wbr>Key<wbr>And<wbr>Name<wbr>Validation</a>
@@ -550,6 +586,5 @@ client.projects
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

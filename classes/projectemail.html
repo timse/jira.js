@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Workflows | jira.js</title>
+	<title>ProjectEmail | jira.js</title>
 	<meta name="description" content="Documentation for jira.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="workflows.html">Workflows</a>
+					<a href="projectemail.html">ProjectEmail</a>
 				</li>
 			</ul>
-			<h1>Class Workflows</h1>
+			<h1>Class ProjectEmail</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Workflows</span>
+						<span class="target">ProjectEmail</span>
 					</li>
 				</ul>
 			</section>
@@ -81,20 +81,20 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="workflows.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="projectemail.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="workflows.html#client" class="tsd-kind-icon">client</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="projectemail.html#client" class="tsd-kind-icon">client</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="workflows.html#getallworkflows" class="tsd-kind-icon">get<wbr>All<wbr>Workflows</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="workflows.html#getworkflowspaginated" class="tsd-kind-icon">get<wbr>Workflows<wbr>Paginated</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="projectemail.html#getprojectssenderemail" class="tsd-kind-icon">get<wbr>Projects<wbr>Sender<wbr>Email</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="projectemail.html#setprojectssenderemail" class="tsd-kind-icon">set<wbr>Projects<wbr>Sender<wbr>Email</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,13 +106,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Workflows<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../globals.html#sender" class="tsd-signature-type">Sender</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="workflows.html" class="tsd-signature-type">Workflows</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Project<wbr>Email<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../globals.html#sender" class="tsd-signature-type">Sender</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="projectemail.html" class="tsd-signature-type">ProjectEmail</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/workflows.ts#L4">api/workflows.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/projectEmail.ts#L4">api/projectEmail.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -121,7 +121,7 @@
 									<h5>client: <a href="../globals.html#sender" class="tsd-signature-type">Sender</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="workflows.html" class="tsd-signature-type">Workflows</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="projectemail.html" class="tsd-signature-type">ProjectEmail</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -134,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="../globals.html#sender" class="tsd-signature-type">Sender</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/workflows.ts#L5">api/workflows.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/projectEmail.ts#L5">api/projectEmail.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,22 +142,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getallworkflows" class="tsd-anchor"></a>
-					<h3>get<wbr>All<wbr>Workflows</h3>
+					<a name="getprojectssenderemail" class="tsd-anchor"></a>
+					<h3>get<wbr>Projects<wbr>Sender<wbr>Email</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Workflows<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>workflowName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Projects<wbr>Sender<wbr>Email<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>projectId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/workflows.ts#L7">api/workflows.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/projectEmail.ts#L7">api/projectEmail.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>workflowName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>params: <span class="tsd-signature-symbol">{ </span>projectId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>project<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#callback" class="tsd-signature-type">Callback</a></h5>
@@ -168,22 +173,30 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getworkflowspaginated" class="tsd-anchor"></a>
-					<h3>get<wbr>Workflows<wbr>Paginated</h3>
+					<a name="setprojectssenderemail" class="tsd-anchor"></a>
+					<h3>set<wbr>Projects<wbr>Sender<wbr>Email</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Workflows<wbr>Paginated<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>expand<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>workflowName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Projects<wbr>Sender<wbr>Email<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>emailAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>projectId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/workflows.ts#L26">api/workflows.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/644e7a2/src/api/projectEmail.ts#L21">api/projectEmail.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>expand<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>maxResults<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startAt<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>workflowName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>params: <span class="tsd-signature-symbol">{ </span>emailAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>projectId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> email<wbr>Address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>project<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#callback" class="tsd-signature-type">Callback</a></h5>
@@ -208,19 +221,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="workflows.html" class="tsd-kind-icon">Workflows</a>
+						<a href="projectemail.html" class="tsd-kind-icon">Project<wbr>Email</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="workflows.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="projectemail.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="workflows.html#client" class="tsd-kind-icon">client</a>
+								<a href="projectemail.html#client" class="tsd-kind-icon">client</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="workflows.html#getallworkflows" class="tsd-kind-icon">get<wbr>All<wbr>Workflows</a>
+								<a href="projectemail.html#getprojectssenderemail" class="tsd-kind-icon">get<wbr>Projects<wbr>Sender<wbr>Email</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="workflows.html#getworkflowspaginated" class="tsd-kind-icon">get<wbr>Workflows<wbr>Paginated</a>
+								<a href="projectemail.html#setprojectssenderemail" class="tsd-kind-icon">set<wbr>Projects<wbr>Sender<wbr>Email</a>
 							</li>
 						</ul>
 					</li>
