@@ -120,12 +120,27 @@ client.projects
 				<a href="#basic-authorization" id="basic-authorization" style="color: inherit; text-decoration: none;">
 					<h3>Basic authorization</h3>
 				</a>
-				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
-  <span class="hljs-attr">host</span>: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>,
-  <span class="hljs-attr">authentication</span>: {
-    <span class="hljs-attr">basic</span>: {
-      <span class="hljs-attr">username</span>: <span class="hljs-string">&quot;MyUsername&quot;</span>,
-      <span class="hljs-attr">apiToken</span>: <span class="hljs-string">&quot;My Password or API Token&quot;</span>
+				<a href="#with-api-token" id="with-api-token" style="color: inherit; text-decoration: none;">
+					<h5>With API token</h5>
+				</a>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
+  host: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>,
+  authentication: {
+    basic: {
+      username: <span class="hljs-string">&quot;MyUsername&quot;</span>,
+      apiToken: <span class="hljs-string">&quot;API_Token&quot;</span>
+    }
+  }
+});</code></pre>
+				<a href="#with-password" id="with-password" style="color: inherit; text-decoration: none;">
+					<h5>With password</h5>
+				</a>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
+  host: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>,
+  authentication: {
+    basic: {
+      username: <span class="hljs-string">&quot;MyUsername&quot;</span>,
+      password: <span class="hljs-string">&quot;MyPassword&quot;</span>
     }
   }
 });</code></pre>
@@ -150,6 +165,47 @@ client.projects
     <span class="hljs-attr">accessToken</span>: <span class="hljs-string">&quot;my access token&quot;</span>
   }
 });</code></pre>
+				<a href="#base-request-config" id="base-request-config" style="color: inherit; text-decoration: none;">
+					<h2>Base request config</h2>
+				</a>
+				<p>If you want to add headers, timeout, withCredentials or other data for each of the requests that will be called,
+				then pass them to baseRequestConfig.</p>
+				<p>Full list of properties for baseRequestConfig you can find here:
+				<a href="https://github.com/axios/axios#request-config">https://github.com/axios/axios#request-config</a></p>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Client } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;jira.js&quot;</span>;
+
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
+  host: <span class="hljs-string">&#x27;https://jira.somehost.com&#x27;</span>,
+  baseRequestConfig: {
+    timeout: <span class="hljs-number">20000</span>,
+    headers: {
+      <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span>,
+    },
+    timeoutErrorMessage: <span class="hljs-string">&#x27;Error message&#x27;</span>,
+    withCredentials: <span class="hljs-literal">false</span>,
+    responseType: <span class="hljs-string">&#x27;arraybuffer&#x27;</span>,
+    maxContentLength: <span class="hljs-number">100</span>,
+    <span class="hljs-comment">// and others properties</span>
+  },
+});</code></pre>
+				<a href="#set-middleware-for-jira39s-responses-and-errors" id="set-middleware-for-jira39s-responses-and-errors" style="color: inherit; text-decoration: none;">
+					<h2>Set middleware for Jira&#39;s responses and errors</h2>
+				</a>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Client } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;jira.js&quot;</span>;
+
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
+  host: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>,
+  middlewares: {
+    onError: <span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> {
+      <span class="hljs-built_in">console</span>.error(error);
+      <span class="hljs-keyword">throw</span> error;
+    },
+    onResponse: <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+      <span class="hljs-built_in">console</span>.log(data);
+      <span class="hljs-keyword">return</span> data;
+    }
+  }
+});</code></pre>
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
@@ -161,144 +217,50 @@ client.projects
 					<li>Response models</li>
 					<li>Method names reducing</li>
 				</ul>
-				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
-					<h2>Changelog</h2>
+				<a href="#latest-version-changelog" id="latest-version-changelog" style="color: inherit; text-decoration: none;">
+					<h2>Latest version changelog</h2>
 				</a>
-				<a href="#162" id="162" style="color: inherit; text-decoration: none;">
-					<h3>1.6.2</h3>
-				</a>
-				<ul>
-					<li>FIX: Sprints added to client</li>
-					<li>IMPROVEMENT: Dependencies updated</li>
-				</ul>
-				<a href="#161" id="161" style="color: inherit; text-decoration: none;">
-					<h3>1.6.1</h3>
+				<a href="#170" id="170" style="color: inherit; text-decoration: none;">
+					<h3>1.7.0</h3>
 				</a>
 				<ul>
-					<li>FIX: Added the ability to use the library without authorization <a href="https://github.com/MrRefactoring/jira.js/pull/75">#75</a></li>
-				</ul>
-				<a href="#160" id="160" style="color: inherit; text-decoration: none;">
-					<h3>1.6.0</h3>
-				</a>
-				<ul>
-					<li>FEATURE: New API <code>IssueTypeScreenSchemes</code> added</li>
-					<li>FEATURE: New API <code>ProjectEmail</code> added</li>
+					<li>IMPROVEMENT: Readme examples updated</li>
 				</ul>
 				<hr>
 				<ul>
-					<li>FEATURE: Method <code>bulkGetGroups</code> added to <code>Groups</code></li>
-					<li>FEATURE: Method <code>restoreDeletedProject</code> added to <code>Projects</code></li>
-					<li>FEATURE: Method <code>createIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
-					<li>FEATURE: Method <code>deleteIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
-					<li>FEATURE: Method <code>updateIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
-					<li>FEATURE: Method <code>addIssueTypesToIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
-					<li>FEATURE: Method <code>deleteIssueTypeFromIssueTypeScheme</code> added to <code>IssueTypeSchemes</code></li>
+					<li>IMPROVEMENT: Config typings refactored</li>
+					<li>DEPRECATION: Property <code>timeout</code> deprecated in <code>Config</code></li>
 				</ul>
 				<hr>
 				<ul>
-					<li>FEATURE: Property <code>id</code> added to <code>IssueFieldConfigurations.getAllFieldConfigurations</code></li>
-					<li>FEATURE: Property <code>sortByOpsBarAndStatus</code> added to <code>Issues.getTransitions</code></li>
-					<li>FEATURE: Property <code>accountId</code> added to <code>Permissions.getBulkPermissions</code></li>
+					<li>FEATURE: Property <code>middlewares</code> added to <code>Config</code></li>
 				</ul>
 				<hr>
 				<ul>
-					<li>DEPRECATION: Method <code>getIssueTypeScreenSchemes</code> are deprecated in <code>Screens</code></li>
-					<li>DEPRECATION: Method <code>getIssueTypeScreenSchemeItems</code> are deprecated in <code>Screens</code></li>
-					<li>DEPRECATION: Method <code>getIssueTypeScreenSchemesForProjects</code> are deprecated in <code>Screens</code></li>
+					<li>FEATURE: Property <code>baseRequestConfig</code> added to <code>Config</code></li>
 				</ul>
-				<a href="#150" id="150" style="color: inherit; text-decoration: none;">
-					<h3>1.5.0</h3>
-				</a>
+				<hr>
 				<ul>
-					<li>FEATURE: Method <code>getAllFieldConfigurationSchemes</code> added to <code>IssueFieldConfigurations</code></li>
-					<li>FEATURE: Method <code>getFieldConfigurationSchemesForProjects</code> added to <code>IssueFieldConfigurations</code></li>
-					<li>FEATURE: Property <code>fieldConfigurationSchemeId</code> added to <code>issueFieldConfigurations.getFieldConfigurationIssueTypeItems</code></li>
-					<li>FEATURE: Method <code>getIssueSecurityLevelMembers</code> added to <code>IssueSecurityLevel</code></li>
-					<li>FEATURE: Issue type schemes API added</li>
-					<li>FEATURE: Method <code>getLicensedProjectTypes</code> added to <code>ProjectTypes</code></li>
-					<li>FEATURE: Method <code>deleteProjectAsynchronously</code> added to <code>Projects</code></li>
-					<li>FEATURE: Method <code>getIssueTypeScreenSchemes</code> added to <code>Screens</code></li>
-					<li>FEATURE: Method <code>getAllScreenSchemes</code> renamed to <code>getScreenSchemes</code></li>
-					<li>DEPRECATION: <code>getAllScreenSchemes</code> are deprecated (Renamed to <code>getScreenSchemes</code>)</li>
+					<li>FEATURE: Method <code>getOptionsForContext</code> added to <code>IssueCustomFieldOptions</code> <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-custom-field-options/#api-rest-api-2-customfield-fieldid-context-contextid-option-get">Jira documentation</a></li>
+					<li>FEATURE: Method <code>deleteCustomFieldOption</code> added to <code>IssueCustomFieldOptions</code> <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-custom-field-options/#api-rest-api-2-customfield-fieldid-context-contextid-option-optionid-delete">Jira documentation</a></li>
 				</ul>
-				<a href="#140" id="140" style="color: inherit; text-decoration: none;">
-					<h3>1.4.0</h3>
-				</a>
+				<hr>
 				<ul>
-					<li>FEATURE: Now requests where there are no required parameters do not have to pass an empty object to make a request</li>
-					<li>FEATURE: <code>dashboards.createDashboard</code> was added</li>
-					<li>FEATURE: <code>dashboards.updateDashboard</code> was added</li>
-					<li>FEATURE: <code>dashboards.deleteDashboard</code> was added</li>
-					<li>FEATURE: <code>dashboards.copyDashboard</code> was added</li>
-					<li>FEATURE: <code>screens.getIssueTypeScreenSchemesForProjects</code> was added</li>
-					<li>FEATURE: <code>issueFieldConfigurations.getAllFieldConfiguration</code> was added</li>
-					<li>FEATURE: <code>issueFieldConfigurations.getFieldConfigurationItems</code> was added</li>
-					<li>FEATURE: <code>issueFieldConfigurations.getFieldConfigurationIssueTypeItems</code> was added</li>
-					<li>FEATURE: In <code>issues.getTransitions</code> was added <code>includeUnavailableTransitions</code> property</li>
-					<li>DEPRECATION: <code>issueFields.getFieldConfigurationItems</code> are deprecated (Removed from official API, use <code>issueFieldConfigurations.getFieldConfigurationItems</code>). Will be removed in next major version</li>
+					<li>FEATURE: Method <code>changeOrderOfIssueTypes</code> added to <code>IssueTypeSchemes</code> <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-issue-type-schemes/#api-rest-api-2-issuetypescheme-issuetypeschemeid-issuetype-move-put">Jira documentation</a></li>
 				</ul>
-				<a href="#130" id="130" style="color: inherit; text-decoration: none;">
-					<h3>1.3.0</h3>
-				</a>
+				<hr>
 				<ul>
-					<li>FEATURE: <code>jiraExpressions.analyseJiraExpression</code> was added</li>
-					<li>FEATURE: <code>screens.getIssueTypeScreenSchemeItems</code> was added</li>
-					<li>FEATURE: In <code>projects.getProjectsPaginated</code> was added <code>status</code> property</li>
-					<li>FEATURE: In <code>projects.deleteProject</code> was added <code>enableUndo</code> property</li>
-					<li>DEPRECATION: <code>timeTracking.disableTimeTracking</code> are deprecated (Removed from official API). Will be removed in next major version</li>
+					<li>FEATURE: Method <code>assignWorkflowSchemeToProject</code> added to <code>WorkflowSchemeProjectAssociations</code> <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-workflow-scheme-project-associations/#api-rest-api-2-workflowscheme-project-put">Jira documentation</a></li>
 				</ul>
-				<a href="#120" id="120" style="color: inherit; text-decoration: none;">
-					<h3>1.2.0</h3>
-				</a>
+				<hr>
 				<ul>
-					<li>FEATURE: <code>issueFields.getAllFieldConfigurations</code> added as experimental</li>
-					<li>FEATURE: <code>issueFields.getFieldConfigurationItems</code> added as experimental</li>
-					<li>IMPROVEMENT: dependencies update</li>
+					<li>FEATURE: New API <code>ScreenSchemes</code> added. <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screen-schemes/#api-group-screen-schemes">Jira documentation</a>.</li>
+					<li>FEATURE: New API <code>ScreenTabFields</code> added <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screen-tab-fields/#api-group-screen-tab-fields">Jira documentation</a></li>
+					<li>FEATURE: New API <code>ScreenTabs</code> added <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-screen-tabs/">Jira documentation</a></li>
 				</ul>
-				<a href="#111" id="111" style="color: inherit; text-decoration: none;">
-					<h3>1.1.1</h3>
-				</a>
+				<hr>
 				<ul>
-					<li>FIX: <code>strictGDPR</code> feature fixed</li>
-					<li>FIX: <code>Cannot read property &#39;Authorization&#39; of undefined</code> fixed</li>
-				</ul>
-				<a href="#110" id="110" style="color: inherit; text-decoration: none;">
-					<h3>1.1.0</h3>
-				</a>
-				<ul>
-					<li>FEATURE: <code>strictGDPR</code> property added to Config. Allows use only <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">GDPR-compliant functionality</a></li>
-					<li>FEATURE: <code>users.getAllUsersDefault</code> added</li>
-					<li>FEATURE: <code>issueCustomFieldOptions.updateCustomFieldOptions</code> added as experimental</li>
-					<li>DEPRECATION: <code>projectRoleActors.getActorsCountForProjectRole</code> are deprecated (Removed from official API). Will be removed in next major version</li>
-				</ul>
-				<a href="#103" id="103" style="color: inherit; text-decoration: none;">
-					<h3>1.0.3</h3>
-				</a>
-				<ul>
-					<li>DEPRECATION: <code>permissionsSchemes</code> and <code>issueAttachment</code> are deprecated</li>
-					<li>IMPROVEMENT: agile api typings improved</li>
-					<li>IMPROVEMENT: dependencies update</li>
-					<li>FIX: Authorization parameter excluded for agile API in the request body</li>
-				</ul>
-				<a href="#102" id="102" style="color: inherit; text-decoration: none;">
-					<h3>1.0.2</h3>
-				</a>
-				<ul>
-					<li>FIX: JWT Authentication default expire time added</li>
-					<li>IMPROVEMENT: modified <code>atlassian-jwt</code> (removed lodash from dependencies, bundle size decreased)</li>
-					<li>IMPROVEMENT: small tests for authentication added</li>
-				</ul>
-				<a href="#101" id="101" style="color: inherit; text-decoration: none;">
-					<h3>1.0.1</h3>
-				</a>
-				<ul>
-					<li>FIX: documentation link fixed</li>
-				</ul>
-				<a href="#100" id="100" style="color: inherit; text-decoration: none;">
-					<h3>1.0.0</h3>
-				</a>
-				<ul>
-					<li>RELEASE</li>
+					<li>FEATURE: Added models for new endpoints</li>
 				</ul>
 			</div>
 		</div>
@@ -307,6 +269,15 @@ client.projects
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/config.html">Config</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="modules/config.authentication.html">Config.<wbr>Authentication</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="modules/config.middlewares.html">Config.<wbr>Middlewares</a>
 					</li>
 				</ul>
 			</nav>
@@ -508,6 +479,15 @@ client.projects
 						<a href="classes/projects.html" class="tsd-kind-icon">Projects</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/screenschemes.html" class="tsd-kind-icon">Screen<wbr>Schemes</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/screentabfields.html" class="tsd-kind-icon">Screen<wbr>Tab<wbr>Fields</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/screentabs.html" class="tsd-kind-icon">Screen<wbr>Tabs</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/screens.html" class="tsd-kind-icon">Screens</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -559,7 +539,28 @@ client.projects
 						<a href="classes/workflows.html" class="tsd-kind-icon">Workflows</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/config.html" class="tsd-kind-icon">Config</a>
+						<a href="interfaces/customfieldcontextoption.html" class="tsd-kind-icon">Custom<wbr>Field<wbr>Context<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pagebeancustomfieldcontextoption.html" class="tsd-kind-icon">Page<wbr>Bean<wbr>Custom<wbr>Field<wbr>Context<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pagebeanscreenscheme.html" class="tsd-kind-icon">Page<wbr>Bean<wbr>Screen<wbr>Scheme</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/screenscheme.html" class="tsd-kind-icon">Screen<wbr>Scheme</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/screenschemeid.html" class="tsd-kind-icon">Screen<wbr>Scheme<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/screentypes.html" class="tsd-kind-icon">Screen<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/screenablefield.html" class="tsd-kind-icon">Screenable<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/screenabletab.html" class="tsd-kind-icon">Screenable<wbr>Tab</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#callback" class="tsd-kind-icon">Callback</a>
