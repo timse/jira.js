@@ -187,6 +187,9 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="globals.html#getauthentication" class="tsd-kind-icon">get<wbr>Authentication</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#removeundefinedelements" class="tsd-kind-icon">remove<wbr>Undefined<wbr>Elements</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#removeundefinedfromarray" class="tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#removeundefinedfromobject" class="tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Object</a></li>
 							</ul>
 						</section>
 					</div>
@@ -200,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">Callback&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, data<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/a5c23ed/src/callback.ts#L1">callback.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/callback.ts#L1">callback.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -237,10 +240,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="sender" class="tsd-anchor"></a>
 					<h3>Sender</h3>
-					<div class="tsd-signature tsd-kind-icon">Sender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>sendRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosRequestConfig</span>, callback<span class="tsd-signature-symbol">?: </span><a href="globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Sender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>sendRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="modules/config.html#baserequestconfig" class="tsd-signature-type">BaseRequestConfig</a>, callback<span class="tsd-signature-symbol">?: </span><a href="globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/a5c23ed/src/sender.ts#L4">sender.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/sender.ts#L4">sender.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -250,18 +253,18 @@
 								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>send<wbr>Request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosRequestConfig</span>, callback<span class="tsd-signature-symbol">?: </span><a href="globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>send<wbr>Request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="modules/config.html#baserequestconfig" class="tsd-signature-type">BaseRequestConfig</a>, callback<span class="tsd-signature-symbol">?: </span><a href="globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosRequestConfig</span>, callback<span class="tsd-signature-symbol">?: </span><a href="globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="modules/config.html#baserequestconfig" class="tsd-signature-type">BaseRequestConfig</a>, callback<span class="tsd-signature-symbol">?: </span><a href="globals.html#callback" class="tsd-signature-type">Callback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 										</ul>
 										<ul class="tsd-descriptions">
 											<li class="tsd-description">
 												<h4 class="tsd-parameters-title">Parameters</h4>
 												<ul class="tsd-parameters">
 													<li>
-														<h5>request: <span class="tsd-signature-type">AxiosRequestConfig</span></h5>
+														<h5>request: <a href="modules/config.html#baserequestconfig" class="tsd-signature-type">BaseRequestConfig</a></h5>
 													</li>
 													<li>
 														<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="globals.html#callback" class="tsd-signature-type">Callback</a></h5>
@@ -289,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/a5c23ed/src/helpers/index.ts#L6">helpers/index.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/helpers/index.ts#L6">helpers/index.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -302,6 +305,114 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="removeundefinedelements" class="tsd-anchor"></a>
+					<h3>remove<wbr>Undefined<wbr>Elements</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Undefined<wbr>Elements&lt;T&gt;<span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Undefined<wbr>Elements&lt;T&gt;<span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/utils/removeUndefinedElements.ts#L39">utils/removeUndefinedElements.ts:39</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>o: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/utils/removeUndefinedElements.ts#L40">utils/removeUndefinedElements.ts:40</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>o: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="removeundefinedfromarray" class="tsd-anchor"></a>
+					<h3>remove<wbr>Undefined<wbr>From<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/utils/removeUndefinedElements.ts#L1">utils/removeUndefinedElements.ts:1</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="removeundefinedfromobject" class="tsd-anchor"></a>
+					<h3>remove<wbr>Undefined<wbr>From<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Object&lt;T&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/cf114d4/src/utils/removeUndefinedElements.ts#L5">utils/removeUndefinedElements.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -613,6 +724,15 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getauthentication" class="tsd-kind-icon">get<wbr>Authentication</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#removeundefinedelements" class="tsd-kind-icon">remove<wbr>Undefined<wbr>Elements</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#removeundefinedfromarray" class="tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#removeundefinedfromobject" class="tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Object</a>
 					</li>
 				</ul>
 			</nav>

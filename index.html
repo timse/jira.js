@@ -64,10 +64,10 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#javascript-jira-api-client" id="javascript-jira-api-client" style="color: inherit; text-decoration: none;">
-					<h1>JavaScript JIRA API Client</h1>
+				<a href="#javascript--typescript-jira-api-client" id="javascript--typescript-jira-api-client" style="color: inherit; text-decoration: none;">
+					<h1>JavaScript / TypeScript JIRA API Client</h1>
 				</a>
-				<p>A JavaScript/TypeScript wrapper for the JIRA REST API</p>
+				<p>A JavaScript / TypeScript wrapper for the JIRA REST API</p>
 				<p><a href="https://www.npmjs.com/package/jira.js"><img src="https://img.shields.io/npm/v/jira.js.svg?style=flat-square" alt="npm"></a>
 					<a href="https://npmjs.com/jira.js"><img src="https://img.shields.io/npm/dm/jira.js.svg?style=flat-square" alt="Downloads"></a>
 					<a href="https://bundlephobia.com/result?p=jira.js"><img src="https://badgen.net/bundlephobia/minzip/jira.js?style=flat-square" alt="Minizipped size"></a>
@@ -87,20 +87,26 @@
 				<a href="#create-the-jira-client" id="create-the-jira-client" style="color: inherit; text-decoration: none;">
 					<h3>Create the JIRA client</h3>
 				</a>
-				<pre><code class="language-js"><span class="hljs-comment">// ES5</span>
-<span class="hljs-keyword">var</span> { Client } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;jira.js&quot;</span>);
-
-<span class="hljs-comment">// ES6</span>
-<span class="hljs-keyword">import</span> { Client } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;jira.js&quot;</span>;
+				<pre><code class="language-js"><span class="hljs-keyword">import</span> { Client } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;jira.js&quot;</span>;
 
 <span class="hljs-comment">// Initialize</span>
-<span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> Client({
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> Client({
   <span class="hljs-attr">host</span>: <span class="hljs-string">&quot;https://jira.somehost.com&quot;</span>
 });</code></pre>
-				<a href="#get-all-projects" id="get-all-projects" style="color: inherit; text-decoration: none;">
-					<h3>Get all projects</h3>
+				<a href="#working-with-api-how-to-get-a-list-of-all-projects-for-example" id="working-with-api-how-to-get-a-list-of-all-projects-for-example" style="color: inherit; text-decoration: none;">
+					<h3>Working with API (How to get a list of all projects, for example)</h3>
 				</a>
-				<pre><code class="language-js"><span class="hljs-comment">// ES5/ES6</span>
+				<pre><code class="language-js"><span class="hljs-comment">// Callbacks</span>
+client.projects.getAllProjects({}, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> {
+  <span class="hljs-keyword">if</span> (err) {
+    <span class="hljs-keyword">throw</span> err;
+  }
+
+  <span class="hljs-built_in">console</span>.log(data);
+});
+
+
+<span class="hljs-comment">// ES5/ES6</span>
 client.projects
   .getAllProjects()
   .then(<span class="hljs-function"><span class="hljs-params">projects</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(projects))
@@ -209,17 +215,55 @@ client.projects
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
+				<p>Library based on <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2">Jira API v2</a> and <a href="https://developer.atlassian.com/cloud/jira/software/rest">Jira Agile API</a></p>
 				<p>Can&#39;t find what you need in the readme? Check out our documentation here: <a href="https://mrrefactoring.github.io/jira.js/">https://mrrefactoring.github.io/jira.js/</a></p>
+				<a href="#contributors" id="contributors" style="color: inherit; text-decoration: none;">
+					<h2>Contributors</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th align="center"><a href="https://github.com/MrRefactoring"><img alt="MrRefactoring" src="https://avatars0.githubusercontent.com/u/10329528?v=4&s=117 width=117"></a></th>
+							<th align="center"><a href="https://github.com/Swapnull"><img alt="Swapnull" src="https://avatars0.githubusercontent.com/u/4456346?v=4&s=117 width=117"></a></th>
+							<th align="center"><a href="https://github.com/violine1101"><img alt="violine1101" src="https://avatars0.githubusercontent.com/u/12451842?v=4&s=117 width=117"></a></th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td align="center"><a href="https://github.com/MrRefactoring">MrRefactoring</a></td>
+							<td align="center"><a href="https://github.com/Swapnull">Swapnull</a></td>
+							<td align="center"><a href="https://github.com/violine1101">violine1101</a></td>
+						</tr>
+				</tbody></table>
 				<a href="#road-map" id="road-map" style="color: inherit; text-decoration: none;">
 					<h2>Road map</h2>
 				</a>
 				<ul>
-					<li>Response models</li>
-					<li>Method names reducing</li>
+					<li>Response models (<a href="https://github.com/MrRefactoring/jira.js/pull/76">Check 2.0 version PR</a>)</li>
+					<li>Method names reducing (<a href="https://github.com/MrRefactoring/jira.js/pull/76">Check 2.0 version PR</a>)</li>
 				</ul>
 				<a href="#latest-version-changelog" id="latest-version-changelog" style="color: inherit; text-decoration: none;">
 					<h2>Latest version changelog</h2>
 				</a>
+				<a href="#173" id="173" style="color: inherit; text-decoration: none;">
+					<h3>1.7.3</h3>
+				</a>
+				<ul>
+					<li>DEPENDENCIES: <code>atlassian-jwt</code> installed from npm instead git</li>
+					<li>DEPENDENCIES: Updated dependencies versions</li>
+					<li>README: Contributors section added, small redesign</li>
+				</ul>
+				<a href="#172" id="172" style="color: inherit; text-decoration: none;">
+					<h3>1.7.2</h3>
+				</a>
+				<ul>
+					<li>FIX: console.log removed</li>
+				</ul>
+				<a href="#171" id="171" style="color: inherit; text-decoration: none;">
+					<h3>1.7.1</h3>
+				</a>
+				<ul>
+					<li>FIX: Headers fixes</li>
+				</ul>
 				<a href="#170" id="170" style="color: inherit; text-decoration: none;">
 					<h3>1.7.0</h3>
 				</a>
@@ -570,6 +614,15 @@ client.projects
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getauthentication" class="tsd-kind-icon">get<wbr>Authentication</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#removeundefinedelements" class="tsd-kind-icon">remove<wbr>Undefined<wbr>Elements</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#removeundefinedfromarray" class="tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#removeundefinedfromobject" class="tsd-kind-icon">remove<wbr>Undefined<wbr>From<wbr>Object</a>
 					</li>
 				</ul>
 			</nav>
