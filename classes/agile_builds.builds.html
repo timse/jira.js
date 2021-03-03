@@ -110,7 +110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L7">agile/builds.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L7">agile/builds.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L142">agile/builds.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L142">agile/builds.ts:142</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -169,7 +169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L152">agile/builds.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L152">agile/builds.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -204,14 +204,14 @@
 					<a name="deletebuildsbyproperty" class="tsd-anchor"></a>
 					<h3>delete<wbr>Builds<wbr>ByProperty</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Builds<wbr>ByProperty&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">?: </span><a href="../interfaces/agile_parameters_deletebuildsbyproperty.deletebuildsbyproperty.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteBuildsByProperty</a>, callback<span class="tsd-signature-symbol">?: </span><a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Builds<wbr>ByProperty&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/agile_parameters_deletebuildsbyproperty.deletebuildsbyproperty.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteBuildsByProperty</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">delete<wbr>Builds<wbr>ByProperty&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">?: </span><a href="../interfaces/agile_parameters_deletebuildsbyproperty.deletebuildsbyproperty.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteBuildsByProperty</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L76">agile/builds.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L76">agile/builds.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,7 +227,7 @@
 								<p>Deletion is performed asynchronously. The <code>getBuildByKey</code> operation can be used to confirm that data has been
 								deleted successfully (if needed).</p>
 								<p>Only Connect apps that define the <code>jiraBuildInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
+								This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -238,10 +238,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parameters: <a href="../interfaces/agile_parameters_deletebuildsbyproperty.deletebuildsbyproperty.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteBuildsByProperty</a></h5>
+									<h5>parameters: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/agile_parameters_deletebuildsbyproperty.deletebuildsbyproperty.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteBuildsByProperty</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -249,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L95">agile/builds.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L95">agile/builds.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,7 +265,7 @@
 								<p>Deletion is performed asynchronously. The <code>getBuildByKey</code> operation can be used to confirm that data has been
 								deleted successfully (if needed).</p>
 								<p>Only Connect apps that define the <code>jiraBuildInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
+								This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -297,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L115">agile/builds.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L115">agile/builds.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,7 +306,7 @@
 								</div>
 								<p>The result will be what is currently stored, ignoring any pending updates or deletes.</p>
 								<p>Only Connect apps that define the <code>jiraBuildInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;READ&#39; scope for Connect apps.</p>
+								This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -328,7 +328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L124">agile/builds.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L124">agile/builds.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,7 +337,7 @@
 								</div>
 								<p>The result will be what is currently stored, ignoring any pending updates or deletes.</p>
 								<p>Only Connect apps that define the <code>jiraBuildInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;READ&#39; scope for Connect apps.</p>
+								This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -362,14 +362,14 @@
 					<a name="submitbuilds" class="tsd-anchor"></a>
 					<h3>submit<wbr>Builds</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">submit<wbr>Builds&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">?: </span><a href="../interfaces/agile_parameters_submitbuilds.submitbuilds.html" class="tsd-signature-type" data-tsd-kind="Interface">SubmitBuilds</a>, callback<span class="tsd-signature-symbol">?: </span><a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">submit<wbr>Builds&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/agile_parameters_submitbuilds.submitbuilds.html" class="tsd-signature-type" data-tsd-kind="Interface">SubmitBuilds</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">submit<wbr>Builds&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">?: </span><a href="../interfaces/agile_parameters_submitbuilds.submitbuilds.html" class="tsd-signature-type" data-tsd-kind="Interface">SubmitBuilds</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L26">agile/builds.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L26">agile/builds.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -396,10 +396,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parameters: <a href="../interfaces/agile_parameters_submitbuilds.submitbuilds.html" class="tsd-signature-type" data-tsd-kind="Interface">SubmitBuilds</a></h5>
+									<h5>parameters: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/agile_parameters_submitbuilds.submitbuilds.html" class="tsd-signature-type" data-tsd-kind="Interface">SubmitBuilds</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>callback: <a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -407,7 +407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9e41bae/src/agile/builds.ts#L44">agile/builds.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/agile/builds.ts#L44">agile/builds.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
