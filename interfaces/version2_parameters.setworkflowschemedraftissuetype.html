@@ -90,9 +90,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_parameters.setworkflowschemedraftissuetype.html#body" class="tsd-kind-icon">body</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_parameters.setworkflowschemedraftissuetype.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="version2_parameters.setworkflowschemedraftissuetype.html#issuetype" class="tsd-kind-icon">issue<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters.setworkflowschemedraftissuetype.html#updatedraftifneeded" class="tsd-kind-icon">update<wbr>Draft<wbr>IfNeeded</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters.setworkflowschemedraftissuetype.html#workflow" class="tsd-kind-icon">workflow</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="version2_parameters.setworkflowschemedraftissuetype.html#issuetype-1" class="tsd-kind-icon">issue<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters.setworkflowschemedraftissuetype.html#updatedraftifneeded-1" class="tsd-kind-icon">update<wbr>Draft<wbr>IfNeeded</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters.setworkflowschemedraftissuetype.html#workflow-1" class="tsd-kind-icon">workflow</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,16 +103,45 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="body" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> body</h3>
-					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>issueType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>updateDraftIfNeeded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>workflow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>issueType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>updateDraftIfNeeded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>workflow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/version2/parameters/setWorkflowSchemeDraftIssueType.ts#L12">version2/parameters/setWorkflowSchemeDraftIssueType.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/317b1d5/src/version2/parameters/setWorkflowSchemeDraftIssueType.ts#L12">version2/parameters/setWorkflowSchemeDraftIssueType.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Details about the mapping between an issue type and a workflow.</p>
 						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> issue<wbr>Type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The ID of the issue type. Not required if updating the issue type-workflow mapping.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> update<wbr>Draft<wbr>IfNeeded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Set to true to create or update the draft of a workflow scheme and update the mapping in the draft, when the workflow scheme cannot be edited. Defaults to <code>false</code>. Only applicable when updating the workflow-issue types mapping.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> workflow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The name of the workflow.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -121,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/version2/parameters/setWorkflowSchemeDraftIssueType.ts#L5">version2/parameters/setWorkflowSchemeDraftIssueType.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/317b1d5/src/version2/parameters/setWorkflowSchemeDraftIssueType.ts#L5">version2/parameters/setWorkflowSchemeDraftIssueType.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -131,13 +160,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-					<a name="issuetype" class="tsd-anchor"></a>
+					<a name="issuetype-1" class="tsd-anchor"></a>
 					<h3>issue<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">issue<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides <a href="version2_models_issuetypeworkflowmapping.issuetypeworkflowmapping.html">IssueTypeWorkflowMapping</a>.<a href="version2_models_issuetypeworkflowmapping.issuetypeworkflowmapping.html#issuetype">issueType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/version2/parameters/setWorkflowSchemeDraftIssueType.ts#L7">version2/parameters/setWorkflowSchemeDraftIssueType.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/317b1d5/src/version2/parameters/setWorkflowSchemeDraftIssueType.ts#L7">version2/parameters/setWorkflowSchemeDraftIssueType.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,13 +176,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="updatedraftifneeded" class="tsd-anchor"></a>
+					<a name="updatedraftifneeded-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> update<wbr>Draft<wbr>IfNeeded</h3>
-					<div class="tsd-signature tsd-kind-icon">update<wbr>Draft<wbr>IfNeeded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<div class="tsd-signature tsd-kind-icon">update<wbr>Draft<wbr>IfNeeded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="version2_models_issuetypeworkflowmapping.issuetypeworkflowmapping.html">IssueTypeWorkflowMapping</a>.<a href="version2_models_issuetypeworkflowmapping.issuetypeworkflowmapping.html#updatedraftifneeded">updateDraftIfNeeded</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/version2/models/issueTypeWorkflowMapping.ts#L9">version2/models/issueTypeWorkflowMapping.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/317b1d5/src/version2/models/issueTypeWorkflowMapping.ts#L9">version2/models/issueTypeWorkflowMapping.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,13 +192,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="workflow" class="tsd-anchor"></a>
+					<a name="workflow-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> workflow</h3>
-					<div class="tsd-signature tsd-kind-icon">workflow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">workflow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="version2_models_issuetypeworkflowmapping.issuetypeworkflowmapping.html">IssueTypeWorkflowMapping</a>.<a href="version2_models_issuetypeworkflowmapping.issuetypeworkflowmapping.html#workflow">workflow</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b4e08d9/src/version2/models/issueTypeWorkflowMapping.ts#L7">version2/models/issueTypeWorkflowMapping.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/317b1d5/src/version2/models/issueTypeWorkflowMapping.ts#L7">version2/models/issueTypeWorkflowMapping.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -205,13 +234,13 @@
 								<a href="version2_parameters.setworkflowschemedraftissuetype.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-								<a href="version2_parameters.setworkflowschemedraftissuetype.html#issuetype" class="tsd-kind-icon">issue<wbr>Type</a>
+								<a href="version2_parameters.setworkflowschemedraftissuetype.html#issuetype-1" class="tsd-kind-icon">issue<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="version2_parameters.setworkflowschemedraftissuetype.html#updatedraftifneeded" class="tsd-kind-icon">update<wbr>Draft<wbr>IfNeeded</a>
+								<a href="version2_parameters.setworkflowschemedraftissuetype.html#updatedraftifneeded-1" class="tsd-kind-icon">update<wbr>Draft<wbr>IfNeeded</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="version2_parameters.setworkflowschemedraftissuetype.html#workflow" class="tsd-kind-icon">workflow</a>
+								<a href="version2_parameters.setworkflowschemedraftissuetype.html#workflow-1" class="tsd-kind-icon">workflow</a>
 							</li>
 						</ul>
 					</li>
