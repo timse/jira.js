@@ -344,6 +344,7 @@
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-categories/#api-group-project-categories">projectCategories</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-components/#api-group-project-components">projectComponents</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-email/#api-group-project-email">projectEmail</a></li>
+							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-features/#api-group-project-features">projectFeatures</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-key-and-name-validation/#api-group-project-key-and-name-validation">projectKeyAndNameValidation</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-permission-schemes/#api-group-project-permission-schemes">projectPermissionSchemes</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-project-properties/#api-group-project-properties">projectProperties</a></li>
@@ -423,6 +424,7 @@
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-categories/#api-group-project-categories">projectCategories</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-components/#api-group-project-components">projectComponents</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-email/#api-group-project-email">projectEmail</a></li>
+							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-features/#api-group-project-features">projectFeatures</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-key-and-name-validation/#api-group-project-key-and-name-validation">projectKeyAndNameValidation</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-permission-schemes/#api-group-project-permission-schemes">projectPermissionSchemes</a></li>
 							<li><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-properties/#api-group-project-properties">projectProperties</a></li>
@@ -475,6 +477,7 @@
 					<h2>Take a look at our other products</h2>
 				</a>
 				<ul>
+					<li><a href="https://github.com/MrRefactoring/confluence.js">Confluence.js</a> - confluence.js is a powerful Node.JS / Browser module that allows you to interact with the Confluence API very easily</li>
 					<li><a href="https://github.com/MrRefactoring/trello.js">Trello.js</a> - JavaScript / TypeScript library for Node.JS and browsers to easily interact with Atlassian Trello API</li>
 				</ul>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
@@ -584,6 +587,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/agile_models_entry.html">agile/models/entry</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/agile_models_epic.html">agile/models/epic</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/agile_models_epicrankrequestbean.html">agile/models/epic<wbr>Rank<wbr>Request<wbr>Bean</a>
@@ -701,6 +707,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/agile_models_partialsuccessbean.html">agile/models/partial<wbr>Success<wbr>Bean</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/agile_models_projects.html">agile/models/projects</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/agile_models_quickfilterbean.html">agile/models/quick<wbr>Filter<wbr>Bean</a>
@@ -1025,6 +1034,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/index.html">index</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/paginated.html">paginated</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/requestconfig.html">request<wbr>Config</a>
@@ -1354,10 +1366,19 @@
 						<a href="modules/version2_models_convertedjqlqueries.html">version2/models/convertedJQLQueries</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version2_models_crateworkflowstatusdetails.html">version2/models/crate<wbr>Workflow<wbr>Status<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version2_models_createcustomfieldcontext.html">version2/models/create<wbr>Custom<wbr>Field<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_models_createupdaterolerequestbean.html">version2/models/create<wbr>Update<wbr>Role<wbr>Request<wbr>Bean</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_models_createworkflowdetails.html">version2/models/create<wbr>Workflow<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_models_createworkflowtransitiondetails.html">version2/models/create<wbr>Workflow<wbr>Transition<wbr>Details</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_models_createdissue.html">version2/models/created<wbr>Issue</a>
@@ -2065,6 +2086,15 @@
 						<a href="modules/version2_models_projectemailaddress.html">version2/models/project<wbr>Email<wbr>Address</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version2_models_projectfeature.html">version2/models/project<wbr>Feature</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_models_projectfeaturetogglerequest.html">version2/models/project<wbr>Feature<wbr>Toggle<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_models_projectfeatures.html">version2/models/project<wbr>Features</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version2_models_projectforscope.html">version2/models/project<wbr>For<wbr>Scope</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -2626,6 +2656,9 @@
 						<a href="modules/version2_parameters_createversion.html">version2/parameters/create<wbr>Version</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version2_parameters_createworkflow.html">version2/parameters/create<wbr>Workflow</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version2_parameters_createworkflowscheme.html">version2/parameters/create<wbr>Workflow<wbr>Scheme</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -2681,6 +2714,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_parameters_deletefilter.html">version2/parameters/delete<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_parameters_deleteinactiveworkflow.html">version2/parameters/delete<wbr>Inactive<wbr>Workflow</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_parameters_deleteissue.html">version2/parameters/delete<wbr>Issue</a>
@@ -2999,6 +3035,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_parameters_getfavouritefilters.html">version2/parameters/get<wbr>Favourite<wbr>Filters</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_parameters_getfeaturesforproject.html">version2/parameters/get<wbr>Features<wbr>For<wbr>Project</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_parameters_getfieldautocompleteforquerystring.html">version2/parameters/get<wbr>Field<wbr>Auto<wbr>Complete<wbr>For<wbr>Query<wbr>String</a>
@@ -3493,6 +3532,9 @@
 						<a href="modules/version2_parameters_storeavatar.html">version2/parameters/store<wbr>Avatar</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version2_parameters_togglefeatureforproject.html">version2/parameters/toggle<wbr>Feature<wbr>For<wbr>Project</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version2_parameters_updatecomment.html">version2/parameters/update<wbr>Comment</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -3611,6 +3653,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_projectemail.html">version2/project<wbr>Email</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version2_projectfeatures.html">version2/project<wbr>Features</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version2_projectkeyandnamevalidation.html">version2/project<wbr>Key<wbr>And<wbr>Name<wbr>Validation</a>
@@ -3991,10 +4036,19 @@
 						<a href="modules/version3_models_convertedjqlqueries.html">version3/models/convertedJQLQueries</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version3_models_crateworkflowstatusdetails.html">version3/models/crate<wbr>Workflow<wbr>Status<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version3_models_createcustomfieldcontext.html">version3/models/create<wbr>Custom<wbr>Field<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_models_createupdaterolerequestbean.html">version3/models/create<wbr>Update<wbr>Role<wbr>Request<wbr>Bean</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_models_createworkflowdetails.html">version3/models/create<wbr>Workflow<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_models_createworkflowtransitiondetails.html">version3/models/create<wbr>Workflow<wbr>Transition<wbr>Details</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_models_createdissue.html">version3/models/created<wbr>Issue</a>
@@ -4702,6 +4756,15 @@
 						<a href="modules/version3_models_projectemailaddress.html">version3/models/project<wbr>Email<wbr>Address</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version3_models_projectfeature.html">version3/models/project<wbr>Feature</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_models_projectfeaturetogglerequest.html">version3/models/project<wbr>Feature<wbr>Toggle<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_models_projectfeatures.html">version3/models/project<wbr>Features</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version3_models_projectforscope.html">version3/models/project<wbr>For<wbr>Scope</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -5029,7 +5092,7 @@
 						<a href="modules/version3_models_workflowconditionbean.html">version3/models/workflow<wbr>Condition<wbr>Bean</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="modules/version3_models_workflowid.html">version3/models/workflow<wbr>Id</a>
+						<a href="modules/version3_models_workflowid.html">version3/models/workflowID</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_models_workflowrules.html">version3/models/workflow<wbr>Rules</a>
@@ -5263,6 +5326,9 @@
 						<a href="modules/version3_parameters_createversion.html">version3/parameters/create<wbr>Version</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version3_parameters_createworkflow.html">version3/parameters/create<wbr>Workflow</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version3_parameters_createworkflowscheme.html">version3/parameters/create<wbr>Workflow<wbr>Scheme</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -5318,6 +5384,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_parameters_deletefilter.html">version3/parameters/delete<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_parameters_deleteinactiveworkflow.html">version3/parameters/delete<wbr>Inactive<wbr>Workflow</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_parameters_deleteissue.html">version3/parameters/delete<wbr>Issue</a>
@@ -5636,6 +5705,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_parameters_getfavouritefilters.html">version3/parameters/get<wbr>Favourite<wbr>Filters</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_parameters_getfeaturesforproject.html">version3/parameters/get<wbr>Features<wbr>For<wbr>Project</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_parameters_getfieldautocompleteforquerystring.html">version3/parameters/get<wbr>Field<wbr>Auto<wbr>Complete<wbr>For<wbr>Query<wbr>String</a>
@@ -6130,6 +6202,9 @@
 						<a href="modules/version3_parameters_storeavatar.html">version3/parameters/store<wbr>Avatar</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="modules/version3_parameters_togglefeatureforproject.html">version3/parameters/toggle<wbr>Feature<wbr>For<wbr>Project</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="modules/version3_parameters_updatecomment.html">version3/parameters/update<wbr>Comment</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -6248,6 +6323,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_projectemail.html">version3/project<wbr>Email</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/version3_projectfeatures.html">version3/project<wbr>Features</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/version3_projectkeyandnamevalidation.html">version3/project<wbr>Key<wbr>And<wbr>Name<wbr>Validation</a>

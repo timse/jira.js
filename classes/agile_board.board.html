@@ -132,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L7">agile/board.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L8">agile/board.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -159,39 +159,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L66">agile/board.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L72">agile/board.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a new board. Board name, type and filter ID is required.
+									<p>Creates a new board. Board name, type and filter ID is required.</p>
+									<ul>
+										<li><code>name</code> - Must be less than 255 characters.</li>
+										<li><code>type</code> - Valid values: scrum, kanban</li>
+										<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the 'Create shared objects'
+										permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
+										<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
+											If choosing 'project', then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
+											If choosing 'user', the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
+										</li>
+									</ul>
+									<p>
+										Note:
 										<ul>
-											<li><code>name</code> - Must be less than 255 characters.</li>
-											<li><code>type</code> - Valid values: scrum, kanban</li>
-											<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the &#39;Create shared objects&#39;
-											permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
-											<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
-												If choosing &#39;project&#39;, then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
-												If choosing &#39;user&#39;, the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
+											<li>
+												If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
+												For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
+												The <code>projectTypeKey</code> for software boards must be 'software' and the <code>projectTemplateKey</code> must be either
+												<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
+											</li>
+											<li>
+												You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
+												For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
+											</li>
+											<li>
+												If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
 											</li>
 										</ul>
-										<p>
-											Note:
-											<ul>
-												<li>
-													If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
-													For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
-													The <code>projectTypeKey</code> for software boards must be &#39;software&#39; and the <code>projectTemplateKey</code> must be either
-													<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
-												</li>
-												<li>
-													You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
-													For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
-												</li>
-												<li>
-													If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
-												</li>
-										</ul></p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -214,39 +214,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L96">agile/board.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L103">agile/board.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a new board. Board name, type and filter ID is required.
+									<p>Creates a new board. Board name, type and filter ID is required.</p>
+									<ul>
+										<li><code>name</code> - Must be less than 255 characters.</li>
+										<li><code>type</code> - Valid values: scrum, kanban</li>
+										<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the 'Create shared objects'
+										permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
+										<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
+											If choosing 'project', then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
+											If choosing 'user', the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
+										</li>
+									</ul>
+									<p>
+										Note:
 										<ul>
-											<li><code>name</code> - Must be less than 255 characters.</li>
-											<li><code>type</code> - Valid values: scrum, kanban</li>
-											<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the &#39;Create shared objects&#39;
-											permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
-											<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
-												If choosing &#39;project&#39;, then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
-												If choosing &#39;user&#39;, the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
+											<li>
+												If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
+												For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
+												The <code>projectTypeKey</code> for software boards must be 'software' and the <code>projectTemplateKey</code> must be either
+												<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
+											</li>
+											<li>
+												You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
+												For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
+											</li>
+											<li>
+												If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
 											</li>
 										</ul>
-										<p>
-											Note:
-											<ul>
-												<li>
-													If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
-													For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
-													The <code>projectTypeKey</code> for software boards must be &#39;software&#39; and the <code>projectTemplateKey</code> must be either
-													<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
-												</li>
-												<li>
-													You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
-													For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
-												</li>
-												<li>
-													If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
-												</li>
-										</ul></p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -279,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L151">agile/board.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L166">agile/board.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L154">agile/board.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L170">agile/board.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L550">agile/board.ts:550</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L598">agile/board.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,7 +374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L554">agile/board.ts:554</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L603">agile/board.ts:603</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -413,7 +413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L11">agile/board.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L14">agile/board.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -441,7 +441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L14">agile/board.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L18">agile/board.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -479,7 +479,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L565">agile/board.ts:565</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L616">agile/board.ts:616</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -507,7 +507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L568">agile/board.ts:568</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L620">agile/board.ts:620</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -545,7 +545,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L613">agile/board.ts:613</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L667">agile/board.ts:667</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -573,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L616">agile/board.ts:616</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L671">agile/board.ts:671</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -611,7 +611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L660">agile/board.ts:660</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L720">agile/board.ts:720</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -641,7 +641,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L665">agile/board.ts:665</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L726">agile/board.ts:726</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -681,7 +681,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L135">agile/board.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L147">agile/board.ts:147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -711,7 +711,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L140">agile/board.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L153">agile/board.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -751,7 +751,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L114">agile/board.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L123">agile/board.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -780,7 +780,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L118">agile/board.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L128">agile/board.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -819,7 +819,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L303">agile/board.ts:303</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L333">agile/board.ts:333</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -833,7 +833,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../interfaces/agile_models_searchresultsbean.searchresultsbean.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchResultsBean</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -850,7 +850,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L309">agile/board.ts:309</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L340">agile/board.ts:340</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,7 +864,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../interfaces/agile_models_searchresultsbean.searchresultsbean.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchResultsBean</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -891,7 +891,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L634">agile/board.ts:634</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L691">agile/board.ts:691</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -921,7 +921,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L639">agile/board.ts:639</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L697">agile/board.ts:697</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -961,7 +961,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L512">agile/board.ts:512</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L554">agile/board.ts:554</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -990,7 +990,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L516">agile/board.ts:516</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L559">agile/board.ts:559</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1029,7 +1029,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L496">agile/board.ts:496</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L535">agile/board.ts:535</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1058,7 +1058,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L500">agile/board.ts:500</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L540">agile/board.ts:540</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1097,7 +1097,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L216">agile/board.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L237">agile/board.ts:237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1146,7 +1146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L240">agile/board.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L262">agile/board.ts:262</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1205,7 +1205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L252">agile/board.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L276">agile/board.ts:276</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1217,7 +1217,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../modules/paginated.html#paginated-1" class="tsd-signature-type" data-tsd-kind="Type alias">Paginated</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/agile_models_epic.epic.html" class="tsd-signature-type" data-tsd-kind="Interface">Epic</a><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1234,7 +1234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L256">agile/board.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L281">agile/board.ts:281</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1246,7 +1246,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../modules/paginated.html#paginated-1" class="tsd-signature-type" data-tsd-kind="Type alias">Paginated</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/agile_models_epic.epic.html" class="tsd-signature-type" data-tsd-kind="Interface">Epic</a><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1273,7 +1273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L328">agile/board.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L358">agile/board.ts:358</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1296,7 +1296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L331">agile/board.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L359">agile/board.ts:359</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1329,7 +1329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L169">agile/board.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L187">agile/board.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1361,7 +1361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L176">agile/board.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L195">agile/board.ts:195</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1403,7 +1403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L362">agile/board.ts:362</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L389">agile/board.ts:389</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1436,7 +1436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L370">agile/board.ts:370</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L398">agile/board.ts:398</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1479,7 +1479,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L275">agile/board.ts:275</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L302">agile/board.ts:302</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1493,7 +1493,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../interfaces/agile_models_searchresultsbean.searchresultsbean.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchResultsBean</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1510,7 +1510,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L281">agile/board.ts:281</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L309">agile/board.ts:309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1524,7 +1524,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../interfaces/agile_models_searchresultsbean.searchresultsbean.html" class="tsd-signature-type" data-tsd-kind="Interface">SearchResultsBean</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1551,7 +1551,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L431">agile/board.ts:431</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L464">agile/board.ts:464</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1576,7 +1576,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../modules/paginated.html#paginated-1" class="tsd-signature-type" data-tsd-kind="Type alias">Paginated</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/agile_models_projects.projects.html" class="tsd-signature-type" data-tsd-kind="Interface">Projects</a><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1593,7 +1593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L448">agile/board.ts:448</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L482">agile/board.ts:482</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1618,7 +1618,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../modules/paginated.html#paginated-1" class="tsd-signature-type" data-tsd-kind="Type alias">Paginated</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/agile_models_projects.projects.html" class="tsd-signature-type" data-tsd-kind="Interface">Projects</a><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1645,7 +1645,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L472">agile/board.ts:472</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L508">agile/board.ts:508</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1665,7 +1665,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../interfaces/agile_models_projects.projects.html" class="tsd-signature-type" data-tsd-kind="Interface">Projects</a><span class="tsd-signature-symbol">[]</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1682,7 +1682,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L484">agile/board.ts:484</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L521">agile/board.ts:521</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1702,7 +1702,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
+									<h4>T = <a href="../interfaces/agile_models_projects.projects.html" class="tsd-signature-type" data-tsd-kind="Interface">Projects</a><span class="tsd-signature-symbol">[]</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1729,7 +1729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L584">agile/board.ts:584</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L638">agile/board.ts:638</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1758,7 +1758,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L588">agile/board.ts:588</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L643">agile/board.ts:643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1797,7 +1797,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L599">agile/board.ts:599</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L653">agile/board.ts:653</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1820,7 +1820,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L602">agile/board.ts:602</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L654">agile/board.ts:654</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1853,17 +1853,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L393">agile/board.ts:393</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L423">agile/board.ts:423</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Move issues from the backog to the board (if they are already in the backlog of that board).
-										<br />
-										This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
-										Or transitions the issue(s) to the first column for a kanban board with backlog.
-									At most 50 issues may be moved at once.</p>
+									<p>Move issues from the backog to the board (if they are already in the backlog of that board).</p>
 								</div>
+								<p> This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
+									Or transitions the issue(s) to the first column for a kanban board with backlog.
+								At most 50 issues may be moved at once.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1885,17 +1884,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L400">agile/board.ts:400</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L431">agile/board.ts:431</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Move issues from the backog to the board (if they are already in the backlog of that board).
-										<br />
-										This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
-										Or transitions the issue(s) to the first column for a kanban board with backlog.
-									At most 50 issues may be moved at once.</p>
+									<p>Move issues from the backog to the board (if they are already in the backlog of that board).</p>
 								</div>
+								<p> This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
+									Or transitions the issue(s) to the first column for a kanban board with backlog.
+								At most 50 issues may be moved at once.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1927,7 +1925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L531">agile/board.ts:531</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L576">agile/board.ts:576</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1959,7 +1957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L538">agile/board.ts:538</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L584">agile/board.ts:584</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2001,7 +1999,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L342">agile/board.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L369">agile/board.ts:369</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2024,7 +2022,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/board.ts#L345">agile/board.ts:345</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/board.ts#L370">agile/board.ts:370</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

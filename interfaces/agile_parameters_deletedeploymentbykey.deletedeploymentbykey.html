@@ -87,6 +87,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_deletedeploymentbykey.deletedeploymentbykey.html#deploymentsequencenumber" class="tsd-kind-icon">deployment<wbr>Sequence<wbr>Number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_deletedeploymentbykey.deletedeploymentbykey.html#environmentid" class="tsd-kind-icon">environment<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_deletedeploymentbykey.deletedeploymentbykey.html#pipelineid" class="tsd-kind-icon">pipeline<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_deletedeploymentbykey.deletedeploymentbykey.html#updatesequencenumber" class="tsd-kind-icon">update<wbr>Sequence<wbr>Number</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,16 +101,14 @@
 					<div class="tsd-signature tsd-kind-icon">_update<wbr>Sequence<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/parameters/deleteDeploymentByKey.ts#L18">agile/parameters/deleteDeploymentByKey.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/parameters/deleteDeploymentByKey.ts#L17">agile/parameters/deleteDeploymentByKey.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>This parameter usage is no longer supported.</p>
-						</div>
-						<p>An optional <code>_updateSequenceNumber</code> to use to control deletion.</p>
-						<p>Only stored data with an <code>updateSequenceNumber</code> less than or equal to that provided will be deleted.
-						This can be used help ensure submit/delete requests are applied correctly if issued close together.</p>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd></dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -118,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">deployment<wbr>Sequence<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/parameters/deleteDeploymentByKey.ts#L10">agile/parameters/deleteDeploymentByKey.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/parameters/deleteDeploymentByKey.ts#L13">agile/parameters/deleteDeploymentByKey.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">environment<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/parameters/deleteDeploymentByKey.ts#L7">agile/parameters/deleteDeploymentByKey.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/parameters/deleteDeploymentByKey.ts#L9">agile/parameters/deleteDeploymentByKey.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,13 +147,33 @@
 					<div class="tsd-signature tsd-kind-icon">pipeline<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/b07f39f4/src/agile/parameters/deleteDeploymentByKey.ts#L4">agile/parameters/deleteDeploymentByKey.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/parameters/deleteDeploymentByKey.ts#L5">agile/parameters/deleteDeploymentByKey.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The ID of the deployment&#39;s pipeline.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="updatesequencenumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> update<wbr>Sequence<wbr>Number</h3>
+					<div class="tsd-signature tsd-kind-icon">update<wbr>Sequence<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/e59c686a/src/agile/parameters/deleteDeploymentByKey.ts#L27">agile/parameters/deleteDeploymentByKey.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>This parameter usage is no longer supported.</p>
+								<p>An optional <code>_updateSequenceNumber</code> to use to control deletion.</p>
+								<p>Only stored data with an <code>updateSequenceNumber</code> less than or equal to that provided will be deleted.
+								This can be used help ensure submit/delete requests are applied correctly if issued close together.</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -188,6 +207,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="agile_parameters_deletedeploymentbykey.deletedeploymentbykey.html#pipelineid" class="tsd-kind-icon">pipeline<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="agile_parameters_deletedeploymentbykey.deletedeploymentbykey.html#updatesequencenumber" class="tsd-kind-icon">update<wbr>Sequence<wbr>Number</a>
 							</li>
 						</ul>
 					</li>
