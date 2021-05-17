@@ -89,6 +89,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="version2_workflowtransitionrules.workflowtransitionrules.html#deleteworkflowtransitionruleconfigurations" class="tsd-kind-icon">delete<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="version2_workflowtransitionrules.workflowtransitionrules.html#getworkflowtransitionruleconfigurations" class="tsd-kind-icon">get<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="version2_workflowtransitionrules.workflowtransitionrules.html#updateworkflowtransitionruleconfigurations" class="tsd-kind-icon">update<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</a></li>
 							</ul>
@@ -108,7 +109,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/669272f7/src/version2/workflowTransitionRules.ts#L7">version2/workflowTransitionRules.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L7">version2/workflowTransitionRules.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -125,6 +126,86 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="deleteworkflowtransitionruleconfigurations" class="tsd-anchor"></a>
+					<h3>delete<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/version2_parameters_deleteworkflowtransitionruleconfigurations.deleteworkflowtransitionruleconfigurations.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteWorkflowTransitionRuleConfigurations</a>, callback<span class="tsd-signature-symbol">: </span><a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations&lt;T&gt;<span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">?: </span><a href="../interfaces/version2_parameters_deleteworkflowtransitionruleconfigurations.deleteworkflowtransitionruleconfigurations.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteWorkflowTransitionRuleConfigurations</a>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L95">version2/workflowTransitionRules.ts:95</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deletes workflow transition rules from one or more workflows. These rule types are supported:</p>
+								</div>
+								<ul>
+									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
+									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
+									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
+								</ul>
+								<p>Only rules created by the calling Connect app can be deleted.</p>
+								<p><strong><a href="#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T = <a href="../interfaces/version2_models_workflowtransitionrulesupdateerrors.workflowtransitionrulesupdateerrors.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRulesUpdateErrors</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parameters: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/version2_parameters_deleteworkflowtransitionruleconfigurations.deleteworkflowtransitionruleconfigurations.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteWorkflowTransitionRuleConfigurations</a></h5>
+								</li>
+								<li>
+									<h5>callback: <a href="../modules/callback.html#callback-1" class="tsd-signature-type" data-tsd-kind="Type alias">Callback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L106">version2/workflowTransitionRules.ts:106</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deletes workflow transition rules from one or more workflows. These rule types are supported:</p>
+								</div>
+								<ul>
+									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
+									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
+									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
+								</ul>
+								<p>Only rules created by the calling Connect app can be deleted.</p>
+								<p><strong><a href="#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T = <a href="../interfaces/version2_models_workflowtransitionrulesupdateerrors.workflowtransitionrulesupdateerrors.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRulesUpdateErrors</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parameters: <a href="../interfaces/version2_parameters_deleteworkflowtransitionruleconfigurations.deleteworkflowtransitionruleconfigurations.html" class="tsd-signature-type" data-tsd-kind="Interface">DeleteWorkflowTransitionRuleConfigurations</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-type">undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="getworkflowtransitionruleconfigurations" class="tsd-anchor"></a>
 					<h3>get<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
@@ -135,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/669272f7/src/version2/workflowTransitionRules.ts#L22">version2/workflowTransitionRules.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L22">version2/workflowTransitionRules.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -170,7 +251,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/669272f7/src/version2/workflowTransitionRules.ts#L34">version2/workflowTransitionRules.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L34">version2/workflowTransitionRules.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -215,7 +296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/669272f7/src/version2/workflowTransitionRules.ts#L61">version2/workflowTransitionRules.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L61">version2/workflowTransitionRules.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,7 +331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/669272f7/src/version2/workflowTransitionRules.ts#L72">version2/workflowTransitionRules.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/workflowTransitionRules.ts#L72">version2/workflowTransitionRules.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,6 +387,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="version2_workflowtransitionrules.workflowtransitionrules.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="version2_workflowtransitionrules.workflowtransitionrules.html#deleteworkflowtransitionruleconfigurations" class="tsd-kind-icon">delete<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="version2_workflowtransitionrules.workflowtransitionrules.html#getworkflowtransitionruleconfigurations" class="tsd-kind-icon">get<wbr>Workflow<wbr>Transition<wbr>Rule<wbr>Configurations</a>
