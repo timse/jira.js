@@ -110,7 +110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L7">agile/featureFlags.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L7">agile/featureFlags.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,14 +137,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L121">agile/featureFlags.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L158">agile/featureFlags.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Delete the Feature Flag data currently stored for the given ID.</p>
 								</div>
-								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been deleted successfully (if needed).</p>
+								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
 								<p>Only apps that define the Feature Flags module can access this resource. This resource requires the &#39;DELETE&#39; scope.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -167,14 +168,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L129">agile/featureFlags.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L170">agile/featureFlags.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Delete the Feature Flag data currently stored for the given ID.</p>
 								</div>
-								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been deleted successfully (if needed).</p>
+								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
 								<p>Only apps that define the Feature Flags module can access this resource. This resource requires the &#39;DELETE&#39; scope.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -207,18 +209,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L62">agile/featureFlags.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L79">agile/featureFlags.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Bulk delete all Feature Flags that match the given request.</p>
 								</div>
-								<p>One or more query params must be supplied to specify Properties to delete by. Optional param <code>_updateSequenceId</code> is no longer supported.
-									If more than one Property is provided, data will be deleted that matches ALL of the Properties (e.g. treated as an AND).
-								See the documentation for the submitFeatureFlags operation for more details.</p>
-								<p>e.g. DELETE /bulkByProperties?accountId=account-123&amp;createdBy=user-456</p>
-								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been deleted successfully (if needed).</p>
+								<p>One or more query params must be supplied to specify Properties to delete by. Optional param <code>_updateSequenceId</code> is
+									no longer supported. If more than one Property is provided, data will be deleted that matches ALL of the Properties
+								(e.g. treated as an AND). See the documentation for the submitFeatureFlags operation for more details.</p>
+								<p>E.g. DELETE /bulkByProperties?accountId=account-123&amp;createdBy=user-456</p>
+								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
 								<p>Only apps that define the Feature Flags module can access this resource. This resource requires the &#39;DELETE&#39; scope.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -241,18 +244,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L76">agile/featureFlags.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L97">agile/featureFlags.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Bulk delete all Feature Flags that match the given request.</p>
 								</div>
-								<p>One or more query params must be supplied to specify Properties to delete by. Optional param <code>_updateSequenceId</code> is no longer supported.
-									If more than one Property is provided, data will be deleted that matches ALL of the Properties (e.g. treated as an AND).
-								See the documentation for the submitFeatureFlags operation for more details.</p>
-								<p>e.g. DELETE /bulkByProperties?accountId=account-123&amp;createdBy=user-456</p>
-								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been deleted successfully (if needed).</p>
+								<p>One or more query params must be supplied to specify Properties to delete by. Optional param <code>_updateSequenceId</code> is
+									no longer supported. If more than one Property is provided, data will be deleted that matches ALL of the Properties
+								(e.g. treated as an AND). See the documentation for the submitFeatureFlags operation for more details.</p>
+								<p>E.g. DELETE /bulkByProperties?accountId=account-123&amp;createdBy=user-456</p>
+								<p>Deletion is performed asynchronously. The getFeatureFlagById operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
 								<p>Only apps that define the Feature Flags module can access this resource. This resource requires the &#39;DELETE&#39; scope.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -285,7 +289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L96">agile/featureFlags.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L123">agile/featureFlags.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L104">agile/featureFlags.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L134">agile/featureFlags.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,16 +359,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L22">agile/featureFlags.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L25">agile/featureFlags.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Update / insert Feature Flag data.</p>
 								</div>
-								<p>Feature Flags are identified by their ID, and existing Feature Flag data for the same ID will be replaced if it exists and the updateSequenceId of existing data is less than the incoming data.</p>
-								<p>Submissions are performed asynchronously. Submitted data will eventually be available in Jira; most updates are available within a short period of time, but may take some time during peak load and/or maintenance times. The getFeatureFlagById operation can be used to confirm that data has been stored successfully (if needed).</p>
-								<p>In the case of multiple Feature Flags being submitted in one request, each is validated individually prior to submission. Details of which Feature Flags failed submission (if any) are available in the response object.</p>
+								<p>Feature Flags are identified by their ID, and existing Feature Flag data for the same ID will be replaced if it
+								exists and the updateSequenceId of existing data is less than the incoming data.</p>
+								<p>Submissions are performed asynchronously. Submitted data will eventually be available in Jira; most updates are
+									available within a short period of time, but may take some time during peak load and/or maintenance times. The
+								getFeatureFlagById operation can be used to confirm that data has been stored successfully (if needed).</p>
+								<p>In the case of multiple Feature Flags being submitted in one request, each is validated individually prior to
+								submission. Details of which Feature Flags failed submission (if any) are available in the response object.</p>
 								<p>Only apps that define the Feature Flags module can access this resource. This resource requires the &#39;WRITE&#39; scope.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -387,16 +395,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/featureFlags.ts#L34">agile/featureFlags.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/featureFlags.ts#L44">agile/featureFlags.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Update / insert Feature Flag data.</p>
 								</div>
-								<p>Feature Flags are identified by their ID, and existing Feature Flag data for the same ID will be replaced if it exists and the updateSequenceId of existing data is less than the incoming data.</p>
-								<p>Submissions are performed asynchronously. Submitted data will eventually be available in Jira; most updates are available within a short period of time, but may take some time during peak load and/or maintenance times. The getFeatureFlagById operation can be used to confirm that data has been stored successfully (if needed).</p>
-								<p>In the case of multiple Feature Flags being submitted in one request, each is validated individually prior to submission. Details of which Feature Flags failed submission (if any) are available in the response object.</p>
+								<p>Feature Flags are identified by their ID, and existing Feature Flag data for the same ID will be replaced if it
+								exists and the updateSequenceId of existing data is less than the incoming data.</p>
+								<p>Submissions are performed asynchronously. Submitted data will eventually be available in Jira; most updates are
+									available within a short period of time, but may take some time during peak load and/or maintenance times. The
+								getFeatureFlagById operation can be used to confirm that data has been stored successfully (if needed).</p>
+								<p>In the case of multiple Feature Flags being submitted in one request, each is validated individually prior to
+								submission. Details of which Feature Flags failed submission (if any) are available in the response object.</p>
 								<p>Only apps that define the Feature Flags module can access this resource. This resource requires the &#39;WRITE&#39; scope.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

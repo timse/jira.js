@@ -108,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <a href="version3_models_groupname.groupname.html" class="tsd-signature-type" data-tsd-kind="Interface">GroupName</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/sharePermission.ts#L21">version3/models/sharePermission.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/sharePermission.ts#L23">version3/models/sharePermission.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/sharePermission.ts#L9">version3/models/sharePermission.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/sharePermission.ts#L8">version3/models/sharePermission.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">project<span class="tsd-signature-symbol">:</span> <a href="version3_models_project.project.html" class="tsd-signature-type" data-tsd-kind="Interface">Project</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/sharePermission.ts#L19">version3/models/sharePermission.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/sharePermission.ts#L21">version3/models/sharePermission.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">role<span class="tsd-signature-symbol">:</span> <a href="version3_models_projectrole.projectrole.html" class="tsd-signature-type" data-tsd-kind="Interface">ProjectRole</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/sharePermission.ts#L20">version3/models/sharePermission.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/sharePermission.ts#L22">version3/models/sharePermission.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,19 +153,20 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/sharePermission.ts#L18">version3/models/sharePermission.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/sharePermission.ts#L20">version3/models/sharePermission.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The type of share permission:</p>
 						</div>
-						<p> <code>group</code> Shared with a group. If set in a request, then specify <code>sharePermission.group</code> as well.
-							<code>project</code> Shared with a project. If set in a request, then specify <code>sharePermission.project</code> as well.
-							<code>projectRole</code> Share with a project role in a project. This value is not returned in responses. It is used in requests, where it needs to be specify with <code>projectId</code> and <code>projectRoleId</code>.
-							<code>global</code> Shared globally. If set in a request, no other <code>sharePermission</code> properties need to be specified.
-							<code>loggedin</code> Shared with all logged-in users. Note: This value is set in a request by specifying <code>authenticated</code> as the <code>type</code>.
-						<code>project-unknown</code> Shared with a project that the user does not have access to. Cannot be set in a request.</p>
+						<p><code>group</code> Shared with a group. If set in a request, then specify <code>sharePermission.group</code> as well. <code>project</code> Shared
+							with a project. If set in a request, then specify <code>sharePermission.project</code> as well. <code>projectRole</code> Share with a
+							project role in a project. This value is not returned in responses. It is used in requests, where it needs to be
+							specify with <code>projectId</code> and <code>projectRoleId</code>. <code>global</code> Shared globally. If set in a request, no other
+							<code>sharePermission</code> properties need to be specified. <code>loggedin</code> Shared with all logged-in users. Note: This value is
+							set in a request by specifying <code>authenticated</code> as the <code>type</code>. <code>project-unknown</code> Shared with a project that the user
+						does not have access to. Cannot be set in a request.</p>
 					</div>
 				</section>
 			</section>

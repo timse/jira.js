@@ -110,7 +110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L7">version2/issueSearch.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L7">version2/issueSearch.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,17 +137,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L22">version2/issueSearch.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L25">version2/issueSearch.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns lists of issues matching a query string. Use this resource to provide auto-completion suggestions when the user is looking for an issue using a word or string.</p>
+									<p>Returns lists of issues matching a query string. Use this resource to provide auto-completion suggestions when the
+									user is looking for an issue using a word or string.</p>
 								</div>
 								<p>This operation returns two lists:</p>
 								<ul>
-									<li> <code>History Search</code> which includes issues from the user&#39;s history of created, edited, or viewed issues that contain the string in the <code>query</code> parameter.</li>
-									<li> <code>Current Search</code> which includes issues that match the JQL expression in <code>currentJQL</code> and contain the string in the <code>query</code> parameter.</li>
+									<li><code>History Search</code> which includes issues from the user&#39;s history of created, edited, or viewed issues that contain
+									the string in the <code>query</code> parameter.</li>
+									<li><code>Current Search</code> which includes issues that match the JQL expression in <code>currentJQL</code> and contain the string in the
+									<code>query</code> parameter.</li>
 								</ul>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None.</p>
@@ -172,17 +175,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L34">version2/issueSearch.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L44">version2/issueSearch.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns lists of issues matching a query string. Use this resource to provide auto-completion suggestions when the user is looking for an issue using a word or string.</p>
+									<p>Returns lists of issues matching a query string. Use this resource to provide auto-completion suggestions when the
+									user is looking for an issue using a word or string.</p>
 								</div>
 								<p>This operation returns two lists:</p>
 								<ul>
-									<li> <code>History Search</code> which includes issues from the user&#39;s history of created, edited, or viewed issues that contain the string in the <code>query</code> parameter.</li>
-									<li> <code>Current Search</code> which includes issues that match the JQL expression in <code>currentJQL</code> and contain the string in the <code>query</code> parameter.</li>
+									<li><code>History Search</code> which includes issues from the user&#39;s history of created, edited, or viewed issues that contain
+									the string in the <code>query</code> parameter.</li>
+									<li><code>Current Search</code> which includes issues that match the JQL expression in <code>currentJQL</code> and contain the string in the
+									<code>query</code> parameter.</li>
 								</ul>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None.</p>
@@ -217,17 +223,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L59">version2/issueSearch.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L78">version2/issueSearch.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Checks whether one or more issues would be returned by one or more JQL queries.</p>
 								</div>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None, however, issues are only matched against JQL queries where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None,
+								however, issues are only matched against JQL queries where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -250,17 +258,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L67">version2/issueSearch.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L92">version2/issueSearch.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Checks whether one or more issues would be returned by one or more JQL queries.</p>
 								</div>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None, however, issues are only matched against JQL queries where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None,
+								however, issues are only matched against JQL queries where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -293,19 +303,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L92">version2/issueSearch.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L124">version2/issueSearch.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Searches for issues using <a href="https://confluence.atlassian.com/x/egORLQ">JQL</a>.</p>
 								</div>
-								<p>If the JQL query expression is too large to be encoded as a query parameter, use the <a href="#api-rest-api-2-search-post">POST</a> version of this resource.</p>
+								<p>If the JQL query expression is too large to be encoded as a query parameter, use the
+								<a href="#api-rest-api-2-search-post">POST</a> version of this resource.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues are included in the response where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues
+								are included in the response where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -328,19 +341,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L104">version2/issueSearch.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L143">version2/issueSearch.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Searches for issues using <a href="https://confluence.atlassian.com/x/egORLQ">JQL</a>.</p>
 								</div>
-								<p>If the JQL query expression is too large to be encoded as a query parameter, use the <a href="#api-rest-api-2-search-post">POST</a> version of this resource.</p>
+								<p>If the JQL query expression is too large to be encoded as a query parameter, use the
+								<a href="#api-rest-api-2-search-post">POST</a> version of this resource.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues are included in the response where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues
+								are included in the response where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -373,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L135">version2/issueSearch.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L183">version2/issueSearch.ts:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,10 +398,12 @@
 								</div>
 								<p>There is a <a href="#api-rest-api-2-search-get">GET</a> version of this resource that can be used for smaller JQL query expressions.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues are included in the response where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues
+								are included in the response where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -408,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueSearch.ts#L147">version2/issueSearch.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueSearch.ts#L201">version2/issueSearch.ts:201</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -417,10 +435,12 @@
 								</div>
 								<p>There is a <a href="#api-rest-api-2-search-get">GET</a> version of this resource that can be used for smaller JQL query expressions.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues are included in the response where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Issues
+								are included in the response where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

@@ -105,15 +105,18 @@
 					<div class="tsd-signature tsd-kind-icon">expensive<wbr>Operations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/jiraExpressionComplexity.ts#L8">version3/models/jiraExpressionComplexity.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/jiraExpressionComplexity.ts#L12">version3/models/jiraExpressionComplexity.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Information that can be used to determine how many <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#expensive-operations">expensive operations</a> the evaluation of the expression will perform. This information may be a formula or number. For example:</p>
+							<p>Information that can be used to determine how many <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#expensive-operations">expensive
+								operations</a> the
+							evaluation of the expression will perform. This information may be a formula or number. For example:</p>
 						</div>
-						<p> <code>issues.map(i =&gt; i.comments)</code> performs as many expensive operations as there are issues on the issues list. So this parameter returns <code>N</code>, where <code>N</code> is the size of issue list.
-						<code>new Issue(10010).comments</code> gets comments for one issue, so its complexity is <code>2</code> (<code>1</code> to retrieve issue 10010 from the database plus <code>1</code> to get its comments).</p>
+						<p><code>issues.map(i =&gt; i.comments)</code> performs as many expensive operations as there are issues on the issues list. So this
+							parameter returns <code>N</code>, where <code>N</code> is the size of issue list. <code>new Issue(10010).comments</code> gets comments for one
+						issue, so its complexity is <code>2</code> (<code>1</code> to retrieve issue 10010 from the database plus <code>1</code> to get its comments).</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -122,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">variables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/jiraExpressionComplexity.ts#L10">version3/models/jiraExpressionComplexity.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/jiraExpressionComplexity.ts#L14">version3/models/jiraExpressionComplexity.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

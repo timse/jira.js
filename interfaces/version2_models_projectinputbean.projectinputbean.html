@@ -68,19 +68,20 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>deprecated</dt>
+						<dd><p>This model divided to <code>UpdateProjectDetails</code> and <code>CreateProjectDetails</code>.</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">ProjectInputBean</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="version2_parameters_createproject.createproject.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateProject</a>
-							</li>
-							<li>
-								<a href="version2_parameters_updateproject.updateproject.html" class="tsd-signature-type" data-tsd-kind="Interface">UpdateProject</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</section>
@@ -118,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">assignee<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L19">version2/models/projectInputBean.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L41">version2/models/projectInputBean.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L21">version2/models/projectInputBean.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L43">version2/models/projectInputBean.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,12 +149,13 @@
 					<div class="tsd-signature tsd-kind-icon">category<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L29">version2/models/projectInputBean.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L64">version2/models/projectInputBean.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the project&#39;s category. A complete list of category IDs is found using the <a href="#api-rest-api-2-projectCategory-get">Get all project categories</a> operation.</p>
+							<p>The ID of the project&#39;s category. A complete list of category IDs is found using the <a href="#api-rest-api-2-projectCategory-get">Get all project
+							categories</a> operation.</p>
 						</div>
 					</div>
 				</section>
@@ -163,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L11">version2/models/projectInputBean.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L25">version2/models/projectInputBean.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,12 +180,14 @@
 					<div class="tsd-signature tsd-kind-icon">issue<wbr>Security<wbr>Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L23">version2/models/projectInputBean.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L49">version2/models/projectInputBean.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the issue security scheme for the project, which enables you to control who can and cannot view issues. Use the <a href="#api-rest-api-2-issuesecurityschemes-get">Get issue security schemes</a> resource to get all issue security scheme IDs.</p>
+							<p>The ID of the issue security scheme for the project, which enables you to control who can and cannot view issues.
+								Use the <a href="#api-rest-api-2-issuesecurityschemes-get">Get issue security schemes</a> resource to get all issue security
+							scheme IDs.</p>
 						</div>
 					</div>
 				</section>
@@ -193,12 +197,13 @@
 					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L3">version2/models/projectInputBean.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L9">version2/models/projectInputBean.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Project keys must be unique and start with an uppercase letter followed by one or more uppercase alphanumeric characters. The maximum length is 10 characters. Required when creating a project. Optional when updating a project.</p>
+							<p>Project keys must be unique and start with an uppercase letter followed by one or more uppercase alphanumeric
+							characters. The maximum length is 10 characters. Required when creating a project. Optional when updating a project.</p>
 						</div>
 					</div>
 				</section>
@@ -208,12 +213,15 @@
 					<div class="tsd-signature tsd-kind-icon">lead<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L13">version2/models/projectInputBean.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L32">version2/models/projectInputBean.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>This parameter is deprecated because of privacy changes. Use <code>leadAccountId</code> instead. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">migration guide</a> for details. The user name of the project lead. Either <code>lead</code> or <code>leadAccountId</code> must be set when creating a project. Optional when updating a project. Cannot be provided with <code>leadAccountId</code>.</p>
+							<p>This parameter is deprecated because of privacy changes. Use <code>leadAccountId</code> instead. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">migration
+								guide</a>
+								for details. The user name of the project lead. Either <code>lead</code> or <code>leadAccountId</code> must be set when creating a
+							project. Optional when updating a project. Cannot be provided with <code>leadAccountId</code>.</p>
 						</div>
 					</div>
 				</section>
@@ -223,12 +231,13 @@
 					<div class="tsd-signature tsd-kind-icon">lead<wbr>Account<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L15">version2/models/projectInputBean.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L37">version2/models/projectInputBean.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The account ID of the project lead. Either <code>lead</code> or <code>leadAccountId</code> must be set when creating a project. Optional when updating a project. Cannot be provided with <code>lead</code>.</p>
+							<p>The account ID of the project lead. Either <code>lead</code> or <code>leadAccountId</code> must be set when creating a project. Optional
+							when updating a project. Cannot be provided with <code>lead</code>.</p>
 						</div>
 					</div>
 				</section>
@@ -238,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L5">version2/models/projectInputBean.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L11">version2/models/projectInputBean.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -253,12 +262,13 @@
 					<div class="tsd-signature tsd-kind-icon">notification<wbr>Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L27">version2/models/projectInputBean.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L59">version2/models/projectInputBean.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the notification scheme for the project. Use the <a href="#api-rest-api-2-notificationscheme-get">Get notification schemes</a> resource to get a list of notification scheme IDs.</p>
+							<p>The ID of the notification scheme for the project. Use the <a href="#api-rest-api-2-notificationscheme-get">Get notification
+							schemes</a> resource to get a list of notification scheme IDs.</p>
 						</div>
 					</div>
 				</section>
@@ -268,12 +278,13 @@
 					<div class="tsd-signature tsd-kind-icon">permission<wbr>Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L25">version2/models/projectInputBean.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L54">version2/models/projectInputBean.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the permission scheme for the project. Use the <a href="#api-rest-api-2-permissionscheme-get">Get all permission schemes</a> resource to see a list of all permission scheme IDs.</p>
+							<p>The ID of the permission scheme for the project. Use the <a href="#api-rest-api-2-permissionscheme-get">Get all permission
+							schemes</a> resource to see a list of all permission scheme IDs.</p>
 						</div>
 					</div>
 				</section>
@@ -283,12 +294,13 @@
 					<div class="tsd-signature tsd-kind-icon">project<wbr>Template<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L9">version2/models/projectInputBean.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L23">version2/models/projectInputBean.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A prebuilt configuration for a project. The type of the <code>projectTemplateKey</code> must match with the type of the <code>projectTypeKey</code>. Required when creating a project. Not applicable for the Update project resource.</p>
+							<p>A prebuilt configuration for a project. The type of the <code>projectTemplateKey</code> must match with the type of the
+							<code>projectTypeKey</code>. Required when creating a project. Not applicable for the Update project resource.</p>
 						</div>
 					</div>
 				</section>
@@ -298,12 +310,15 @@
 					<div class="tsd-signature tsd-kind-icon">project<wbr>Type<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L7">version2/models/projectInputBean.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L18">version2/models/projectInputBean.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The <a href="https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes">project type</a>, which dictates the application-specific feature set. Required when creating a project. Not applicable for the Update project resource.</p>
+							<p>The <a href="https://confluence.atlassian.com/x/GwiiLQ#Jiraapplicationsoverview-Productfeaturesandprojecttypes">project
+								type</a>, which
+								dictates the application-specific feature set. Required when creating a project. Not applicable for the Update
+							project resource.</p>
 						</div>
 					</div>
 				</section>
@@ -313,7 +328,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/projectInputBean.ts#L17">version2/models/projectInputBean.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/projectInputBean.ts#L39">version2/models/projectInputBean.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

@@ -108,7 +108,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="version3_models_issuefieldoption.issuefieldoption.html">IssueFieldOption</a>.<a href="version3_models_issuefieldoption.issuefieldoption.html#config">config</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/issueFieldOption.ts#L12">version3/models/issueFieldOption.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/issueFieldOption.ts#L16">version3/models/issueFieldOption.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,15 +118,18 @@
 					<div class="tsd-signature tsd-kind-icon">field<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/parameters/updateIssueFieldOption.ts#L8">version3/parameters/updateIssueFieldOption.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/parameters/updateIssueFieldOption.ts#L13">version3/parameters/updateIssueFieldOption.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The field key is specified in the following format: <strong>$(app-key)__$(field-key)</strong>. For example, <em>example-add-on__example-issue-field</em>. To determine the <code>fieldKey</code> value, do one of the following:</p>
+							<p>The field key is specified in the following format: **$(app-key)__$(field-key)**. For example,
+							<em>example-add-on__example-issue-field</em>. To determine the <code>fieldKey</code> value, do one of the following:</p>
 						</div>
-						<p> open the app&#39;s plugin descriptor, then <strong>app-key</strong> is the key at the top and <strong>field-key</strong> is the key in the <code>jiraIssueFields</code> module. <strong>app-key</strong> can also be found in the app listing in the Atlassian Universal Plugin Manager.
-						run <a href="#api-rest-api-3-field-get">Get fields</a> and in the field details the value is returned in <code>key</code>. For example, <code>&quot;key&quot;: &quot;teams-add-on__team-issue-field&quot;</code></p>
+						<p>Open the app&#39;s plugin descriptor, then <strong>app-key</strong> is the key at the top and <strong>field-key</strong> is the key in the
+							<code>jiraIssueFields</code> module. <strong>app-key</strong> can also be found in the app listing in the Atlassian Universal Plugin
+							Manager. run <a href="#api-rest-api-3-field-get">Get fields</a> and in the field details the value is returned in <code>key</code>. For
+						example, <code>&quot;key&quot;: &quot;teams-add-on__team-issue-field&quot;</code></p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -136,7 +139,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="version3_models_issuefieldoption.issuefieldoption.html">IssueFieldOption</a>.<a href="version3_models_issuefieldoption.issuefieldoption.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/issueFieldOption.ts#L7">version3/models/issueFieldOption.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/issueFieldOption.ts#L6">version3/models/issueFieldOption.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">option<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/parameters/updateIssueFieldOption.ts#L10">version3/parameters/updateIssueFieldOption.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/parameters/updateIssueFieldOption.ts#L15">version3/parameters/updateIssueFieldOption.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,12 +170,15 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="version3_models_issuefieldoption.issuefieldoption.html">IssueFieldOption</a>.<a href="version3_models_issuefieldoption.issuefieldoption.html#properties">properties</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/issueFieldOption.ts#L11">version3/models/issueFieldOption.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/issueFieldOption.ts#L15">version3/models/issueFieldOption.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The properties of the object, as arbitrary key-value pairs. These properties can be searched using JQL, if the extractions (see <a href="https://developer.atlassian.com/cloud/jira/platform/modules/issue-field-option-property-index/">Issue Field Option Property Index</a>) are defined in the descriptor for the issue field module.</p>
+							<p>The properties of the object, as arbitrary key-value pairs. These properties can be searched using JQL, if the
+								extractions (see <a href="https://developer.atlassian.com/cloud/jira/platform/modules/issue-field-option-property-index/">Issue Field Option Property
+								Index</a>) are defined
+							in the descriptor for the issue field module.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -188,7 +194,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="version3_models_issuefieldoption.issuefieldoption.html">IssueFieldOption</a>.<a href="version3_models_issuefieldoption.issuefieldoption.html#value">value</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/issueFieldOption.ts#L9">version3/models/issueFieldOption.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/issueFieldOption.ts#L8">version3/models/issueFieldOption.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

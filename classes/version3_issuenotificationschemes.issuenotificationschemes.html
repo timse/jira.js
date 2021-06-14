@@ -108,7 +108,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/issueNotificationSchemes.ts#L7">version3/issueNotificationSchemes.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/issueNotificationSchemes.ts#L7">version3/issueNotificationSchemes.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -135,14 +135,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/issueNotificationSchemes.ts#L83">version3/issueNotificationSchemes.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/issueNotificationSchemes.ts#L115">version3/issueNotificationSchemes.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a <a href="https://confluence.atlassian.com/x/8YdKLg">notification scheme</a>, including the list of events and the recipients who will receive notifications for those events.</p>
+									<p>Returns a <a href="https://confluence.atlassian.com/x/8YdKLg">notification scheme</a>, including the list of events and the
+									recipients who will receive notifications for those events.</p>
 								</div>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Permission to access Jira, however the user must have permission to administer at least one project associated with the notification scheme.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong>
+									Permission to access Jira, however the user must have permission to administer at least one project associated with
+								the notification scheme.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -164,14 +167,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/issueNotificationSchemes.ts#L88">version3/issueNotificationSchemes.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/issueNotificationSchemes.ts#L127">version3/issueNotificationSchemes.ts:127</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a <a href="https://confluence.atlassian.com/x/8YdKLg">notification scheme</a>, including the list of events and the recipients who will receive notifications for those events.</p>
+									<p>Returns a <a href="https://confluence.atlassian.com/x/8YdKLg">notification scheme</a>, including the list of events and the
+									recipients who will receive notifications for those events.</p>
 								</div>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Permission to access Jira, however the user must have permission to administer at least one project associated with the notification scheme.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong>
+									Permission to access Jira, however the user must have permission to administer at least one project associated with
+								the notification scheme.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -203,39 +209,47 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/issueNotificationSchemes.ts#L37">version3/issueNotificationSchemes.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/issueNotificationSchemes.ts#L45">version3/issueNotificationSchemes.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of <a href="https://confluence.atlassian.com/x/8YdKLg">notification schemes</a> ordered by display name.</p>
+									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of
+									<a href="https://confluence.atlassian.com/x/8YdKLg">notification schemes</a> ordered by display name.</p>
 								</div>
 								<a href="#about-notification-schemes" id="about-notification-schemes" style="color: inherit; text-decoration: none;">
 									<h3>About notification schemes</h3>
 								</a>
-								<p>A notification scheme is a list of events and recipients who will receive notifications for those events. The list is contained within the <code>notificationSchemeEvents</code> object and contains pairs of <code>events</code> and <code>notifications</code>:</p>
+								<p>A notification scheme is a list of events and recipients who will receive notifications for those events. The list
+								is contained within the <code>notificationSchemeEvents</code> object and contains pairs of <code>events</code> and <code>notifications</code>:</p>
 								<ul>
-									<li><p> <code>event</code> Identifies the type of event. The events can be <a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-eventsEvents">Jira system events</a> or <a href="https://confluence.atlassian.com/x/AIlKLg">custom events</a>.</p>
+									<li><p><code>event</code> Identifies the type of event. The events can be <a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-eventsEvents">Jira system
+												events</a> or <a href="https://confluence.atlassian.com/x/AIlKLg">custom
+										events</a>.</p>
 									</li>
-									<li><p><code>notifications</code> Identifies the <a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-recipientsRecipients">recipients</a> of notifications for each event. Recipients can be any of the following types:</p>
+									<li><p><code>notifications</code> Identifies the
+											<a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-recipientsRecipients">recipients</a> of
+										notifications for each event. Recipients can be any of the following types:</p>
 										<ul>
-											<li> <code>CurrentAssignee</code></li>
-											<li> <code>Reporter</code></li>
-											<li> <code>CurrentUser</code></li>
-											<li> <code>ProjectLead</code></li>
-											<li> <code>ComponentLead</code></li>
-											<li> <code>User</code> (the <code>parameter</code> is the user key)</li>
-											<li> <code>Group</code> (the <code>parameter</code> is the group name)</li>
-											<li> <code>ProjectRole</code> (the <code>parameter</code> is the project role ID)</li>
-											<li> <code>EmailAddress</code></li>
-											<li> <code>AllWatchers</code></li>
-											<li> <code>UserCustomField</code> (the <code>parameter</code> is the ID of the custom field)</li>
-											<li> <code>GroupCustomField</code>(the <code>parameter</code> is the ID of the custom field)</li>
+											<li><code>CurrentAssignee</code></li>
+											<li><code>Reporter</code></li>
+											<li><code>CurrentUser</code></li>
+											<li><code>ProjectLead</code></li>
+											<li><code>ComponentLead</code></li>
+											<li><code>User</code> (the <code>parameter</code> is the user key)</li>
+											<li><code>Group</code> (the <code>parameter</code> is the group name)</li>
+											<li><code>ProjectRole</code> (the <code>parameter</code> is the project role ID)</li>
+											<li><code>EmailAddress</code></li>
+											<li><code>AllWatchers</code></li>
+											<li><code>UserCustomField</code> (the <code>parameter</code> is the ID of the custom field)</li>
+											<li><code>GroupCustomField</code>(the <code>parameter</code> is the ID of the custom field)</li>
 										</ul>
 									</li>
 								</ul>
 								<p><em>Note that you should allow for events without recipients to appear in responses.</em></p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Permission to access Jira, however the user must have permission to administer at least one project associated with a notification scheme for it to be returned.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong>
+									Permission to access Jira, however the user must have permission to administer at least one project associated with
+								a notification scheme for it to be returned.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -257,39 +271,47 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/issueNotificationSchemes.ts#L64">version3/issueNotificationSchemes.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/issueNotificationSchemes.ts#L84">version3/issueNotificationSchemes.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of <a href="https://confluence.atlassian.com/x/8YdKLg">notification schemes</a> ordered by display name.</p>
+									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of
+									<a href="https://confluence.atlassian.com/x/8YdKLg">notification schemes</a> ordered by display name.</p>
 								</div>
 								<a href="#about-notification-schemes" id="about-notification-schemes" style="color: inherit; text-decoration: none;">
 									<h3>About notification schemes</h3>
 								</a>
-								<p>A notification scheme is a list of events and recipients who will receive notifications for those events. The list is contained within the <code>notificationSchemeEvents</code> object and contains pairs of <code>events</code> and <code>notifications</code>:</p>
+								<p>A notification scheme is a list of events and recipients who will receive notifications for those events. The list
+								is contained within the <code>notificationSchemeEvents</code> object and contains pairs of <code>events</code> and <code>notifications</code>:</p>
 								<ul>
-									<li><p> <code>event</code> Identifies the type of event. The events can be <a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-eventsEvents">Jira system events</a> or <a href="https://confluence.atlassian.com/x/AIlKLg">custom events</a>.</p>
+									<li><p><code>event</code> Identifies the type of event. The events can be <a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-eventsEvents">Jira system
+												events</a> or <a href="https://confluence.atlassian.com/x/AIlKLg">custom
+										events</a>.</p>
 									</li>
-									<li><p><code>notifications</code> Identifies the <a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-recipientsRecipients">recipients</a> of notifications for each event. Recipients can be any of the following types:</p>
+									<li><p><code>notifications</code> Identifies the
+											<a href="https://confluence.atlassian.com/x/8YdKLg#Creatinganotificationscheme-recipientsRecipients">recipients</a> of
+										notifications for each event. Recipients can be any of the following types:</p>
 										<ul>
-											<li> <code>CurrentAssignee</code></li>
-											<li> <code>Reporter</code></li>
-											<li> <code>CurrentUser</code></li>
-											<li> <code>ProjectLead</code></li>
-											<li> <code>ComponentLead</code></li>
-											<li> <code>User</code> (the <code>parameter</code> is the user key)</li>
-											<li> <code>Group</code> (the <code>parameter</code> is the group name)</li>
-											<li> <code>ProjectRole</code> (the <code>parameter</code> is the project role ID)</li>
-											<li> <code>EmailAddress</code></li>
-											<li> <code>AllWatchers</code></li>
-											<li> <code>UserCustomField</code> (the <code>parameter</code> is the ID of the custom field)</li>
-											<li> <code>GroupCustomField</code>(the <code>parameter</code> is the ID of the custom field)</li>
+											<li><code>CurrentAssignee</code></li>
+											<li><code>Reporter</code></li>
+											<li><code>CurrentUser</code></li>
+											<li><code>ProjectLead</code></li>
+											<li><code>ComponentLead</code></li>
+											<li><code>User</code> (the <code>parameter</code> is the user key)</li>
+											<li><code>Group</code> (the <code>parameter</code> is the group name)</li>
+											<li><code>ProjectRole</code> (the <code>parameter</code> is the project role ID)</li>
+											<li><code>EmailAddress</code></li>
+											<li><code>AllWatchers</code></li>
+											<li><code>UserCustomField</code> (the <code>parameter</code> is the ID of the custom field)</li>
+											<li><code>GroupCustomField</code>(the <code>parameter</code> is the ID of the custom field)</li>
 										</ul>
 									</li>
 								</ul>
 								<p><em>Note that you should allow for events without recipients to appear in responses.</em></p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Permission to access Jira, however the user must have permission to administer at least one project associated with a notification scheme for it to be returned.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong>
+									Permission to access Jira, however the user must have permission to administer at least one project associated with
+								a notification scheme for it to be returned.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">

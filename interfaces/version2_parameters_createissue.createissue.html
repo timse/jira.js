@@ -107,12 +107,14 @@
 					<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>assignee<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>components<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>duedate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>environment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>fixVersions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>issuetype<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>parent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>priority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>project<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="version2_models_project.project.html" class="tsd-signature-type" data-tsd-kind="Interface">Project</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>reporter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>security<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>summary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>timetracking<span class="tsd-signature-symbol">?: </span><a href="version2_models_timetrackingdetails.timetrackingdetails.html" class="tsd-signature-type" data-tsd-kind="Interface">TimeTrackingDetails</a><span class="tsd-signature-symbol">; </span>versions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/parameters/createIssue.ts#L12">version2/parameters/createIssue.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/parameters/createIssue.ts#L15">version2/parameters/createIssue.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>List of issue screen fields to update, specifying the sub-field to update and its value for each field. This field provides a straightforward option when setting a sub-field. When multiple sub-fields or other operations are required, use <code>update</code>. Fields included in here cannot be included in <code>update</code>.</p>
+							<p>List of issue screen fields to update, specifying the sub-field to update and its value for each field. This field
+								provides a straightforward option when setting a sub-field. When multiple sub-fields or other operations are
+							required, use <code>update</code>. Fields included in here cannot be included in <code>update</code>.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -227,7 +229,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Omit.historyMetadata</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/issueUpdateDetails.ts#L13">version2/models/issueUpdateDetails.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/issueUpdateDetails.ts#L16">version2/models/issueUpdateDetails.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Omit.properties</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/issueUpdateDetails.ts#L15">version2/models/issueUpdateDetails.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/issueUpdateDetails.ts#L18">version2/models/issueUpdateDetails.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +256,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Omit.transition</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/issueUpdateDetails.ts#L8">version2/models/issueUpdateDetails.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/issueUpdateDetails.ts#L7">version2/models/issueUpdateDetails.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -265,7 +267,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Omit.update</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/issueUpdateDetails.ts#L12">version2/models/issueUpdateDetails.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/issueUpdateDetails.ts#L15">version2/models/issueUpdateDetails.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,12 +282,13 @@
 					<div class="tsd-signature tsd-kind-icon">update<wbr>History<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/parameters/createIssue.ts#L9">version2/parameters/createIssue.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/parameters/createIssue.ts#L8">version2/parameters/createIssue.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Whether the project in which the issue is created is added to the user&#39;s <strong>Recently viewed</strong> project list, as shown under <strong>Projects</strong> in Jira.</p>
+							<p>Whether the project in which the issue is created is added to the user&#39;s <strong>Recently viewed</strong> project list, as shown
+							under <strong>Projects</strong> in Jira.</p>
 						</div>
 					</div>
 				</section>

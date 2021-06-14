@@ -109,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">application<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L17">version3/models/userWriteBean.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L34">version3/models/userWriteBean.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -124,12 +124,15 @@
 					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L13">version3/models/userWriteBean.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L30">version3/models/userWriteBean.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The display name for the user.</p>
+							<p>A suggested display name for the user. If the user already has an Atlassian account then their existing display
+								name will be unchanged. If the user does not have an Atlassian account then this display name will be used as a
+								suggestion for creating the new account. The user will be sent an email asking them to set their actual display
+							name and privacy preferences.</p>
 						</div>
 					</div>
 				</section>
@@ -139,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">email<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L11">version3/models/userWriteBean.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L23">version3/models/userWriteBean.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,12 +157,14 @@
 					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L5">version3/models/userWriteBean.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L9">version3/models/userWriteBean.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The key for the user. When provided with <code>name</code>, overrides the value in <code>name</code> to set both <code>name</code> and <code>key</code>. This property is deprecated because of privacy changes. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">migration guide</a> for details.</p>
+							<p>This parameter is no longer available and will be removed from the documentation soon. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">migration
+								guide</a>
+							for details.</p>
 						</div>
 					</div>
 				</section>
@@ -169,12 +174,14 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L7">version3/models/userWriteBean.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L15">version3/models/userWriteBean.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The username for the user. This property is deprecated because of privacy changes. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">migration guide</a> for details.</p>
+							<p>This parameter is no longer available and will be removed from the documentation soon. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">migration
+								guide</a>
+							for details.</p>
 						</div>
 					</div>
 				</section>
@@ -184,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">notification<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L15">version3/models/userWriteBean.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L32">version3/models/userWriteBean.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,12 +206,14 @@
 					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L9">version3/models/userWriteBean.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L21">version3/models/userWriteBean.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A password for the user. If a password is not set, a random password is generated.</p>
+							<p>This parameter is no longer available and will be removed from the documentation soon. If the user already has an
+								Atlassian account then their password will be unchanged. If the user does not have an Atlassian account they will
+							be sent an email asking them to set a new password.</p>
 						</div>
 					</div>
 				</section>
@@ -214,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">self<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userWriteBean.ts#L3">version3/models/userWriteBean.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userWriteBean.ts#L3">version3/models/userWriteBean.ts:3</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

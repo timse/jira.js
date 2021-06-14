@@ -107,7 +107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/groupAndUserPicker.ts#L7">version3/groupAndUserPicker.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/groupAndUserPicker.ts#L7">version3/groupAndUserPicker.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -134,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/groupAndUserPicker.ts#L35">version3/groupAndUserPicker.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/groupAndUserPicker.ts#L45">version3/groupAndUserPicker.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -142,27 +142,37 @@
 									<p>Returns a list of users and groups matching a string. The string is used:</p>
 								</div>
 								<ul>
-									<li> for users, to find a case-insensitive match with display name and e-mail address. Note that if a user has hidden their email address in their user profile, partial matches of the email address will not find the user. An exact match is required.</li>
-									<li> for groups, to find a case-sensitive match with group name.</li>
+									<li>For users, to find a case-insensitive match with display name and e-mail address. Note that if a user has hidden
+										their email address in their user profile, partial matches of the email address will not find the user. An exact
+									match is required.</li>
+									<li>For groups, to find a case-sensitive match with group name.</li>
 								</ul>
-								<p>For example, if the string <em>tin</em> is used, records with the display name <em>Tina</em>, email address <em><a href="mailto:sarah@tinplatetraining.com">sarah@tinplatetraining.com</a></em>, and the group <em>accounting</em> would be returned.</p>
+								<p>For example, if the string <em>tin</em> is used, records with the display name <em>Tina</em>, email address
+								<em><a href="mailto:sarah@tinplatetraining.com">sarah@tinplatetraining.com</a></em>, and the group <em>accounting</em> would be returned.</p>
 								<p>Optionally, the search can be refined to:</p>
 								<ul>
-									<li><p>the projects and issue types associated with a custom field, such as a user picker. The search can then be further refined to return only users and groups that have permission to view specific:</p>
+									<li><p>The projects and issue types associated with a custom field, such as a user picker. The search can then be further
+										refined to return only users and groups that have permission to view specific:</p>
 										<ul>
-											<li> projects.</li>
-											<li> issue types.</li>
+											<li>Projects.</li>
+											<li>Issue types.</li>
 										</ul>
-										<p> If multiple projects or issue types are specified, they must be a subset of those enabled for the custom field or no results are returned. For example, if a field is enabled for projects A, B, and C then the search could be limited to projects B and C. However, if the search is limited to projects B and D, nothing is returned.</p>
+										<p>If multiple projects or issue types are specified, they must be a subset of those enabled for the custom field or
+											no results are returned. For example, if a field is enabled for projects A, B, and C then the search could be
+										limited to projects B and C. However, if the search is limited to projects B and D, nothing is returned.</p>
 									</li>
-									<li><p> not return Connect app users and groups.</p>
+									<li><p>Not return Connect app users and groups.</p>
 									</li>
-									<li><p> return groups that have a case-insensitive match with the query.</p>
+									<li><p>Return groups that have a case-insensitive match with the query.</p>
 									</li>
 								</ul>
-								<p>The primary use case for this resource is to populate a picker field suggestion list with users or groups. To this end, the returned object includes an <code>html</code> field for each list. This field highlights the matched query term in the item name with the HTML strong tag. Also, each list is wrapped in a response object that contains a header for use in a picker, specifically <em>Showing X of Y matching groups</em>.</p>
+								<p>The primary use case for this resource is to populate a picker field suggestion list with users or groups. To this
+									end, the returned object includes an <code>html</code> field for each list. This field highlights the matched query term in
+									the item name with the HTML strong tag. Also, each list is wrapped in a response object that contains a header for
+								use in a picker, specifically <em>Showing X of Y matching groups</em>.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/yodKLg">global permission</a>.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+								users and groups</em> <a href="https://confluence.atlassian.com/x/yodKLg">global permission</a>.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -184,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/groupAndUserPicker.ts#L60">version3/groupAndUserPicker.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/groupAndUserPicker.ts#L84">version3/groupAndUserPicker.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -192,27 +202,37 @@
 									<p>Returns a list of users and groups matching a string. The string is used:</p>
 								</div>
 								<ul>
-									<li> for users, to find a case-insensitive match with display name and e-mail address. Note that if a user has hidden their email address in their user profile, partial matches of the email address will not find the user. An exact match is required.</li>
-									<li> for groups, to find a case-sensitive match with group name.</li>
+									<li>For users, to find a case-insensitive match with display name and e-mail address. Note that if a user has hidden
+										their email address in their user profile, partial matches of the email address will not find the user. An exact
+									match is required.</li>
+									<li>For groups, to find a case-sensitive match with group name.</li>
 								</ul>
-								<p>For example, if the string <em>tin</em> is used, records with the display name <em>Tina</em>, email address <em><a href="mailto:sarah@tinplatetraining.com">sarah@tinplatetraining.com</a></em>, and the group <em>accounting</em> would be returned.</p>
+								<p>For example, if the string <em>tin</em> is used, records with the display name <em>Tina</em>, email address
+								<em><a href="mailto:sarah@tinplatetraining.com">sarah@tinplatetraining.com</a></em>, and the group <em>accounting</em> would be returned.</p>
 								<p>Optionally, the search can be refined to:</p>
 								<ul>
-									<li><p>the projects and issue types associated with a custom field, such as a user picker. The search can then be further refined to return only users and groups that have permission to view specific:</p>
+									<li><p>The projects and issue types associated with a custom field, such as a user picker. The search can then be further
+										refined to return only users and groups that have permission to view specific:</p>
 										<ul>
-											<li> projects.</li>
-											<li> issue types.</li>
+											<li>Projects.</li>
+											<li>Issue types.</li>
 										</ul>
-										<p> If multiple projects or issue types are specified, they must be a subset of those enabled for the custom field or no results are returned. For example, if a field is enabled for projects A, B, and C then the search could be limited to projects B and C. However, if the search is limited to projects B and D, nothing is returned.</p>
+										<p>If multiple projects or issue types are specified, they must be a subset of those enabled for the custom field or
+											no results are returned. For example, if a field is enabled for projects A, B, and C then the search could be
+										limited to projects B and C. However, if the search is limited to projects B and D, nothing is returned.</p>
 									</li>
-									<li><p> not return Connect app users and groups.</p>
+									<li><p>Not return Connect app users and groups.</p>
 									</li>
-									<li><p> return groups that have a case-insensitive match with the query.</p>
+									<li><p>Return groups that have a case-insensitive match with the query.</p>
 									</li>
 								</ul>
-								<p>The primary use case for this resource is to populate a picker field suggestion list with users or groups. To this end, the returned object includes an <code>html</code> field for each list. This field highlights the matched query term in the item name with the HTML strong tag. Also, each list is wrapped in a response object that contains a header for use in a picker, specifically <em>Showing X of Y matching groups</em>.</p>
+								<p>The primary use case for this resource is to populate a picker field suggestion list with users or groups. To this
+									end, the returned object includes an <code>html</code> field for each list. This field highlights the matched query term in
+									the item name with the HTML strong tag. Also, each list is wrapped in a response object that contains a header for
+								use in a picker, specifically <em>Showing X of Y matching groups</em>.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/yodKLg">global permission</a>.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+								users and groups</em> <a href="https://confluence.atlassian.com/x/yodKLg">global permission</a>.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">

@@ -74,9 +74,12 @@
 						<p>User details permitted by the user&#39;s Atlassian Account privacy settings. However, be aware of these exceptions:*</p>
 					</div>
 					<ul>
-						<li> User record deleted from Atlassian: This occurs as the result of a right to be forgotten request. In this case, <code>displayName</code> provides an indication and other parameters have default values or are blank (for example, email is blank).</li>
-						<li> User record corrupted: This occurs as a results of events such as a server import and can only happen to deleted users. In this case, <code>accountId</code> returns <em>unknown</em> and all other parameters have fallback values.</li>
-						<li> User record unavailable: This usually occurs due to an internal service outage. In this case, all parameters have fallback values.</li>
+						<li>User record deleted from Atlassian: This occurs as the result of a right to be forgotten request. In this case,
+						<code>displayName</code> provides an indication and other parameters have default values or are blank (for example, email is blank).</li>
+						<li>User record corrupted: This occurs as a results of events such as a server import and can only happen to deleted
+						users. In this case, <code>accountId</code> returns <em>unknown</em> and all other parameters have fallback values.</li>
+						<li>User record unavailable: This usually occurs due to an internal service outage. In this case, all parameters have
+						fallback values.</li>
 					</ul>
 				</div>
 			</section>
@@ -118,12 +121,13 @@
 					<div class="tsd-signature tsd-kind-icon">account<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L17">version3/models/userDetails.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L32">version3/models/userDetails.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, <em>5b10ac8d82e05b22cc7d4ef5</em>.</p>
+							<p>The account ID of the user, which uniquely identifies the user across all Atlassian products. For example,
+							<em>5b10ac8d82e05b22cc7d4ef5</em>.</p>
 						</div>
 					</div>
 				</section>
@@ -133,12 +137,13 @@
 					<div class="tsd-signature tsd-kind-icon">account<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L28">version3/models/userDetails.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L46">version3/models/userDetails.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type of account represented by this user. This will be one of &#39;atlassian&#39; (normal users), &#39;app&#39; (application user) or &#39;customer&#39; (Jira Service Desk customer user)</p>
+							<p>The type of account represented by this user. This will be one of &#39;atlassian&#39; (normal users), &#39;app&#39; (application
+							user) or &#39;customer&#39; (Jira Service Desk customer user)</p>
 						</div>
 					</div>
 				</section>
@@ -148,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L24">version3/models/userDetails.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L39">version3/models/userDetails.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Urls<span class="tsd-signature-symbol">:</span> <a href="version3_models_avatarurlsbean.avatarurlsbean.html" class="tsd-signature-type" data-tsd-kind="Interface">AvatarUrlsBean</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L20">version3/models/userDetails.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L35">version3/models/userDetails.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -173,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L22">version3/models/userDetails.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L37">version3/models/userDetails.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -188,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">email<wbr>Address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L19">version3/models/userDetails.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L34">version3/models/userDetails.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -203,12 +208,14 @@
 					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L15">version3/models/userDetails.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L27">version3/models/userDetails.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>This property is no longer available and will be removed from the documentation soon. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">deprecation notice</a> for details.</p>
+							<p>This property is no longer available and will be removed from the documentation soon. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">deprecation
+								notice</a>
+							for details.</p>
 						</div>
 					</div>
 				</section>
@@ -218,12 +225,14 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L13">version3/models/userDetails.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L21">version3/models/userDetails.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>This property is no longer available and will be removed from the documentation soon. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">deprecation notice</a> for details.</p>
+							<p>This property is no longer available and will be removed from the documentation soon. See the <a href="https://developer.atlassian.com/cloud/jira/platform/deprecation-notice-user-privacy-api-migration-guide/">deprecation
+								notice</a>
+							for details.</p>
 						</div>
 					</div>
 				</section>
@@ -233,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">self<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L11">version3/models/userDetails.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L15">version3/models/userDetails.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -248,7 +257,7 @@
 					<div class="tsd-signature tsd-kind-icon">time<wbr>Zone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/models/userDetails.ts#L26">version3/models/userDetails.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/models/userDetails.ts#L41">version3/models/userDetails.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

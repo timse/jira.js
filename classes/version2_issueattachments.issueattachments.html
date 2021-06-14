@@ -112,7 +112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L8">version2/issueAttachments.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L8">version2/issueAttachments.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -139,26 +139,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L183">version2/issueAttachments.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L268">version2/issueAttachments.ts:268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds one or more attachments to an issue. Attachments are posted as multipart/form-data (<a href="https://www.ietf.org/rfc/rfc1867.txt">RFC 1867</a>).</p>
+									<p>Adds one or more attachments to an issue. Attachments are posted as multipart/form-data (<a href="https://www.ietf.org/rfc/rfc1867.txt">RFC
+									1867</a>).</p>
 								</div>
 								<p>Note that:</p>
 								<ul>
-									<li> The request must have a <code>X-Atlassian-Token: no-check</code> header, if not it is blocked. See <a href="#special-request-headers">Special headers</a> for more information.</li>
-									<li> The name of the multipart/form-data parameter that contains the attachments must be <code>file</code>.</li>
+									<li>The request must have a <code>X-Atlassian-Token: no-check</code> header, if not it is blocked. See <a href="#special-request-headers">Special
+									headers</a> for more information.</li>
+									<li>The name of the multipart/form-data parameter that contains the attachments must be <code>file</code>.</li>
 								</ul>
 								<p>The following example uploads a file called <em>myfile.txt</em> to the issue <em>TEST-123</em>:</p>
 								<p><code>curl -D- -u admin:admin -X POST -H &quot;X-Atlassian-Token: no-check&quot; -F &quot;file=@myfile.txt&quot; https://your-domain.atlassian.net/rest/api/2/issue/TEST-123/attachments</code></p>
-								<p>Tip: Use a client library. Many client libraries have classes for handling multipart POST operations. For example, in Java, the Apache HTTP Components library provides a <a href="http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html">MultiPartEntity</a> class for multipart POST operations.</p>
+								<p>Tip: Use a client library. Many client libraries have classes for handling multipart POST operations. For example,
+									in Java, the Apache HTTP Components library provides a
+									<a href="http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html">MultiPartEntity</a>
+								class for multipart POST operations.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse Projects</em> and <em>Create attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse Projects</em> and <em>Create attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for the
+									project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -181,26 +188,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L204">version2/issueAttachments.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L301">version2/issueAttachments.ts:301</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds one or more attachments to an issue. Attachments are posted as multipart/form-data (<a href="https://www.ietf.org/rfc/rfc1867.txt">RFC 1867</a>).</p>
+									<p>Adds one or more attachments to an issue. Attachments are posted as multipart/form-data (<a href="https://www.ietf.org/rfc/rfc1867.txt">RFC
+									1867</a>).</p>
 								</div>
 								<p>Note that:</p>
 								<ul>
-									<li> The request must have a <code>X-Atlassian-Token: no-check</code> header, if not it is blocked. See <a href="#special-request-headers">Special headers</a> for more information.</li>
-									<li> The name of the multipart/form-data parameter that contains the attachments must be <code>file</code>.</li>
+									<li>The request must have a <code>X-Atlassian-Token: no-check</code> header, if not it is blocked. See <a href="#special-request-headers">Special
+									headers</a> for more information.</li>
+									<li>The name of the multipart/form-data parameter that contains the attachments must be <code>file</code>.</li>
 								</ul>
 								<p>The following example uploads a file called <em>myfile.txt</em> to the issue <em>TEST-123</em>:</p>
 								<p><code>curl -D- -u admin:admin -X POST -H &quot;X-Atlassian-Token: no-check&quot; -F &quot;file=@myfile.txt&quot; https://your-domain.atlassian.net/rest/api/2/issue/TEST-123/attachments</code></p>
-								<p>Tip: Use a client library. Many client libraries have classes for handling multipart POST operations. For example, in Java, the Apache HTTP Components library provides a <a href="http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html">MultiPartEntity</a> class for multipart POST operations.</p>
+								<p>Tip: Use a client library. Many client libraries have classes for handling multipart POST operations. For example,
+									in Java, the Apache HTTP Components library provides a
+									<a href="http://hc.apache.org/httpcomponents-client-ga/httpmime/apidocs/org/apache/http/entity/mime/MultipartEntity.html">MultiPartEntity</a>
+								class for multipart POST operations.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse Projects</em> and <em>Create attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse Projects</em> and <em>Create attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for the
+									project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -233,19 +247,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L108">version2/issueAttachments.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L139">version2/issueAttachments.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the metadata for the contents of an attachment, if it is an archive, and metadata for the attachment itself. For example, if the attachment is a ZIP archive, then information about the files in the archive is returned and metadata for the ZIP archive. Currently, only the ZIP archive format is supported.</p>
+									<p>Returns the metadata for the contents of an attachment, if it is an archive, and metadata for the attachment
+										itself. For example, if the attachment is a ZIP archive, then information about the files in the archive is
+									returned and metadata for the ZIP archive. Currently, only the ZIP archive format is supported.</p>
 								</div>
-								<p>Use this operation to retrieve data that is presented to the user, as this operation returns the metadata for the attachment itself, such as the attachment&#39;s ID and name. Otherwise, use <a href="#api-rest-api-2-attachment-id-expand-raw-get"> Get contents metadata for an expanded attachment</a>, which only returns the metadata for the attachment&#39;s contents.</p>
+								<p>Use this operation to retrieve data that is presented to the user, as this operation returns the metadata for the
+									attachment itself, such as the attachment&#39;s ID and name. Otherwise, use <a href="#api-rest-api-2-attachment-id-expand-raw-get"> Get contents metadata for an expanded
+								attachment</a>, which only returns the metadata for the attachment&#39;s contents.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the issue containing the attachment:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the
+								issue containing the attachment:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -268,19 +288,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L120">version2/issueAttachments.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L161">version2/issueAttachments.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the metadata for the contents of an attachment, if it is an archive, and metadata for the attachment itself. For example, if the attachment is a ZIP archive, then information about the files in the archive is returned and metadata for the ZIP archive. Currently, only the ZIP archive format is supported.</p>
+									<p>Returns the metadata for the contents of an attachment, if it is an archive, and metadata for the attachment
+										itself. For example, if the attachment is a ZIP archive, then information about the files in the archive is
+									returned and metadata for the ZIP archive. Currently, only the ZIP archive format is supported.</p>
 								</div>
-								<p>Use this operation to retrieve data that is presented to the user, as this operation returns the metadata for the attachment itself, such as the attachment&#39;s ID and name. Otherwise, use <a href="#api-rest-api-2-attachment-id-expand-raw-get"> Get contents metadata for an expanded attachment</a>, which only returns the metadata for the attachment&#39;s contents.</p>
+								<p>Use this operation to retrieve data that is presented to the user, as this operation returns the metadata for the
+									attachment itself, such as the attachment&#39;s ID and name. Otherwise, use <a href="#api-rest-api-2-attachment-id-expand-raw-get"> Get contents metadata for an expanded
+								attachment</a>, which only returns the metadata for the attachment&#39;s contents.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the issue containing the attachment:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the
+								issue containing the attachment:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -313,19 +339,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L141">version2/issueAttachments.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L198">version2/issueAttachments.ts:198</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the metadata for the contents of an attachment, if it is an archive. For example, if the attachment is a ZIP archive, then information about the files in the archive is returned. Currently, only the ZIP archive format is supported.</p>
+									<p>Returns the metadata for the contents of an attachment, if it is an archive. For example, if the attachment is a
+										ZIP archive, then information about the files in the archive is returned. Currently, only the ZIP archive format is
+									supported.</p>
 								</div>
-								<p>Use this operation if you are processing the data without presenting it to the user, as this operation only returns the metadata for the contents of the attachment. Otherwise, to retrieve data to present to the user, use <a href="#api-rest-api-2-attachment-id-expand-human-get"> Get all metadata for an expanded attachment</a> which also returns the metadata for the attachment itself, such as the attachment&#39;s ID and name.</p>
+								<p>Use this operation if you are processing the data without presenting it to the user, as this operation only returns
+									the metadata for the contents of the attachment. Otherwise, to retrieve data to present to the user, use <a href="#api-rest-api-2-attachment-id-expand-human-get"> Get all
+									metadata for an expanded attachment</a> which also returns the
+								metadata for the attachment itself, such as the attachment&#39;s ID and name.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the issue containing the attachment:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the
+								issue containing the attachment:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -348,19 +381,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L153">version2/issueAttachments.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L221">version2/issueAttachments.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the metadata for the contents of an attachment, if it is an archive. For example, if the attachment is a ZIP archive, then information about the files in the archive is returned. Currently, only the ZIP archive format is supported.</p>
+									<p>Returns the metadata for the contents of an attachment, if it is an archive. For example, if the attachment is a
+										ZIP archive, then information about the files in the archive is returned. Currently, only the ZIP archive format is
+									supported.</p>
 								</div>
-								<p>Use this operation if you are processing the data without presenting it to the user, as this operation only returns the metadata for the contents of the attachment. Otherwise, to retrieve data to present to the user, use <a href="#api-rest-api-2-attachment-id-expand-human-get"> Get all metadata for an expanded attachment</a> which also returns the metadata for the attachment itself, such as the attachment&#39;s ID and name.</p>
+								<p>Use this operation if you are processing the data without presenting it to the user, as this operation only returns
+									the metadata for the contents of the attachment. Otherwise, to retrieve data to present to the user, use <a href="#api-rest-api-2-attachment-id-expand-human-get"> Get all
+									metadata for an expanded attachment</a> which also returns the
+								metadata for the attachment itself, such as the attachment&#39;s ID and name.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the issue containing the attachment:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the
+								issue containing the attachment:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -393,7 +433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L48">version2/issueAttachments.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L53">version2/issueAttachments.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,8 +443,9 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -427,7 +468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L58">version2/issueAttachments.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L68">version2/issueAttachments.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -437,8 +478,9 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -471,14 +513,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L20">version2/issueAttachments.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L21">version2/issueAttachments.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the attachment settings, that is, whether attachments are enabled and the maximum attachment size allowed.</p>
 								</div>
-								<p>Note that there are also <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> that restrict whether users can create and delete attachments.</p>
+								<p>Note that there are also <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> that restrict whether
+								users can create and delete attachments.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None.</p>
 							</div>
@@ -499,14 +542,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L29">version2/issueAttachments.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L32">version2/issueAttachments.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the attachment settings, that is, whether attachments are enabled and the maximum attachment size allowed.</p>
 								</div>
-								<p>Note that there are also <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> that restrict whether users can create and delete attachments.</p>
+								<p>Note that there are also <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> that restrict whether
+								users can create and delete attachments.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> None.</p>
 							</div>
@@ -537,7 +581,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L77">version2/issueAttachments.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L97">version2/issueAttachments.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -545,10 +589,13 @@
 									<p>Deletes an attachment from an issue.</p>
 								</div>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the project holding the issue containing the attachment:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the
+								project holding the issue containing the attachment:</p>
 								<ul>
-									<li> <em>Delete own attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment created by the calling user.</li>
-									<li> <em>Delete all attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment created by any user.</li>
+									<li><em>Delete own attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment
+									created by the calling user.</li>
+									<li><em>Delete all attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment
+									created by any user.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -571,7 +618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueAttachments.ts#L87">version2/issueAttachments.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueAttachments.ts#L111">version2/issueAttachments.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -579,10 +626,13 @@
 									<p>Deletes an attachment from an issue.</p>
 								</div>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the project holding the issue containing the attachment:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> For the
+								project holding the issue containing the attachment:</p>
 								<ul>
-									<li> <em>Delete own attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment created by the calling user.</li>
-									<li> <em>Delete all attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment created by any user.</li>
+									<li><em>Delete own attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment
+									created by the calling user.</li>
+									<li><em>Delete all attachments</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> to delete an attachment
+									created by any user.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

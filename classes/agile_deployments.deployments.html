@@ -111,7 +111,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L7">agile/deployments.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L7">agile/deployments.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -138,16 +138,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L128">agile/deployments.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L172">agile/deployments.ts:172</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Delete the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code> combination.</p>
+									<p>Delete the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and
+									<code>deploymentSequenceNumber</code> combination.</p>
 								</div>
-								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been deleted successfully (if needed).</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
+								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -169,16 +171,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L137">agile/deployments.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L186">agile/deployments.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Delete the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code> combination.</p>
+									<p>Delete the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and
+									<code>deploymentSequenceNumber</code> combination.</p>
 								</div>
-								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been deleted successfully (if needed).</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
+								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -210,20 +214,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L65">agile/deployments.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L85">agile/deployments.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Bulk delete all deployments that match the given request.</p>
 								</div>
-								<p>One or more query params must be supplied to specify the Properties to delete by. Optional param <code>_updateSequenceNumber</code> is no longer supported.
-									If more than one Property is provided, data will be deleted that matches ALL of the Properties (i.e. treated as AND).
-								See the documentation for the <code>submitDeployments</code> operation for more details.</p>
+								<p>One or more query params must be supplied to specify the Properties to delete by. Optional param
+									<code>_updateSequenceNumber</code> is no longer supported. If more than one Property is provided, data will be deleted that
+									matches ALL of the Properties (i.e. treated as AND). See the documentation for the <code>submitDeployments</code> operation
+								for more details.</p>
 								<p>Example operation: DELETE /bulkByProperties?accountId=account-123&amp;createdBy=user-456</p>
-								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been deleted successfully (if needed).</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
+								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -245,20 +251,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L80">agile/deployments.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L105">agile/deployments.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Bulk delete all deployments that match the given request.</p>
 								</div>
-								<p>One or more query params must be supplied to specify the Properties to delete by. Optional param <code>_updateSequenceNumber</code> is no longer supported.
-									If more than one Property is provided, data will be deleted that matches ALL of the Properties (i.e. treated as AND).
-								See the documentation for the <code>submitDeployments</code> operation for more details.</p>
+								<p>One or more query params must be supplied to specify the Properties to delete by. Optional param
+									<code>_updateSequenceNumber</code> is no longer supported. If more than one Property is provided, data will be deleted that
+									matches ALL of the Properties (i.e. treated as AND). See the documentation for the <code>submitDeployments</code> operation
+								for more details.</p>
 								<p>Example operation: DELETE /bulkByProperties?accountId=account-123&amp;createdBy=user-456</p>
-								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been deleted successfully (if needed).</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
+								<p>Deletion is performed asynchronously. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been
+								deleted successfully (if needed).</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;DELETE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -290,16 +298,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L101">agile/deployments.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L133">agile/deployments.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Retrieve the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code> combination.</p>
+									<p>Retrieve the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and
+									<code>deploymentSequenceNumber</code> combination.</p>
 								</div>
 								<p>The result will be what is currently stored, ignoring any pending updates or deletes.</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;READ&#39; scope for Connect apps.</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;READ&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -321,16 +330,17 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L110">agile/deployments.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L146">agile/deployments.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Retrieve the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code> combination.</p>
+									<p>Retrieve the currently stored deployment data for the given <code>pipelineId</code>, <code>environmentId</code> and
+									<code>deploymentSequenceNumber</code> combination.</p>
 								</div>
 								<p>The result will be what is currently stored, ignoring any pending updates or deletes.</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;READ&#39; scope for Connect apps.</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;READ&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -362,12 +372,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L153">agile/deployments.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L207">agile/deployments.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Retrieve the  Deployment gating status for the given <code>pipelineId + environmentId + deploymentSequenceNumber</code> combination. Only apps that define the <code>jiraDeploymentInfoProvider</code> module can access this resource. This resource requires the &#39;READ&#39; scope.</p>
+									<p>Retrieve the Deployment gating status for the given <code>pipelineId + environmentId + deploymentSequenceNumber</code>
+										combination. Only apps that define the <code>jiraDeploymentInfoProvider</code> module can access this resource. This resource
+									requires the &#39;READ&#39; scope.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -390,12 +402,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L157">agile/deployments.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L216">agile/deployments.ts:216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Retrieve the  Deployment gating status for the given <code>pipelineId + environmentId + deploymentSequenceNumber</code> combination. Only apps that define the <code>jiraDeploymentInfoProvider</code> module can access this resource. This resource requires the &#39;READ&#39; scope.</p>
+									<p>Retrieve the Deployment gating status for the given <code>pipelineId + environmentId + deploymentSequenceNumber</code>
+										combination. Only apps that define the <code>jiraDeploymentInfoProvider</code> module can access this resource. This resource
+									requires the &#39;READ&#39; scope.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -428,18 +442,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L23">agile/deployments.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L27">agile/deployments.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Update / insert deployment data.</p>
 								</div>
-								<p>Deployments are identified by the combination of <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code>, and existing deployment data for the same deployment will be replaced if it exists and the <code>updateSequenceNumber</code> of existing data is less than the incoming data.</p>
-								<p>Submissions are processed asynchronously. Submitted data will eventually be available in Jira. Most updates are available within a short period of time, but may take some time during peak load and/or maintenance times. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been stored successfully (if needed).</p>
-								<p>In the case of multiple deployments being submitted in one request, each is validated individually prior to submission. Details of which deployments failed submission (if any) are available in the response object.</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
+								<p>Deployments are identified by the combination of <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code>, and
+									existing deployment data for the same deployment will be replaced if it exists and the <code>updateSequenceNumber</code> of
+								existing data is less than the incoming data.</p>
+								<p>Submissions are processed asynchronously. Submitted data will eventually be available in Jira. Most updates are
+									available within a short period of time, but may take some time during peak load and/or maintenance times. The
+								<code>getDeploymentByKey</code> operation can be used to confirm that data has been stored successfully (if needed).</p>
+								<p>In the case of multiple deployments being submitted in one request, each is validated individually prior to
+								submission. Details of which deployments failed submission (if any) are available in the response object.</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -461,18 +480,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/deployments.ts#L36">agile/deployments.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/deployments.ts#L48">agile/deployments.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Update / insert deployment data.</p>
 								</div>
-								<p>Deployments are identified by the combination of <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code>, and existing deployment data for the same deployment will be replaced if it exists and the <code>updateSequenceNumber</code> of existing data is less than the incoming data.</p>
-								<p>Submissions are processed asynchronously. Submitted data will eventually be available in Jira. Most updates are available within a short period of time, but may take some time during peak load and/or maintenance times. The <code>getDeploymentByKey</code> operation can be used to confirm that data has been stored successfully (if needed).</p>
-								<p>In the case of multiple deployments being submitted in one request, each is validated individually prior to submission. Details of which deployments failed submission (if any) are available in the response object.</p>
-								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this resource.
-								This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
+								<p>Deployments are identified by the combination of <code>pipelineId</code>, <code>environmentId</code> and <code>deploymentSequenceNumber</code>, and
+									existing deployment data for the same deployment will be replaced if it exists and the <code>updateSequenceNumber</code> of
+								existing data is less than the incoming data.</p>
+								<p>Submissions are processed asynchronously. Submitted data will eventually be available in Jira. Most updates are
+									available within a short period of time, but may take some time during peak load and/or maintenance times. The
+								<code>getDeploymentByKey</code> operation can be used to confirm that data has been stored successfully (if needed).</p>
+								<p>In the case of multiple deployments being submitted in one request, each is validated individually prior to
+								submission. Details of which deployments failed submission (if any) are available in the response object.</p>
+								<p>Only Connect apps that define the <code>jiraDeploymentInfoProvider</code> module, and on-premise integrations, can access this
+								resource. This resource requires the &#39;WRITE&#39; scope for Connect apps.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">

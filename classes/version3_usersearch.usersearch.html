@@ -114,7 +114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L7">version3/userSearch.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L7">version3/userSearch.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -141,21 +141,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L58">version3/userSearch.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L85">version3/userSearch.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a list of users that can be assigned to an issue. Use this operation to find the list of users who can be assigned to:</p>
+									<p>Returns a list of users that can be assigned to an issue. Use this operation to find the list of users who can be
+									assigned to:</p>
 								</div>
 								<ul>
-									<li> a new issue, by providing the <code>projectKeyOrId</code>.</li>
-									<li> an updated issue, by providing the <code>issueKey</code>.</li>
-									<li> to an issue during a transition (workflow action), by providing the <code>issueKey</code> and the transition id in <code>actionDescriptorId</code>. You can obtain the IDs of an issue&#39;s valid transitions using the <code>transitions</code> option in the <code>expand</code> parameter of <a href="#api-rest-api-3-issue-issueIdOrKey-get"> Get issue</a>.</li>
+									<li>A new issue, by providing the <code>projectKeyOrId</code>.</li>
+									<li>An updated issue, by providing the <code>issueKey</code>.</li>
+									<li>To an issue during a transition (workflow action), by providing the <code>issueKey</code> and the transition id in
+										<code>actionDescriptorId</code>. You can obtain the IDs of an issue&#39;s valid transitions using the <code>transitions</code> option in
+									the <code>expand</code> parameter of <a href="#api-rest-api-3-issue-issueIdOrKey-get"> Get issue</a>.</li>
 								</ul>
-								<p>In all these cases, you can pass an account ID to determine if a user can be assigned to an issue. The user is returned in the response if they can be assigned to the issue or issue transition.</p>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that can be assigned the issue. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned the issue, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Permission to access Jira.</p>
+								<p>In all these cases, you can pass an account ID to determine if a user can be assigned to an issue. The user is
+								returned in the response if they can be assigned to the issue or issue transition.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that can be assigned the issue. This means the operation usually
+									returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned the issue, use <a href="#api-rest-api-3-users-search-get">Get
+								all users</a> and filter the records in your code.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong>
+								Permission to access Jira.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -177,21 +185,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L71">version3/userSearch.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L110">version3/userSearch.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a list of users that can be assigned to an issue. Use this operation to find the list of users who can be assigned to:</p>
+									<p>Returns a list of users that can be assigned to an issue. Use this operation to find the list of users who can be
+									assigned to:</p>
 								</div>
 								<ul>
-									<li> a new issue, by providing the <code>projectKeyOrId</code>.</li>
-									<li> an updated issue, by providing the <code>issueKey</code>.</li>
-									<li> to an issue during a transition (workflow action), by providing the <code>issueKey</code> and the transition id in <code>actionDescriptorId</code>. You can obtain the IDs of an issue&#39;s valid transitions using the <code>transitions</code> option in the <code>expand</code> parameter of <a href="#api-rest-api-3-issue-issueIdOrKey-get"> Get issue</a>.</li>
+									<li>A new issue, by providing the <code>projectKeyOrId</code>.</li>
+									<li>An updated issue, by providing the <code>issueKey</code>.</li>
+									<li>To an issue during a transition (workflow action), by providing the <code>issueKey</code> and the transition id in
+										<code>actionDescriptorId</code>. You can obtain the IDs of an issue&#39;s valid transitions using the <code>transitions</code> option in
+									the <code>expand</code> parameter of <a href="#api-rest-api-3-issue-issueIdOrKey-get"> Get issue</a>.</li>
 								</ul>
-								<p>In all these cases, you can pass an account ID to determine if a user can be assigned to an issue. The user is returned in the response if they can be assigned to the issue or issue transition.</p>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that can be assigned the issue. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned the issue, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Permission to access Jira.</p>
+								<p>In all these cases, you can pass an account ID to determine if a user can be assigned to an issue. The user is
+								returned in the response if they can be assigned to the issue or issue transition.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that can be assigned the issue. This means the operation usually
+									returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned the issue, use <a href="#api-rest-api-3-users-search-get">Get
+								all users</a> and filter the records in your code.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong>
+								Permission to access Jira.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -223,14 +239,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L19">version3/userSearch.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L23">version3/userSearch.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a list of users who can be assigned issues in one or more projects. The list may be restricted to users whose attributes match a string.</p>
+									<p>Returns a list of users who can be assigned issues in one or more projects. The list may be restricted to users
+									whose attributes match a string.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that can be assigned issues in the projects. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned issues in the projects, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that can be assigned issues in the projects. This means the operation
+									usually returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned issues in the
+								projects, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> None.</p>
 							</div>
@@ -254,14 +274,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L28">version3/userSearch.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L40">version3/userSearch.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a list of users who can be assigned issues in one or more projects. The list may be restricted to users whose attributes match a string.</p>
+									<p>Returns a list of users who can be assigned issues in one or more projects. The list may be restricted to users
+									whose attributes match a string.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that can be assigned issues in the projects. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned issues in the projects, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that can be assigned issues in the projects. This means the operation
+									usually returns fewer users than specified in <code>maxResults</code>. To get all the users who can be assigned issues in the
+								projects, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> None.</p>
 							</div>
@@ -295,27 +319,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L296">version3/userSearch.ts:296</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L432">version3/userSearch.ts:432</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds users with a structured query and returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user keys.</p>
+									<p>Finds users with a structured query and returns a
+									<a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user keys.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the structured query. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the structured query. This means the operation usually
+									returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get
+								all users</a> and filter the records in your code.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+								users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
 								<p>The query statements are:</p>
 								<ul>
-									<li> <code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
-									<li> <code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
+									<li><code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
+									<li><code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
 								</ul>
-								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
+								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined
+								using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
 								<p><code>is assignee of PROJ AND [propertyKey].entity.property.path is &quot;property value&quot;</code></p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -338,27 +368,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L318">version3/userSearch.ts:318</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L464">version3/userSearch.ts:464</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds users with a structured query and returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user keys.</p>
+									<p>Finds users with a structured query and returns a
+									<a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user keys.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the structured query. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the structured query. This means the operation usually
+									returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get
+								all users</a> and filter the records in your code.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+								users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
 								<p>The query statements are:</p>
 								<ul>
-									<li> <code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
-									<li> <code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
+									<li><code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
+									<li><code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
 								</ul>
-								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
+								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined
+								using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
 								<p><code>is assignee of PROJ AND [propertyKey].entity.property.path is &quot;property value&quot;</code></p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -391,16 +427,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L190">version3/userSearch.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L287">version3/userSearch.ts:287</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns a list of users that match the search string and property.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the search string and property. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and property, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the search string and property. This means the operation
+									usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and
+								property, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls or calls by users without the required permission return empty search results.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+									users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls or calls by users
+								without the required permission return empty search results.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -422,16 +463,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L199">version3/userSearch.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L305">version3/userSearch.ts:305</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns a list of users that match the search string and property.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the search string and property. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and property, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the search string and property. This means the operation
+									usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and
+								property, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls or calls by users without the required permission return empty search results.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+									users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls or calls by users
+								without the required permission return empty search results.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -463,27 +509,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L238">version3/userSearch.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L351">version3/userSearch.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds users with a structured query and returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user details.</p>
+									<p>Finds users with a structured query and returns a
+									<a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user details.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the structured query. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the structured query. This means the operation usually
+									returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get
+								all users</a> and filter the records in your code.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+								users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
 								<p>The query statements are:</p>
 								<ul>
-									<li> <code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
-									<li> <code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
+									<li><code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
+									<li><code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
 								</ul>
-								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
+								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined
+								using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
 								<p><code>is assignee of PROJ AND [propertyKey].entity.property.path is &quot;property value&quot;</code></p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -506,27 +558,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L260">version3/userSearch.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L383">version3/userSearch.ts:383</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Finds users with a structured query and returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user details.</p>
+									<p>Finds users with a structured query and returns a
+									<a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of user details.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the structured query. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the structured query. This means the operation usually
+									returns fewer users than specified in <code>maxResults</code>. To get all the users who match the structured query, use <a href="#api-rest-api-3-users-search-get">Get
+								all users</a> and filter the records in your code.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+								users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>.</p>
 								<p>The query statements are:</p>
 								<ul>
-									<li> <code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
-									<li> <code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
-									<li> <code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
+									<li><code>is assignee of PROJ</code> Returns the users that are assignees of at least one issue in project <em>PROJ</em>.</li>
+									<li><code>is assignee of (PROJ-1, PROJ-2)</code> Returns users that are assignees on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is reporter of (PROJ-1, PROJ-2)</code> Returns users that are reporters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is watcher of (PROJ-1, PROJ-2)</code> Returns users that are watchers on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is voter of (PROJ-1, PROJ-2)</code> Returns users that are voters on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is commenter of (PROJ-1, PROJ-2)</code> Returns users that have posted a comment on the issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>is transitioner of (PROJ-1, PROJ-2)</code> Returns users that have performed a transition on issues <em>PROJ-1</em> or <em>PROJ-2</em>.</li>
+									<li><code>[propertyKey].entity.property.path is &quot;property value&quot;</code> Returns users with the entity property value.</li>
 								</ul>
-								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
+								<p>The list of issues can be extended as needed, as in <em>(PROJ-1, PROJ-2, ... PROJ-n)</em>. Statements can be combined
+								using the <code>AND</code> and <code>OR</code> operators to form more complex queries. For example:</p>
 								<p><code>is assignee of PROJ AND [propertyKey].entity.property.path is &quot;property value&quot;</code></p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -559,16 +617,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L154">version3/userSearch.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L228">version3/userSearch.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a list of users whose attributes match the query term. The returned object includes the <code>html</code> field where the matched query term is highlighted with the HTML strong tag. A list of account IDs can be provided to exclude users from the results.</p>
+									<p>Returns a list of users whose attributes match the query term. The returned object includes the <code>html</code> field where
+										the matched query term is highlighted with the HTML strong tag. A list of account IDs can be provided to exclude
+									users from the results.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the query term. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the query term, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>maxResults</code>, up to the thousandth user, and then returns
+									only the users from that range that match the query term. This means the operation usually returns fewer users than
+									specified in <code>maxResults</code>. To get all the users who match the query term, use <a href="#api-rest-api-3-users-search-get">Get all
+								users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by users without the required permission return search results for an exact name match only.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+									users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by
+								users without the required permission return search results for an exact name match only.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -590,16 +655,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L163">version3/userSearch.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L248">version3/userSearch.ts:248</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a list of users whose attributes match the query term. The returned object includes the <code>html</code> field where the matched query term is highlighted with the HTML strong tag. A list of account IDs can be provided to exclude users from the results.</p>
+									<p>Returns a list of users whose attributes match the query term. The returned object includes the <code>html</code> field where
+										the matched query term is highlighted with the HTML strong tag. A list of account IDs can be provided to exclude
+									users from the results.</p>
 								</div>
-								<p>This operation takes the users in the range defined by <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the query term. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the query term, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>maxResults</code>, up to the thousandth user, and then returns
+									only the users from that range that match the query term. This means the operation usually returns fewer users than
+									specified in <code>maxResults</code>. To get all the users who match the query term, use <a href="#api-rest-api-3-users-search-get">Get all
+								users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by users without the required permission return search results for an exact name match only.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+									users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by
+								users without the required permission return search results for an exact name match only.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -631,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L109">version3/userSearch.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L160">version3/userSearch.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -639,16 +711,21 @@
 									<p>Returns a list of users who fulfill these criteria:</p>
 								</div>
 								<ul>
-									<li> their user attributes match a search string.</li>
-									<li> they have a set of permissions for a project or issue.</li>
+									<li>Their user attributes match a search string.</li>
+									<li>They have a set of permissions for a project or issue.</li>
 								</ul>
 								<p>If no search string is provided, a list of all users with the permissions is returned.</p>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the search string and have permission for the project or issue. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and have permission for the project or issue, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the search string and have permission for the project or
+									issue. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users
+									who match the search string and have permission for the project or issue, use <a href="#api-rest-api-3-users-search-get">Get all
+								users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Administer Jira</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>, to get users for any project.</li>
-									<li> <em>Administer Projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for a project, to get users for that project.</li>
+									<li><em>Administer Jira</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>, to get users for any project.</li>
+									<li><em>Administer Projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for a project, to get users
+									for that project.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -671,7 +748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L126">version3/userSearch.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L186">version3/userSearch.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,16 +756,21 @@
 									<p>Returns a list of users who fulfill these criteria:</p>
 								</div>
 								<ul>
-									<li> their user attributes match a search string.</li>
-									<li> they have a set of permissions for a project or issue.</li>
+									<li>Their user attributes match a search string.</li>
+									<li>They have a set of permissions for a project or issue.</li>
 								</ul>
 								<p>If no search string is provided, a list of all users with the permissions is returned.</p>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the search string and have permission for the project or issue. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and have permission for the project or issue, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the search string and have permission for the project or
+									issue. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users
+									who match the search string and have permission for the project or issue, use <a href="#api-rest-api-3-users-search-get">Get all
+								users</a> and filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Administer Jira</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>, to get users for any project.</li>
-									<li> <em>Administer Projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for a project, to get users for that project.</li>
+									<li><em>Administer Jira</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>, to get users for any project.</li>
+									<li><em>Administer Projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for a project, to get users
+									for that project.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -721,7 +803,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L349">version3/userSearch.ts:349</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L508">version3/userSearch.ts:508</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -729,17 +811,23 @@
 									<p>Returns a list of users who fulfill these criteria:</p>
 								</div>
 								<ul>
-									<li> their user attributes match a search string.</li>
-									<li> they have permission to browse issues.</li>
+									<li>Their user attributes match a search string.</li>
+									<li>They have permission to browse issues.</li>
 								</ul>
 								<p>Use this resource to find users who can browse:</p>
 								<ul>
-									<li> an issue, by providing the <code>issueKey</code>.</li>
-									<li> any issue in a project, by providing the <code>projectKey</code>.</li>
+									<li>An issue, by providing the <code>issueKey</code>.</li>
+									<li>Any issue in a project, by providing the <code>projectKey</code>.</li>
 								</ul>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the search string and have permission to browse issues. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and have permission to browse issues, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the search string and have permission to browse issues. This
+									means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the
+									search string and have permission to browse issues, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and
+								filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by users without the required permission return empty search results.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+									users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by
+								users without the required permission return empty search results.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -761,7 +849,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/userSearch.ts#L366">version3/userSearch.ts:366</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/userSearch.ts#L535">version3/userSearch.ts:535</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,17 +857,23 @@
 									<p>Returns a list of users who fulfill these criteria:</p>
 								</div>
 								<ul>
-									<li> their user attributes match a search string.</li>
-									<li> they have permission to browse issues.</li>
+									<li>Their user attributes match a search string.</li>
+									<li>They have permission to browse issues.</li>
 								</ul>
 								<p>Use this resource to find users who can browse:</p>
 								<ul>
-									<li> an issue, by providing the <code>issueKey</code>.</li>
-									<li> any issue in a project, by providing the <code>projectKey</code>.</li>
+									<li>An issue, by providing the <code>issueKey</code>.</li>
+									<li>Any issue in a project, by providing the <code>projectKey</code>.</li>
 								</ul>
-								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and then returns only the users from that range that match the search string and have permission to browse issues. This means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the search string and have permission to browse issues, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and filter the records in your code.</p>
+								<p>This operation takes the users in the range defined by <code>startAt</code> and <code>maxResults</code>, up to the thousandth user, and
+									then returns only the users from that range that match the search string and have permission to browse issues. This
+									means the operation usually returns fewer users than specified in <code>maxResults</code>. To get all the users who match the
+									search string and have permission to browse issues, use <a href="#api-rest-api-3-users-search-get">Get all users</a> and
+								filter the records in your code.</p>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by users without the required permission return empty search results.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> <em>Browse
+									users and groups</em> <a href="https://confluence.atlassian.com/x/x4dKLg">global permission</a>. Anonymous calls and calls by
+								users without the required permission return empty search results.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">

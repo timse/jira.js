@@ -105,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">groupname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/sharePermissionInputBean.ts#L13">version2/models/sharePermissionInputBean.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/sharePermissionInputBean.ts#L16">version2/models/sharePermissionInputBean.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">project<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/sharePermissionInputBean.ts#L11">version2/models/sharePermissionInputBean.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/sharePermissionInputBean.ts#L14">version2/models/sharePermissionInputBean.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,12 +135,13 @@
 					<div class="tsd-signature tsd-kind-icon">project<wbr>Role<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/sharePermissionInputBean.ts#L15">version2/models/sharePermissionInputBean.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/sharePermissionInputBean.ts#L21">version2/models/sharePermissionInputBean.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the project role to share the filter with. Set <code>type</code> to <code>projectRole</code> and the <code>projectId</code> for the project that the role is in.</p>
+							<p>The ID of the project role to share the filter with. Set <code>type</code> to <code>projectRole</code> and the <code>projectId</code> for the
+							project that the role is in.</p>
 						</div>
 					</div>
 				</section>
@@ -150,18 +151,19 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/models/sharePermissionInputBean.ts#L9">version2/models/sharePermissionInputBean.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/models/sharePermissionInputBean.ts#L12">version2/models/sharePermissionInputBean.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The type of the share permission.Specify the type as follows:</p>
 						</div>
-						<p> <code>group</code> Share with a group. Specify <code>groupname</code> as well.
-							<code>project</code> Share with a project. Specify <code>projectId</code> as well.
-							<code>projectRole</code> Share with a project role in a project. Specify <code>projectId</code> and <code>projectRoleId</code> as well.
-							<code>global</code> Share globally, including anonymous users. If set, this type overrides all existing share permissions and must be deleted before any non-global share permissions is set.
-						<code>authenticated</code> Share with all logged-in users. This shows as <code>loggedin</code> in the response. If set, this type overrides all existing share permissions and must be deleted before any non-global share permissions is set.</p>
+						<p><code>group</code> Share with a group. Specify <code>groupname</code> as well. <code>project</code> Share with a project. Specify <code>projectId</code> as
+							well. <code>projectRole</code> Share with a project role in a project. Specify <code>projectId</code> and <code>projectRoleId</code> as well.
+							<code>global</code> Share globally, including anonymous users. If set, this type overrides all existing share permissions and
+							must be deleted before any non-global share permissions is set. <code>authenticated</code> Share with all logged-in users.
+							This shows as <code>loggedin</code> in the response. If set, this type overrides all existing share permissions and must be
+						deleted before any non-global share permissions is set.</p>
 					</div>
 				</section>
 			</section>

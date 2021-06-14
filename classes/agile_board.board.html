@@ -132,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L8">agile/board.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L8">agile/board.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -159,39 +159,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L73">agile/board.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L72">agile/board.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a new board. Board name, type and filter ID is required.</p>
-									<ul>
-										<li><code>name</code> - Must be less than 255 characters.</li>
-										<li><code>type</code> - Valid values: scrum, kanban</li>
-										<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the 'Create shared objects'
-										permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
-										<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
-											If choosing 'project', then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
-											If choosing 'user', the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
-										</li>
-									</ul>
-									<p>
-										Note:
-										<ul>
-											<li>
-												If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
-												For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
-												The <code>projectTypeKey</code> for software boards must be 'software' and the <code>projectTemplateKey</code> must be either
-												<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
-											</li>
-											<li>
-												You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
-												For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
-											</li>
-											<li>
-												If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
+									<p>Creates a new board. Board name, type and filter ID is required. <ul> <li><code>name</code> - Must be less than 255 characters.</li>
+											<li><code>type</code> - Valid values: scrum, kanban</li>
+											<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the &#39;Create shared objects&#39;
+											permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
+											<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
+												If choosing &#39;project&#39;, then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
+												If choosing &#39;user&#39;, the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
 											</li>
 										</ul>
+										<p>
+											Note:
+											<ul>
+												<li>
+													If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
+													For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
+													The <code>projectTypeKey</code> for software boards must be &#39;software&#39; and the <code>projectTemplateKey</code> must be either
+													<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
+												</li>
+												<li>
+													You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
+													For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
+												</li>
+												<li>
+													If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
+												</li>
+										</ul></p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -214,39 +212,37 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L104">agile/board.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L104">agile/board.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a new board. Board name, type and filter ID is required.</p>
-									<ul>
-										<li><code>name</code> - Must be less than 255 characters.</li>
-										<li><code>type</code> - Valid values: scrum, kanban</li>
-										<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the 'Create shared objects'
-										permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
-										<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
-											If choosing 'project', then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
-											If choosing 'user', the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
-										</li>
-									</ul>
-									<p>
-										Note:
-										<ul>
-											<li>
-												If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
-												For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
-												The <code>projectTypeKey</code> for software boards must be 'software' and the <code>projectTemplateKey</code> must be either
-												<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
-											</li>
-											<li>
-												You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
-												For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
-											</li>
-											<li>
-												If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
+									<p>Creates a new board. Board name, type and filter ID is required. <ul> <li><code>name</code> - Must be less than 255 characters.</li>
+											<li><code>type</code> - Valid values: scrum, kanban</li>
+											<li><code>filterId</code> - ID of a filter that the user has permissions to view. Note, if the user does not have the &#39;Create shared objects&#39;
+											permission and tries to create a shared board, a private board will be created instead (remember that board sharing depends on the filter sharing).</li>
+											<li><code>location</code> - The container that the board will be located in. <code>location</code> must include the <code>type</code> property (Valid values: project, user).
+												If choosing &#39;project&#39;, then a project must be specified by a <code>projectKeyOrId</code> property in <code>location</code>.
+												If choosing &#39;user&#39;, the current user is chosen by default. The <code>projectKeyOrId</code> property should not be provided.
 											</li>
 										</ul>
+										<p>
+											Note:
+											<ul>
+												<li>
+													If you want to create a new project with an associated board, use the <a href="https://docs.atlassian.com/jira/REST/latest">Jira platform REST API</a>.
+													For more information, see the <a href="#api-rest-api-<ver>-project-post">Create project</a> method.
+													The <code>projectTypeKey</code> for software boards must be &#39;software&#39; and the <code>projectTemplateKey</code> must be either
+													<code>com.pyxis.greenhopper.jira:gh-kanban-template</code> or <code>com.pyxis.greenhopper.jira:gh-scrum-template</code>.
+												</li>
+												<li>
+													You can create a filter using the <a href="https://docs.atlassian.com/jira/REST/latest">Jira REST API</a>.
+													For more information, see the <a href="#api-rest-api-<ver>-filter-post">Create filter</a> method.
+												</li>
+												<li>
+													If you do not ORDER BY the Rank field for the filter of your board, you will not be able to reorder issues on the board.
+												</li>
+										</ul></p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -279,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L167">agile/board.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L177">agile/board.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,7 +303,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L171">agile/board.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L179">agile/board.ts:179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,13 +341,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L599">agile/board.ts:599</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L665">agile/board.ts:665</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes the property from the board identified by the id. Ths user removing the property is required
-									to have permissions to modify the board.</p>
+									<p>Removes the property from the board identified by the id. Ths user removing the property is required to have
+									permissions to modify the board.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -374,13 +370,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L604">agile/board.ts:604</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L670">agile/board.ts:670</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes the property from the board identified by the id. Ths user removing the property is required
-									to have permissions to modify the board.</p>
+									<p>Removes the property from the board identified by the id. Ths user removing the property is required to have
+									permissions to modify the board.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -413,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L15">agile/board.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L12">agile/board.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -441,7 +437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L19">agile/board.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L17">agile/board.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -479,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L617">agile/board.ts:617</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L684">agile/board.ts:684</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -507,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L621">agile/board.ts:621</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L689">agile/board.ts:689</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -545,7 +541,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L668">agile/board.ts:668</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L755">agile/board.ts:755</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -573,7 +569,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L672">agile/board.ts:672</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L760">agile/board.ts:760</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -611,13 +607,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L721">agile/board.ts:721</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L824">agile/board.ts:824</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all versions from a board, for a given board ID. This only includes versions that the user has permission to view.
-										Note, if the user does not have permission to view the board, no versions will be returned at all.
+									<p>Returns all versions from a board, for a given board ID. This only includes versions that the user has permission
+										to view. Note, if the user does not have permission to view the board, no versions will be returned at all.
 									Returned versions are ordered by the name of the project from which they belong and then by sequence defined by user.</p>
 								</div>
 							</div>
@@ -641,13 +637,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L727">agile/board.ts:727</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L833">agile/board.ts:833</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all versions from a board, for a given board ID. This only includes versions that the user has permission to view.
-										Note, if the user does not have permission to view the board, no versions will be returned at all.
+									<p>Returns all versions from a board, for a given board ID. This only includes versions that the user has permission
+										to view. Note, if the user does not have permission to view the board, no versions will be returned at all.
 									Returned versions are ordered by the name of the project from which they belong and then by sequence defined by user.</p>
 								</div>
 							</div>
@@ -681,7 +677,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L148">agile/board.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L160">agile/board.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -711,7 +707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L154">agile/board.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L166">agile/board.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -751,13 +747,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L124">agile/board.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L127">agile/board.ts:127</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns any boards which use the provided filter id.  This method can be executed by users without a valid
-									software license in order to find which boards are using a particular filter.</p>
+									<p>Returns any boards which use the provided filter id. This method can be executed by users without a valid software
+									license in order to find which boards are using a particular filter.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -780,13 +776,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L129">agile/board.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L135">agile/board.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns any boards which use the provided filter id.  This method can be executed by users without a valid
-									software license in order to find which boards are using a particular filter.</p>
+									<p>Returns any boards which use the provided filter id. This method can be executed by users without a valid software
+									license in order to find which boards are using a particular filter.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -819,15 +815,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L334">agile/board.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L363">agile/board.ts:363</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues that belong to an epic on the board, for the given epic ID and the board ID.
-										This only includes issues that the user has permission to view.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues that belong to an epic on the board, for the given epic ID and the board ID. This only includes
+										issues that the user has permission to view. Issues returned from this resource include Agile fields, like sprint,
+									closedSprints, flagged, and epic. By default, the returned issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -850,15 +845,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L341">agile/board.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L372">agile/board.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues that belong to an epic on the board, for the given epic ID and the board ID.
-										This only includes issues that the user has permission to view.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues that belong to an epic on the board, for the given epic ID and the board ID. This only includes
+										issues that the user has permission to view. Issues returned from this resource include Agile fields, like sprint,
+									closedSprints, flagged, and epic. By default, the returned issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -891,14 +885,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L692">agile/board.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L786">agile/board.ts:786</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get all issues you have access to that belong to the sprint from the board.
-										Issue returned from this resource contains additional fields like: sprint, closedSprints, flagged and epic.
-									Issues are returned ordered by rank. JQL order has higher priority than default rank.</p>
+									<p>Get all issues you have access to that belong to the sprint from the board. Issue returned from this resource
+										contains additional fields like: sprint, closedSprints, flagged and epic. Issues are returned ordered by rank. JQL
+									order has higher priority than default rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -921,14 +915,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L698">agile/board.ts:698</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L795">agile/board.ts:795</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get all issues you have access to that belong to the sprint from the board.
-										Issue returned from this resource contains additional fields like: sprint, closedSprints, flagged and epic.
-									Issues are returned ordered by rank. JQL order has higher priority than default rank.</p>
+									<p>Get all issues you have access to that belong to the sprint from the board. Issue returned from this resource
+										contains additional fields like: sprint, closedSprints, flagged and epic. Issues are returned ordered by rank. JQL
+									order has higher priority than default rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -961,13 +955,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L555">agile/board.ts:555</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L621">agile/board.ts:621</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the value of the property with a given key from the board identified by the provided id.
-									The user who retrieves the property is required to have permissions to view the board.</p>
+									<p>Returns the value of the property with a given key from the board identified by the provided id. The user who
+									retrieves the property is required to have permissions to view the board.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -990,13 +984,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L560">agile/board.ts:560</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L626">agile/board.ts:626</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the value of the property with a given key from the board identified by the provided id.
-									The user who retrieves the property is required to have permissions to view the board.</p>
+									<p>Returns the value of the property with a given key from the board identified by the provided id. The user who
+									retrieves the property is required to have permissions to view the board.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1029,13 +1023,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L536">agile/board.ts:536</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L596">agile/board.ts:596</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the keys of all properties for the board identified by the id.
-									The user who retrieves the property keys is required to have permissions to view the board.</p>
+									<p>Returns the keys of all properties for the board identified by the id. The user who retrieves the property keys is
+									required to have permissions to view the board.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1058,13 +1052,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L541">agile/board.ts:541</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L604">agile/board.ts:604</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the keys of all properties for the board identified by the id.
-									The user who retrieves the property keys is required to have permissions to view the board.</p>
+									<p>Returns the keys of all properties for the board identified by the id. The user who retrieves the property keys is
+									required to have permissions to view the board.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1097,15 +1091,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L238">agile/board.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L252">agile/board.ts:252</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get the board configuration.
-										The response contains the following fields:
-										<ul>
-											<li><code>id</code> - ID of the board.</li>
+									<p>Get the board configuration. The response contains the following fields: <ul> <li><code>id</code> - ID of the board.</li>
 											<li><code>name</code> - Name of the board.</li>
 											<li><code>filter</code> - Reference to the filter used by the given board.</li>
 											<li><code>location</code> - Reference to the container that the board is located in.
@@ -1146,15 +1137,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L263">agile/board.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L277">agile/board.ts:277</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get the board configuration.
-										The response contains the following fields:
-										<ul>
-											<li><code>id</code> - ID of the board.</li>
+									<p>Get the board configuration. The response contains the following fields: <ul> <li><code>id</code> - ID of the board.</li>
 											<li><code>name</code> - Name of the board.</li>
 											<li><code>filter</code> - Reference to the filter used by the given board.</li>
 											<li><code>location</code> - Reference to the container that the board is located in.
@@ -1205,13 +1193,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L277">agile/board.ts:277</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L297">agile/board.ts:297</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all epics from the board, for the given board ID. This only includes epics that the user has permission to view.
-									Note, if the user does not have permission to view the board, no epics will be returned at all.</p>
+									<p>Returns all epics from the board, for the given board ID. This only includes epics that the user has permission to
+									view. Note, if the user does not have permission to view the board, no epics will be returned at all.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1234,13 +1222,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L282">agile/board.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L302">agile/board.ts:302</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all epics from the board, for the given board ID. This only includes epics that the user has permission to view.
-									Note, if the user does not have permission to view the board, no epics will be returned at all.</p>
+									<p>Returns all epics from the board, for the given board ID. This only includes epics that the user has permission to
+									view. Note, if the user does not have permission to view the board, no epics will be returned at all.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1273,7 +1261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L359">agile/board.ts:359</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L396">agile/board.ts:396</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1296,7 +1284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L360">agile/board.ts:360</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L400">agile/board.ts:400</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1329,16 +1317,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L188">agile/board.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L196">agile/board.ts:196</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues from the board&#39;s backlog, for the given board ID. This only includes issues that the user has permission to view.
-										The backlog contains incomplete issues that are not assigned to any future or active sprint.
-										Note, if the user does not have permission to view the board, no issues will be returned at all.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues from the board&#39;s backlog, for the given board ID. This only includes issues that the user has
+										permission to view. The backlog contains incomplete issues that are not assigned to any future or active sprint.
+										Note, if the user does not have permission to view the board, no issues will be returned at all. Issues returned
+										from this resource include Agile fields, like sprint, closedSprints, flagged, and epic. By default, the returned
+									issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1361,16 +1349,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L196">agile/board.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L207">agile/board.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues from the board&#39;s backlog, for the given board ID. This only includes issues that the user has permission to view.
-										The backlog contains incomplete issues that are not assigned to any future or active sprint.
-										Note, if the user does not have permission to view the board, no issues will be returned at all.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues from the board&#39;s backlog, for the given board ID. This only includes issues that the user has
+										permission to view. The backlog contains incomplete issues that are not assigned to any future or active sprint.
+										Note, if the user does not have permission to view the board, no issues will be returned at all. Issues returned
+										from this resource include Agile fields, like sprint, closedSprints, flagged, and epic. By default, the returned
+									issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1403,17 +1391,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L390">agile/board.ts:390</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L441">agile/board.ts:441</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues from a board, for a given board ID. This only includes issues that the user has permission to view.
-										An issue belongs to the board if its status is mapped to the board&#39;s column.
-										Epic issues do not belongs to the scrum boards.
-										Note, if the user does not have permission to view the board, no issues will be returned at all.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues from a board, for a given board ID. This only includes issues that the user has permission to
+										view. An issue belongs to the board if its status is mapped to the board&#39;s column. Epic issues do not belongs to
+										the scrum boards. Note, if the user does not have permission to view the board, no issues will be returned at all.
+										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic. By default,
+									the returned issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1436,17 +1423,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L399">agile/board.ts:399</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L452">agile/board.ts:452</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues from a board, for a given board ID. This only includes issues that the user has permission to view.
-										An issue belongs to the board if its status is mapped to the board&#39;s column.
-										Epic issues do not belongs to the scrum boards.
-										Note, if the user does not have permission to view the board, no issues will be returned at all.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues from a board, for a given board ID. This only includes issues that the user has permission to
+										view. An issue belongs to the board if its status is mapped to the board&#39;s column. Epic issues do not belongs to
+										the scrum boards. Note, if the user does not have permission to view the board, no issues will be returned at all.
+										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic. By default,
+									the returned issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1479,15 +1465,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L303">agile/board.ts:303</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L325">agile/board.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues that do not belong to any epic on a board, for a given board ID.
-										This only includes issues that the user has permission to view.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues that do not belong to any epic on a board, for a given board ID. This only includes issues that
+										the user has permission to view. Issues returned from this resource include Agile fields, like sprint,
+									closedSprints, flagged, and epic. By default, the returned issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1510,15 +1495,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L310">agile/board.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L334">agile/board.ts:334</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all issues that do not belong to any epic on a board, for a given board ID.
-										This only includes issues that the user has permission to view.
-										Issues returned from this resource include Agile fields, like sprint, closedSprints, flagged, and epic.
-									By default, the returned issues are ordered by rank.</p>
+									<p>Returns all issues that do not belong to any epic on a board, for a given board ID. This only includes issues that
+										the user has permission to view. Issues returned from this resource include Agile fields, like sprint,
+									closedSprints, flagged, and epic. By default, the returned issues are ordered by rank.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1551,18 +1535,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L465">agile/board.ts:465</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L522">agile/board.ts:522</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all projects that are associated with the board, for the given board ID.
-										If the user does not have permission to view the board, no projects will be returned at all.
-										Returned projects are ordered by the name.
-									</p>
-									A project is associated with a board if the board filter contains reference the project
-									or there is an issue from the project that belongs to the board.
-									</p>
+									<p>Returns all projects that are associated with the board, for the given board ID. If the user does not have
+									permission to view the board, no projects will be returned at all. Returned projects are ordered by the name. </p>
+									A project is associated with a board if the board filter contains reference the project or there is an issue from
+									the project that belongs to the board. </p>
 									The board filter contains reference the project only if JQL query guarantees that returned issues
 									will be returned from the project set defined in JQL.
 									For instance the query <code>project in (ABC, BCD) AND reporter = admin</code> have reference to ABC and BCD projects
@@ -1593,18 +1574,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L483">agile/board.ts:483</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L540">agile/board.ts:540</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all projects that are associated with the board, for the given board ID.
-										If the user does not have permission to view the board, no projects will be returned at all.
-										Returned projects are ordered by the name.
-									</p>
-									A project is associated with a board if the board filter contains reference the project
-									or there is an issue from the project that belongs to the board.
-									</p>
+									<p>Returns all projects that are associated with the board, for the given board ID. If the user does not have
+									permission to view the board, no projects will be returned at all. Returned projects are ordered by the name. </p>
+									A project is associated with a board if the board filter contains reference the project or there is an issue from
+									the project that belongs to the board. </p>
 									The board filter contains reference the project only if JQL query guarantees that returned issues
 									will be returned from the project set defined in JQL.
 									For instance the query <code>project in (ABC, BCD) AND reporter = admin</code> have reference to ABC and BCD projects
@@ -1645,16 +1623,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L509">agile/board.ts:509</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L566">agile/board.ts:566</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all projects that are statically associated with the board, for the given board ID.
-										Returned projects are ordered by the name.
-									</p>
-									A project is associated with a board if the board filter contains reference the project.
-									</p>
+									<p>Returns all projects that are statically associated with the board, for the given board ID. Returned projects are
+									ordered by the name. </p> A project is associated with a board if the board filter contains reference the project. </p>
 									The board filter contains reference the project only if JQL query guarantees that returned issues
 									will be returned from the project set defined in JQL.
 									For instance the query <code>project in (ABC, BCD) AND reporter = admin</code> have reference to ABC and BCD projects
@@ -1682,16 +1657,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L522">agile/board.ts:522</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L579">agile/board.ts:579</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns all projects that are statically associated with the board, for the given board ID.
-										Returned projects are ordered by the name.
-									</p>
-									A project is associated with a board if the board filter contains reference the project.
-									</p>
+									<p>Returns all projects that are statically associated with the board, for the given board ID. Returned projects are
+									ordered by the name. </p> A project is associated with a board if the board filter contains reference the project. </p>
 									The board filter contains reference the project only if JQL query guarantees that returned issues
 									will be returned from the project set defined in JQL.
 									For instance the query <code>project in (ABC, BCD) AND reporter = admin</code> have reference to ABC and BCD projects
@@ -1729,13 +1701,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L639">agile/board.ts:639</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L713">agile/board.ts:713</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the quick filter for a given quick filter ID. The quick filter will only be returned if the user can view the board
-									that the quick filter belongs to.</p>
+									<p>Returns the quick filter for a given quick filter ID. The quick filter will only be returned if the user can view
+									the board that the quick filter belongs to.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1758,13 +1730,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L644">agile/board.ts:644</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L721">agile/board.ts:721</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the quick filter for a given quick filter ID. The quick filter will only be returned if the user can view the board
-									that the quick filter belongs to.</p>
+									<p>Returns the quick filter for a given quick filter ID. The quick filter will only be returned if the user can view
+									the board that the quick filter belongs to.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1797,7 +1769,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L654">agile/board.ts:654</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L734">agile/board.ts:734</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1820,7 +1792,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L655">agile/board.ts:655</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L738">agile/board.ts:738</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1853,16 +1825,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L424">agile/board.ts:424</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L482">agile/board.ts:482</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Move issues from the backog to the board (if they are already in the backlog of that board).</p>
 								</div>
-								<p> This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
-									Or transitions the issue(s) to the first column for a kanban board with backlog.
-								At most 50 issues may be moved at once.</p>
+								<p>This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
+								Or transitions the issue(s) to the first column for a kanban board with backlog. At most 50 issues may be moved at once.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1884,16 +1855,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L432">agile/board.ts:432</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L489">agile/board.ts:489</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Move issues from the backog to the board (if they are already in the backlog of that board).</p>
 								</div>
-								<p> This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
-									Or transitions the issue(s) to the first column for a kanban board with backlog.
-								At most 50 issues may be moved at once.</p>
+								<p>This operation either moves an issue(s) onto a board from the backlog (by adding it to the issueList for the board)
+								Or transitions the issue(s) to the first column for a kanban board with backlog. At most 50 issues may be moved at once.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -1925,16 +1895,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L577">agile/board.ts:577</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L643">agile/board.ts:643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the value of the specified board&#39;s property.
-										<p>
-											You can use this resource to store a custom data against the board identified by the id. The user
-											who stores the data is required to have permissions to modify the board.
-									</p></p>
+									<p>Sets the value of the specified board&#39;s property. <p> You can use this resource to store a custom data against the
+									board identified by the id. The user who stores the data is required to have permissions to modify the board. </p></p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1957,16 +1924,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L585">agile/board.ts:585</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L648">agile/board.ts:648</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sets the value of the specified board&#39;s property.
-										<p>
-											You can use this resource to store a custom data against the board identified by the id. The user
-											who stores the data is required to have permissions to modify the board.
-									</p></p>
+									<p>Sets the value of the specified board&#39;s property. <p> You can use this resource to store a custom data against the
+									board identified by the id. The user who stores the data is required to have permissions to modify the board. </p></p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1999,7 +1963,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L370">agile/board.ts:370</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L416">agile/board.ts:416</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2022,7 +1986,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/agile/board.ts#L371">agile/board.ts:371</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/agile/board.ts#L420">agile/board.ts:420</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

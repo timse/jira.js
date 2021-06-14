@@ -109,7 +109,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L7">version3/workflowTransitionRules.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L7">version3/workflowTransitionRules.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -136,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L95">version3/workflowTransitionRules.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L131">version3/workflowTransitionRules.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,9 +144,9 @@
 									<p>Deletes workflow transition rules from one or more workflows. These rule types are supported:</p>
 								</div>
 								<ul>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
 								</ul>
 								<p>Only rules created by the calling Connect app can be deleted.</p>
 								<p><strong><a href="#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
@@ -171,7 +171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L106">version3/workflowTransitionRules.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L146">version3/workflowTransitionRules.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,9 +179,9 @@
 									<p>Deletes workflow transition rules from one or more workflows. These rule types are supported:</p>
 								</div>
 								<ul>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
 								</ul>
 								<p>Only rules created by the calling Connect app can be deleted.</p>
 								<p><strong><a href="#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
@@ -216,20 +216,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L22">version3/workflowTransitionRules.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L26">version3/workflowTransitionRules.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of workflows with transition rules. The workflows can be filtered to return only those containing workflow transition rules:</p>
+									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of
+									workflows with transition rules. The workflows can be filtered to return only those containing workflow transition rules:</p>
 								</div>
 								<ul>
-									<li> of one or more transition rule types, such as <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">workflow post functions</a>.</li>
-									<li> matching one or more transition rule keys.</li>
+									<li>Of one or more transition rule types, such as <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">workflow post
+									functions</a>.</li>
+									<li>Matching one or more transition rule keys.</li>
 								</ul>
-								<p>Only workflows containing transition rules created by the calling Connect app are returned. However, if a workflow is returned all transition rules that match the filters are returned for that workflow.</p>
+								<p>Only workflows containing transition rules created by the calling Connect app are returned. However, if a workflow
+								is returned all transition rules that match the filters are returned for that workflow.</p>
 								<p>Due to server-side optimizations, workflows with an empty list of rules may be returned; these workflows can be ignored.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only
+								Connect apps can use this operation.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -251,20 +255,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L34">version3/workflowTransitionRules.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L46">version3/workflowTransitionRules.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of workflows with transition rules. The workflows can be filtered to return only those containing workflow transition rules:</p>
+									<p>Returns a <a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#pagination">paginated</a> list of
+									workflows with transition rules. The workflows can be filtered to return only those containing workflow transition rules:</p>
 								</div>
 								<ul>
-									<li> of one or more transition rule types, such as <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">workflow post functions</a>.</li>
-									<li> matching one or more transition rule keys.</li>
+									<li>Of one or more transition rule types, such as <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">workflow post
+									functions</a>.</li>
+									<li>Matching one or more transition rule keys.</li>
 								</ul>
-								<p>Only workflows containing transition rules created by the calling Connect app are returned. However, if a workflow is returned all transition rules that match the filters are returned for that workflow.</p>
+								<p>Only workflows containing transition rules created by the calling Connect app are returned. However, if a workflow
+								is returned all transition rules that match the filters are returned for that workflow.</p>
 								<p>Due to server-side optimizations, workflows with an empty list of rules may be returned; these workflows can be ignored.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only
+								Connect apps can use this operation.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -296,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L61">version3/workflowTransitionRules.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L83">version3/workflowTransitionRules.ts:83</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,12 +312,13 @@
 									<p>Updates configuration of workflow transition rules. The following rule types are supported:</p>
 								</div>
 								<ul>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
 								</ul>
 								<p>Only rules created by the calling Connect app can be updated.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only
+								Connect apps can use this operation.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -331,7 +340,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version3/workflowTransitionRules.ts#L72">version3/workflowTransitionRules.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version3/workflowTransitionRules.ts#L99">version3/workflowTransitionRules.ts:99</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -339,12 +348,13 @@
 									<p>Updates configuration of workflow transition rules. The following rule types are supported:</p>
 								</div>
 								<ul>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
-									<li> <a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-post-function/">post functions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-condition/">conditions</a></li>
+									<li><a href="https://developer.atlassian.com/cloud/jira/platform/modules/workflow-validator/">validators</a></li>
 								</ul>
 								<p>Only rules created by the calling Connect app can be updated.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only Connect apps can use this operation.</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/#permissions">Permissions</a> required:</strong> Only
+								Connect apps can use this operation.</p>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">

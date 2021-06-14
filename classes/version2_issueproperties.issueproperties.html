@@ -113,7 +113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L7">version2/issueProperties.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L7">version2/issueProperties.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -140,7 +140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L156">version2/issueProperties.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L207">version2/issueProperties.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -149,21 +149,25 @@
 								</div>
 								<p>The criteria the filter used to identify eligible issues are:</p>
 								<ul>
-									<li> <code>entityIds</code> Only issues from this list are eligible.</li>
-									<li> <code>currentValue</code> Only issues with the property set to this value are eligible.</li>
+									<li><code>entityIds</code> Only issues from this list are eligible.</li>
+									<li><code>currentValue</code> Only issues with the property set to this value are eligible.</li>
 								</ul>
-								<p>If both criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy both criteria are considered eligible.</p>
-								<p>If no filter criteria are specified, all the issues visible to the user and where the user has the EDIT_ISSUES permission for the issue are considered eligible.</p>
+								<p>If both criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy both criteria are
+								considered eligible.</p>
+								<p>If no filter criteria are specified, all the issues visible to the user and where the user has the EDIT_ISSUES
+								permission for the issue are considered eligible.</p>
 								<p>This operation is:</p>
 								<ul>
-									<li> transactional, either the property is deleted from all eligible issues or, when errors occur, no properties are deleted.</li>
-									<li> <a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get task</a> to obtain subsequent updates.</li>
+									<li>Transactional, either the property is deleted from all eligible issues or, when errors occur, no properties are deleted.</li>
+									<li><a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get
+									task</a> to obtain subsequent updates.</li>
 								</ul>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for each project containing issues.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
-									<li> <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for each project containing issues.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
+									<li><em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -186,7 +190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L179">version2/issueProperties.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L238">version2/issueProperties.ts:238</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,21 +199,25 @@
 								</div>
 								<p>The criteria the filter used to identify eligible issues are:</p>
 								<ul>
-									<li> <code>entityIds</code> Only issues from this list are eligible.</li>
-									<li> <code>currentValue</code> Only issues with the property set to this value are eligible.</li>
+									<li><code>entityIds</code> Only issues from this list are eligible.</li>
+									<li><code>currentValue</code> Only issues with the property set to this value are eligible.</li>
 								</ul>
-								<p>If both criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy both criteria are considered eligible.</p>
-								<p>If no filter criteria are specified, all the issues visible to the user and where the user has the EDIT_ISSUES permission for the issue are considered eligible.</p>
+								<p>If both criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy both criteria are
+								considered eligible.</p>
+								<p>If no filter criteria are specified, all the issues visible to the user and where the user has the EDIT_ISSUES
+								permission for the issue are considered eligible.</p>
 								<p>This operation is:</p>
 								<ul>
-									<li> transactional, either the property is deleted from all eligible issues or, when errors occur, no properties are deleted.</li>
-									<li> <a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get task</a> to obtain subsequent updates.</li>
+									<li>Transactional, either the property is deleted from all eligible issues or, when errors occur, no properties are deleted.</li>
+									<li><a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get
+									task</a> to obtain subsequent updates.</li>
 								</ul>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for each project containing issues.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
-									<li> <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg"> project permission</a> for each project containing issues.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
+									<li><em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -242,41 +250,50 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L86">version2/issueProperties.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L116">version2/issueProperties.ts:116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sets a property value on multiple issues.</p>
 								</div>
-								<p>The value set can be a constant or determined by a <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/">Jira expression</a>. Expressions must be computable with constant complexity when applied to a set of issues. Expressions must also comply with the <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions">restrictions</a> that apply to all Jira expressions.</p>
+								<p>The value set can be a constant or determined by a <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/">Jira
+									expression</a>. Expressions must be computable
+									with constant complexity when applied to a set of issues. Expressions must also comply with the
+									<a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions">restrictions</a> that apply to
+								all Jira expressions.</p>
 								<p>The issues to be updated can be specified by a filter.</p>
 								<p>The filter identifies issues eligible for update using these criteria:</p>
 								<ul>
-									<li><p> <code>entityIds</code> Only issues from this list are eligible.</p>
+									<li><p><code>entityIds</code> Only issues from this list are eligible.</p>
 									</li>
-									<li><p> <code>currentValue</code> Only issues with the property set to this value are eligible.</p>
+									<li><p><code>currentValue</code> Only issues with the property set to this value are eligible.</p>
 									</li>
 									<li><p><code>hasProperty</code>:</p>
 										<ul>
-											<li> If <em>true</em>, only issues with the property are eligible.</li>
-											<li> If <em>false</em>, only issues without the property are eligible.</li>
+											<li>If <em>true</em>, only issues with the property are eligible.</li>
+											<li>If <em>false</em>, only issues without the property are eligible.</li>
 										</ul>
 									</li>
 								</ul>
-								<p>If more than one criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy all criteria are eligible.</p>
-								<p>If an invalid combination of criteria is provided, an error is returned. For example, specifying a <code>currentValue</code> and <code>hasProperty</code> as <em>false</em> would not match any issues (because without the property the property cannot have a value).</p>
-								<p>The filter is optional. Without the filter all the issues visible to the user and where the user has the EDIT_ISSUES permission for the issue are considered eligible.</p>
+								<p>If more than one criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy all
+								criteria are eligible.</p>
+								<p>If an invalid combination of criteria is provided, an error is returned. For example, specifying a <code>currentValue</code>
+								and <code>hasProperty</code> as <em>false</em> would not match any issues (because without the property the property cannot have a value).</p>
+								<p>The filter is optional. Without the filter all the issues visible to the user and where the user has the
+								EDIT_ISSUES permission for the issue are considered eligible.</p>
 								<p>This operation is:</p>
 								<ul>
-									<li> transactional, either all eligible issues are updated or, when errors occur, none are updated.</li>
-									<li> <a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get task</a> to obtain subsequent updates.</li>
+									<li>Transactional, either all eligible issues are updated or, when errors occur, none are updated.</li>
+									<li><a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get
+									task</a> to obtain subsequent updates.</li>
 								</ul>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each project containing issues.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
-									<li> <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each project containing issues.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
+									<li><em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -299,41 +316,50 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L119">version2/issueProperties.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L162">version2/issueProperties.ts:162</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sets a property value on multiple issues.</p>
 								</div>
-								<p>The value set can be a constant or determined by a <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/">Jira expression</a>. Expressions must be computable with constant complexity when applied to a set of issues. Expressions must also comply with the <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions">restrictions</a> that apply to all Jira expressions.</p>
+								<p>The value set can be a constant or determined by a <a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/">Jira
+									expression</a>. Expressions must be computable
+									with constant complexity when applied to a set of issues. Expressions must also comply with the
+									<a href="https://developer.atlassian.com/cloud/jira/platform/jira-expressions/#restrictions">restrictions</a> that apply to
+								all Jira expressions.</p>
 								<p>The issues to be updated can be specified by a filter.</p>
 								<p>The filter identifies issues eligible for update using these criteria:</p>
 								<ul>
-									<li><p> <code>entityIds</code> Only issues from this list are eligible.</p>
+									<li><p><code>entityIds</code> Only issues from this list are eligible.</p>
 									</li>
-									<li><p> <code>currentValue</code> Only issues with the property set to this value are eligible.</p>
+									<li><p><code>currentValue</code> Only issues with the property set to this value are eligible.</p>
 									</li>
 									<li><p><code>hasProperty</code>:</p>
 										<ul>
-											<li> If <em>true</em>, only issues with the property are eligible.</li>
-											<li> If <em>false</em>, only issues without the property are eligible.</li>
+											<li>If <em>true</em>, only issues with the property are eligible.</li>
+											<li>If <em>false</em>, only issues without the property are eligible.</li>
 										</ul>
 									</li>
 								</ul>
-								<p>If more than one criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy all criteria are eligible.</p>
-								<p>If an invalid combination of criteria is provided, an error is returned. For example, specifying a <code>currentValue</code> and <code>hasProperty</code> as <em>false</em> would not match any issues (because without the property the property cannot have a value).</p>
-								<p>The filter is optional. Without the filter all the issues visible to the user and where the user has the EDIT_ISSUES permission for the issue are considered eligible.</p>
+								<p>If more than one criteria is specified, they are joined with the logical <em>AND</em>: only issues that satisfy all
+								criteria are eligible.</p>
+								<p>If an invalid combination of criteria is provided, an error is returned. For example, specifying a <code>currentValue</code>
+								and <code>hasProperty</code> as <em>false</em> would not match any issues (because without the property the property cannot have a value).</p>
+								<p>The filter is optional. Without the filter all the issues visible to the user and where the user has the
+								EDIT_ISSUES permission for the issue are considered eligible.</p>
 								<p>This operation is:</p>
 								<ul>
-									<li> transactional, either all eligible issues are updated or, when errors occur, none are updated.</li>
-									<li> <a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get task</a> to obtain subsequent updates.</li>
+									<li>Transactional, either all eligible issues are updated or, when errors occur, none are updated.</li>
+									<li><a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get
+									task</a> to obtain subsequent updates.</li>
 								</ul>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each project containing issues.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
-									<li> <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each project containing issues.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
+									<li><em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for each issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -366,23 +392,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L25">version2/issueProperties.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L29">version2/issueProperties.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sets the values of entity properties on issues. It can set up to 10 entity properties on up to 10,000 issues.</p>
 								</div>
-								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON. The maximum length of single issue property value is 32768 characters. This operation can be accessed anonymously.</p>
+								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON. The maximum
+								length of single issue property value is 32768 characters. This operation can be accessed anonymously.</p>
 								<p>This operation is:</p>
 								<ul>
-									<li> transactional, either all properties are updated in all eligible issues or, when errors occur, no properties are updated.</li>
-									<li> <a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get task</a> to obtain subsequent updates.</li>
+									<li>Transactional, either all properties are updated in all eligible issues or, when errors occur, no properties are updated.</li>
+									<li><a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get
+									task</a> to obtain subsequent updates.</li>
 								</ul>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the
+									project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -405,23 +435,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L40">version2/issueProperties.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L52">version2/issueProperties.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sets the values of entity properties on issues. It can set up to 10 entity properties on up to 10,000 issues.</p>
 								</div>
-								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON. The maximum length of single issue property value is 32768 characters. This operation can be accessed anonymously.</p>
+								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON. The maximum
+								length of single issue property value is 32768 characters. This operation can be accessed anonymously.</p>
 								<p>This operation is:</p>
 								<ul>
-									<li> transactional, either all properties are updated in all eligible issues or, when errors occur, no properties are updated.</li>
-									<li> <a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get task</a> to obtain subsequent updates.</li>
+									<li>Transactional, either all properties are updated in all eligible issues or, when errors occur, no properties are updated.</li>
+									<li><a href="#async">asynchronous</a>. Follow the <code>location</code> link in the response to determine the status of the task and use <a href="#api-rest-api-2-task-taskId-get">Get
+									task</a> to obtain subsequent updates.</li>
 								</ul>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the
+									project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -454,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L293">version2/issueProperties.ts:293</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L402">version2/issueProperties.ts:402</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,8 +498,10 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the
+									project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -488,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L303">version2/issueProperties.ts:303</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L415">version2/issueProperties.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,8 +534,10 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the
+									project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -532,7 +570,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L231">version2/issueProperties.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L315">version2/issueProperties.ts:315</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -542,8 +580,9 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -566,7 +605,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L241">version2/issueProperties.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L330">version2/issueProperties.ts:330</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -576,8 +615,9 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -610,7 +650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L202">version2/issueProperties.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L272">version2/issueProperties.ts:272</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -618,10 +658,12 @@
 									<p>Returns the URLs and keys of an issue&#39;s properties.</p>
 								</div>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Property details are only returned where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong>
+								Property details are only returned where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -644,7 +686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L212">version2/issueProperties.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L288">version2/issueProperties.ts:288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -652,10 +694,12 @@
 									<p>Returns the URLs and keys of an issue&#39;s properties.</p>
 								</div>
 								<p>This operation can be accessed anonymously.</p>
-								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong> Property details are only returned where the user has:</p>
+								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong>
+								Property details are only returned where the user has:</p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -688,19 +732,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L262">version2/issueProperties.ts:262</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L361">version2/issueProperties.ts:361</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sets the value of an issue&#39;s property. Use this resource to store custom data against an issue.</p>
 								</div>
-								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON blob. The maximum length is 32768 characters.</p>
+								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON blob. The
+								maximum length is 32768 characters.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the
+									project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -723,19 +770,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueProperties.ts#L274">version2/issueProperties.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueProperties.ts#L377">version2/issueProperties.ts:377</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Sets the value of an issue&#39;s property. Use this resource to store custom data against an issue.</p>
 								</div>
-								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON blob. The maximum length is 32768 characters.</p>
+								<p>The value of the request body must be a <a href="http://tools.ietf.org/html/rfc4627">valid</a>, non-empty JSON blob. The
+								maximum length is 32768 characters.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the project containing the issue.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Edit issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permissions</a> for the
+									project containing the issue.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>

@@ -112,7 +112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L7">version2/issueRemoteLinks.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L7">version2/issueRemoteLinks.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -139,20 +139,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L60">version2/issueRemoteLinks.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L82">version2/issueRemoteLinks.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Creates or updates a remote issue link for an issue.</p>
 								</div>
-								<p>If a <code>globalId</code> is provided and a remote issue link with that global ID is found it is updated. Any fields without values in the request are set to null. Otherwise, the remote issue link is created.</p>
+								<p>If a <code>globalId</code> is provided and a remote issue link with that global ID is found it is updated. Any fields without
+								values in the request are set to null. Otherwise, the remote issue link is created.</p>
 								<p>This operation requires <a href="https://confluence.atlassian.com/x/yoXKM">issue linking to be active</a>.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project
+									that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -175,20 +178,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L74">version2/issueRemoteLinks.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L103">version2/issueRemoteLinks.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Creates or updates a remote issue link for an issue.</p>
 								</div>
-								<p>If a <code>globalId</code> is provided and a remote issue link with that global ID is found it is updated. Any fields without values in the request are set to null. Otherwise, the remote issue link is created.</p>
+								<p>If a <code>globalId</code> is provided and a remote issue link with that global ID is found it is updated. Any fields without
+								values in the request are set to null. Otherwise, the remote issue link is created.</p>
 								<p>This operation requires <a href="https://confluence.atlassian.com/x/yoXKM">issue linking to be active</a>.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project
+									that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -221,19 +227,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L101">version2/issueRemoteLinks.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L143">version2/issueRemoteLinks.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Deletes the remote issue link from the issue using the link&#39;s global ID. Where the global ID includes reserved URL characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code> as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
+									<p>Deletes the remote issue link from the issue using the link&#39;s global ID. Where the global ID includes reserved URL
+										characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code>
+									as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
 								</div>
 								<p>This operation requires <a href="https://confluence.atlassian.com/x/yoXKM">issue linking to be active</a>.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is implemented, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project
+									that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is implemented, issue-level security
+									permission to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -256,19 +266,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L113">version2/issueRemoteLinks.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L163">version2/issueRemoteLinks.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Deletes the remote issue link from the issue using the link&#39;s global ID. Where the global ID includes reserved URL characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code> as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
+									<p>Deletes the remote issue link from the issue using the link&#39;s global ID. Where the global ID includes reserved URL
+										characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code>
+									as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
 								</div>
 								<p>This operation requires <a href="https://confluence.atlassian.com/x/yoXKM">issue linking to be active</a>.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is implemented, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project
+									that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is implemented, issue-level security
+									permission to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -301,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L213">version2/issueRemoteLinks.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L301">version2/issueRemoteLinks.ts:301</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,8 +326,10 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em>, <em>Edit issues</em>, and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em>, <em>Edit issues</em>, and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a>
+									for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -336,7 +352,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L225">version2/issueRemoteLinks.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L319">version2/issueRemoteLinks.ts:319</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,8 +363,10 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em>, <em>Edit issues</em>, and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em>, <em>Edit issues</em>, and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a>
+									for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -381,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L137">version2/issueRemoteLinks.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L197">version2/issueRemoteLinks.ts:197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,8 +410,9 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -416,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L149">version2/issueRemoteLinks.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L214">version2/issueRemoteLinks.ts:214</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,8 +446,9 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -461,19 +481,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L22">version2/issueRemoteLinks.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L26">version2/issueRemoteLinks.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the remote issue links for an issue. When a remote issue link global ID is provided the record with that global ID is returned, otherwise all remote issue links are returned. Where a global ID includes reserved URL characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code> as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
+									<p>Returns the remote issue links for an issue. When a remote issue link global ID is provided the record with that
+										global ID is returned, otherwise all remote issue links are returned. Where a global ID includes reserved URL
+										characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code>
+									as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
 								</div>
 								<p>This operation requires <a href="https://confluence.atlassian.com/x/yoXKM">issue linking to be active</a>.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -496,19 +520,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L34">version2/issueRemoteLinks.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L46">version2/issueRemoteLinks.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the remote issue links for an issue. When a remote issue link global ID is provided the record with that global ID is returned, otherwise all remote issue links are returned. Where a global ID includes reserved URL characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code> as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
+									<p>Returns the remote issue links for an issue. When a remote issue link global ID is provided the record with that
+										global ID is returned, otherwise all remote issue links are returned. Where a global ID includes reserved URL
+										characters these must be escaped in the request. For example, pass <code>system=http://www.mycompany.com/support&amp;id=1</code>
+									as <code>system%3Dhttp%3A%2F%2Fwww.mycompany.com%2Fsupport%26id%3D1</code>.</p>
 								</div>
 								<p>This operation requires <a href="https://confluence.atlassian.com/x/yoXKM">issue linking to be active</a>.</p>
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -541,7 +569,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L172">version2/issueRemoteLinks.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L248">version2/issueRemoteLinks.ts:248</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -553,8 +581,10 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project
+									that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -577,7 +607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85f50a82/src/version2/issueRemoteLinks.ts#L186">version2/issueRemoteLinks.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/27ede894/src/version2/issueRemoteLinks.ts#L268">version2/issueRemoteLinks.ts:268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,8 +619,10 @@
 								<p>This operation can be accessed anonymously.</p>
 								<p><strong><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro/#permissions">Permissions</a> required:</strong></p>
 								<ul>
-									<li> <em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project that the issue is in.</li>
-									<li> If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission to view the issue.</li>
+									<li><em>Browse projects</em> and <em>Link issues</em> <a href="https://confluence.atlassian.com/x/yodKLg">project permission</a> for the project
+									that the issue is in.</li>
+									<li>If <a href="https://confluence.atlassian.com/x/J4lKLg">issue-level security</a> is configured, issue-level security permission
+									to view the issue.</li>
 								</ul>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
