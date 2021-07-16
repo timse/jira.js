@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/agile_parameters_submitdeployments.html">agile/parameters/submitDeployments</a>
+					<a href="../modules/agile_parameters_submitDeployments.html">agile/parameters/submitDeployments</a>
 				</li>
 				<li>
-					<a href="agile_parameters_submitdeployments.submitdeployments.html">SubmitDeployments</a>
+					<a href="agile_parameters_submitDeployments.SubmitDeployments.html">SubmitDeployments</a>
 				</li>
 			</ul>
 			<h1>Interface SubmitDeployments</h1>
@@ -83,9 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitdeployments.submitdeployments.html#deployments" class="tsd-kind-icon">deployments</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitdeployments.submitdeployments.html#properties" class="tsd-kind-icon">properties</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitdeployments.submitdeployments.html#providermetadata" class="tsd-kind-icon">provider<wbr>Metadata</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitDeployments.SubmitDeployments.html#deployments" class="tsd-kind-icon">deployments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitDeployments.SubmitDeployments.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitDeployments.SubmitDeployments.html#providerMetadata" class="tsd-kind-icon">provider<wbr>Metadata</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,14 +99,15 @@
 					<div class="tsd-signature tsd-kind-icon">deployments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>associations<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>commands<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>command<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>deploymentSequenceNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>displayName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>environment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>displayName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>issueKeys<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pipeline<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>displayName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>schemaVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>updateSequenceNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitDeployments.ts#L13">agile/parameters/submitDeployments.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitDeployments.ts#L18">agile/parameters/submitDeployments.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>A list of deployments to submit to Jira.</p>
 						</div>
-						<p>Each deployment may be associated with one or more Jira issue keys, and will be associated with any properties included in this request.</p>
+						<p>Each deployment may be associated with one or more Jira issue keys, and will be associated with any properties
+						included in this request.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -115,15 +116,17 @@
 					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitDeployments.ts#L8">agile/parameters/submitDeployments.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitDeployments.ts#L11">agile/parameters/submitDeployments.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Properties assigned to deployment data that can then be used for delete / query operations.</p>
 						</div>
-						<p>Examples might be an account or user ID that can then be used to clean up data if an account is removed from the Provider system.</p>
-						<p>Properties are supplied as key/value pairs, and a maximum of 5 properties can be supplied, keys cannot contain &#39;:&#39; or start with &#39;_&#39;.</p>
+						<p>Examples might be an account or user ID that can then be used to clean up data if an account is removed from the
+						Provider system.</p>
+						<p>Properties are supplied as key/value pairs, and a maximum of 5 properties can be supplied, keys cannot contain &#39;:&#39;
+						or start with &#39;_&#39;.</p>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -132,19 +135,18 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="providermetadata" class="tsd-anchor"></a>
+					<a name="providerMetadata" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> provider<wbr>Metadata</h3>
 					<div class="tsd-signature tsd-kind-icon">provider<wbr>Metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>product<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitDeployments.ts#L90">agile/parameters/submitDeployments.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitDeployments.ts#L89">agile/parameters/submitDeployments.ts:89</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Information about the provider. This is useful for auditing, logging, debugging,
-								and other internal uses. It is not considered private information. Hence, it may not contain personally
-							identifiable information.</p>
+							<p>Information about the provider. This is useful for auditing, logging, debugging, and other internal uses. It is not
+							considered private information. Hence, it may not contain personally identifiable information.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -170,7 +172,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/agile_parameters_submitdeployments.html">agile/parameters/submit<wbr>Deployments</a>
+						<a href="../modules/agile_parameters_submitDeployments.html">agile/parameters/submit<wbr>Deployments</a>
 					</li>
 				</ul>
 			</nav>
@@ -179,16 +181,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="agile_parameters_submitdeployments.submitdeployments.html" class="tsd-kind-icon">Submit<wbr>Deployments</a>
+						<a href="agile_parameters_submitDeployments.SubmitDeployments.html" class="tsd-kind-icon">Submit<wbr>Deployments</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitdeployments.submitdeployments.html#deployments" class="tsd-kind-icon">deployments</a>
+								<a href="agile_parameters_submitDeployments.SubmitDeployments.html#deployments" class="tsd-kind-icon">deployments</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitdeployments.submitdeployments.html#properties" class="tsd-kind-icon">properties</a>
+								<a href="agile_parameters_submitDeployments.SubmitDeployments.html#properties" class="tsd-kind-icon">properties</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitdeployments.submitdeployments.html#providermetadata" class="tsd-kind-icon">provider<wbr>Metadata</a>
+								<a href="agile_parameters_submitDeployments.SubmitDeployments.html#providerMetadata" class="tsd-kind-icon">provider<wbr>Metadata</a>
 							</li>
 						</ul>
 					</li>

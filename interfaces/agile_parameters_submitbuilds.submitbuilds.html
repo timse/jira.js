@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/agile_parameters_submitbuilds.html">agile/parameters/submitBuilds</a>
+					<a href="../modules/agile_parameters_submitBuilds.html">agile/parameters/submitBuilds</a>
 				</li>
 				<li>
-					<a href="agile_parameters_submitbuilds.submitbuilds.html">SubmitBuilds</a>
+					<a href="agile_parameters_submitBuilds.SubmitBuilds.html">SubmitBuilds</a>
 				</li>
 			</ul>
 			<h1>Interface SubmitBuilds</h1>
@@ -83,9 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitbuilds.submitbuilds.html#builds" class="tsd-kind-icon">builds</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitbuilds.submitbuilds.html#properties" class="tsd-kind-icon">properties</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitbuilds.submitbuilds.html#providermetadata" class="tsd-kind-icon">provider<wbr>Metadata</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitBuilds.SubmitBuilds.html#builds" class="tsd-kind-icon">builds</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitBuilds.SubmitBuilds.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitBuilds.SubmitBuilds.html#providerMetadata" class="tsd-kind-icon">provider<wbr>Metadata</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,15 +99,15 @@
 					<div class="tsd-signature tsd-kind-icon">builds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>buildNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>displayName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>issueKeys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pipelineId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>references<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>commit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>repositoryUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>ref<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>schemaVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>testInfo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>numberFailed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>numberPassed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>numberSkipped<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>totalNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>updateSequenceNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitBuilds.ts#L20">agile/parameters/submitBuilds.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitBuilds.ts#L21">agile/parameters/submitBuilds.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>A list of builds to submit to Jira.</p>
 						</div>
-						<p>Each build may be associated with one or more Jira issue keys, and will be associated with any properties
-						included in this request.</p>
+						<p>Each build may be associated with one or more Jira issue keys, and will be associated with any properties included
+						in this request.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -116,20 +116,19 @@
 					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitBuilds.ts#L14">agile/parameters/submitBuilds.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitBuilds.ts#L14">agile/parameters/submitBuilds.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Properties assigned to build data that can then be used for delete / query operations.</p>
 						</div>
-						<p>Examples might be an account or user ID that can then be used to clean up data if an account is removed from
-						the Provider system.</p>
-						<p>Note that these properties will never be returned with build data. They are not intended for use as
-							metadata to associate with a build. Internally they are stored as a hash so that personal information etc.
-						is never stored within Jira.</p>
-						<p>Properties are supplied as key/value pairs, a maximum of 5 properties can be supplied, and keys must not
-						contain &#39;:&#39; or start with &#39;_&#39;.</p>
+						<p>Examples might be an account or user ID that can then be used to clean up data if an account is removed from the
+						Provider system.</p>
+						<p>Note that these properties will never be returned with build data. They are not intended for use as metadata to
+						associate with a build. Internally they are stored as a hash so that personal information etc. is never stored within Jira.</p>
+						<p>Properties are supplied as key/value pairs, a maximum of 5 properties can be supplied, and keys must not contain
+						&#39;:&#39; or start with &#39;_&#39;.</p>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -138,19 +137,18 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="providermetadata" class="tsd-anchor"></a>
+					<a name="providerMetadata" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> provider<wbr>Metadata</h3>
 					<div class="tsd-signature tsd-kind-icon">provider<wbr>Metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>product<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitBuilds.ts#L140">agile/parameters/submitBuilds.ts:140</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitBuilds.ts#L135">agile/parameters/submitBuilds.ts:135</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Information about the provider. This is useful for auditing, logging, debugging,
-								and other internal uses. It is not considered private information. Hence, it may not contain personally
-							identifiable information.</p>
+							<p>Information about the provider. This is useful for auditing, logging, debugging, and other internal uses. It is not
+							considered private information. Hence, it may not contain personally identifiable information.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -176,7 +174,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/agile_parameters_submitbuilds.html">agile/parameters/submit<wbr>Builds</a>
+						<a href="../modules/agile_parameters_submitBuilds.html">agile/parameters/submit<wbr>Builds</a>
 					</li>
 				</ul>
 			</nav>
@@ -185,16 +183,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="agile_parameters_submitbuilds.submitbuilds.html" class="tsd-kind-icon">Submit<wbr>Builds</a>
+						<a href="agile_parameters_submitBuilds.SubmitBuilds.html" class="tsd-kind-icon">Submit<wbr>Builds</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitbuilds.submitbuilds.html#builds" class="tsd-kind-icon">builds</a>
+								<a href="agile_parameters_submitBuilds.SubmitBuilds.html#builds" class="tsd-kind-icon">builds</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitbuilds.submitbuilds.html#properties" class="tsd-kind-icon">properties</a>
+								<a href="agile_parameters_submitBuilds.SubmitBuilds.html#properties" class="tsd-kind-icon">properties</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitbuilds.submitbuilds.html#providermetadata" class="tsd-kind-icon">provider<wbr>Metadata</a>
+								<a href="agile_parameters_submitBuilds.SubmitBuilds.html#providerMetadata" class="tsd-kind-icon">provider<wbr>Metadata</a>
 							</li>
 						</ul>
 					</li>

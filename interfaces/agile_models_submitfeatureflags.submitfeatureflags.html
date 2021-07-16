@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/agile_models_submitfeatureflags.html">agile/models/submitFeatureFlags</a>
+					<a href="../modules/agile_models_submitFeatureFlags.html">agile/models/submitFeatureFlags</a>
 				</li>
 				<li>
-					<a href="agile_models_submitfeatureflags.submitfeatureflags.html">SubmitFeatureFlags</a>
+					<a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html">SubmitFeatureFlags</a>
 				</li>
 			</ul>
 			<h1>Interface SubmitFeatureFlags</h1>
@@ -71,7 +71,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The result of a successful submitFeatureFlags request.</p>
+						<p>The result of a successful submitFeatureFlags request.*</p>
 					</div>
 				</div>
 			</section>
@@ -90,9 +90,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitfeatureflags.submitfeatureflags.html#acceptedfeatureflags" class="tsd-kind-icon">accepted<wbr>Feature<wbr>Flags</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitfeatureflags.submitfeatureflags.html#failedfeatureflags" class="tsd-kind-icon">failed<wbr>Feature<wbr>Flags</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitfeatureflags.submitfeatureflags.html#unknownissuekeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html#acceptedFeatureFlags" class="tsd-kind-icon">accepted<wbr>Feature<wbr>Flags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html#failedFeatureFlags" class="tsd-kind-icon">failed<wbr>Feature<wbr>Flags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html#unknownIssueKeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,12 +101,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="acceptedfeatureflags" class="tsd-anchor"></a>
+					<a name="acceptedFeatureFlags" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> accepted<wbr>Feature<wbr>Flags</h3>
 					<div class="tsd-signature tsd-kind-icon">accepted<wbr>Feature<wbr>Flags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/submitFeatureFlags.ts#L11">agile/models/submitFeatureFlags.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/submitFeatureFlags.ts#L11">agile/models/submitFeatureFlags.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -114,23 +114,25 @@
 							<p>The IDs of Feature Flags that have been accepted for submission.</p>
 						</div>
 						<p>A Feature Flag may be rejected if it was only associated with unknown issue keys.</p>
-						<p>Note that a Feature Flag that isn&#39;t updated due to it&#39;s updateSequenceId being out of order is not considered a failed submission.</p>
+						<p>Note that a Feature Flag that isn&#39;t updated due to it&#39;s updateSequenceId being out of order is not considered a
+						failed submission.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failedfeatureflags" class="tsd-anchor"></a>
+					<a name="failedFeatureFlags" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> failed<wbr>Feature<wbr>Flags</h3>
 					<div class="tsd-signature tsd-kind-icon">failed<wbr>Feature<wbr>Flags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/submitFeatureFlags.ts#L16">agile/models/submitFeatureFlags.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/submitFeatureFlags.ts#L18">agile/models/submitFeatureFlags.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Details of Feature Flags that have not been accepted for submission, usually due to a problem with the request data.</p>
 						</div>
-						<p>The object (if present) will be keyed by Feature Flag ID and include any errors associated with that Feature Flag that have prevented it being submitted.</p>
+						<p>The object (if present) will be keyed by Feature Flag ID and include any errors associated with that Feature Flag
+						that have prevented it being submitted.</p>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -139,21 +141,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="unknownissuekeys" class="tsd-anchor"></a>
+					<a name="unknownIssueKeys" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unknown<wbr>Issue<wbr>Keys</h3>
 					<div class="tsd-signature tsd-kind-icon">unknown<wbr>Issue<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/submitFeatureFlags.ts#L24">agile/models/submitFeatureFlags.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/submitFeatureFlags.ts#L28">agile/models/submitFeatureFlags.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Issue keys that are not known on this Jira instance (if any).</p>
 						</div>
-						<p>These may be invalid keys (e.g. <code>UTF-8</code> is sometimes incorrectly identified as a Jira issue key), or they may be for projects that no longer exist.</p>
-						<p>If a Feature Flag has been associated with issue keys other than those in this array it will still be stored against those valid keys.
-						If a Feature Flag was only associated with issue keys deemed to be invalid it won&#39;t be persisted.</p>
+						<p>These may be invalid keys (e.g. <code>UTF-8</code> is sometimes incorrectly identified as a Jira issue key), or they may be
+						for projects that no longer exist.</p>
+						<p>If a Feature Flag has been associated with issue keys other than those in this array it will still be stored
+						against those valid keys. If a Feature Flag was only associated with issue keys deemed to be invalid it won&#39;t be persisted.</p>
 					</div>
 				</section>
 			</section>
@@ -165,7 +168,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/agile_models_submitfeatureflags.html">agile/models/submit<wbr>Feature<wbr>Flags</a>
+						<a href="../modules/agile_models_submitFeatureFlags.html">agile/models/submit<wbr>Feature<wbr>Flags</a>
 					</li>
 				</ul>
 			</nav>
@@ -174,16 +177,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="agile_models_submitfeatureflags.submitfeatureflags.html" class="tsd-kind-icon">Submit<wbr>Feature<wbr>Flags</a>
+						<a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html" class="tsd-kind-icon">Submit<wbr>Feature<wbr>Flags</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_submitfeatureflags.submitfeatureflags.html#acceptedfeatureflags" class="tsd-kind-icon">accepted<wbr>Feature<wbr>Flags</a>
+								<a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html#acceptedFeatureFlags" class="tsd-kind-icon">accepted<wbr>Feature<wbr>Flags</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_submitfeatureflags.submitfeatureflags.html#failedfeatureflags" class="tsd-kind-icon">failed<wbr>Feature<wbr>Flags</a>
+								<a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html#failedFeatureFlags" class="tsd-kind-icon">failed<wbr>Feature<wbr>Flags</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_submitfeatureflags.submitfeatureflags.html#unknownissuekeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a>
+								<a href="agile_models_submitFeatureFlags.SubmitFeatureFlags.html#unknownIssueKeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a>
 							</li>
 						</ul>
 					</li>

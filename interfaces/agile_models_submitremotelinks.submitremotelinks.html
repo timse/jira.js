@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/agile_models_submitremotelinks.html">agile/models/submitRemoteLinks</a>
+					<a href="../modules/agile_models_submitRemoteLinks.html">agile/models/submitRemoteLinks</a>
 				</li>
 				<li>
-					<a href="agile_models_submitremotelinks.submitremotelinks.html">SubmitRemoteLinks</a>
+					<a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html">SubmitRemoteLinks</a>
 				</li>
 			</ul>
 			<h1>Interface SubmitRemoteLinks</h1>
@@ -90,9 +90,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitremotelinks.submitremotelinks.html#acceptedremotelinks" class="tsd-kind-icon">accepted<wbr>Remote<wbr>Links</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitremotelinks.submitremotelinks.html#rejectedremotelinks" class="tsd-kind-icon">rejected<wbr>Remote<wbr>Links</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitremotelinks.submitremotelinks.html#unknownassociations" class="tsd-kind-icon">unknown<wbr>Associations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html#acceptedRemoteLinks" class="tsd-kind-icon">accepted<wbr>Remote<wbr>Links</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html#rejectedRemoteLinks" class="tsd-kind-icon">rejected<wbr>Remote<wbr>Links</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html#unknownAssociations" class="tsd-kind-icon">unknown<wbr>Associations</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,41 +101,41 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="acceptedremotelinks" class="tsd-anchor"></a>
+					<a name="acceptedRemoteLinks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> accepted<wbr>Remote<wbr>Links</h3>
 					<div class="tsd-signature tsd-kind-icon">accepted<wbr>Remote<wbr>Links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/submitRemoteLinks.ts#L13">agile/models/submitRemoteLinks.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/submitRemoteLinks.ts#L12">agile/models/submitRemoteLinks.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The IDs of Remote Links that have been accepted for submission.</p>
 						</div>
-						<p>A Remote Link may be rejected if it was only associated with unknown issue keys, unknown service IDs, or if
-						the submitted data for that Remote Link does not match the required schema.</p>
-						<p>Note that a Remote Link that isn&#39;t updated due to it&#39;s <code>updateSequenceNumber</code> being out of order is not
-						considered a failed submission.</p>
+						<p>A Remote Link may be rejected if it was only associated with unknown issue keys, unknown service IDs, or if the
+						submitted data for that Remote Link does not match the required schema.</p>
+						<p>Note that a Remote Link that isn&#39;t updated due to it&#39;s <code>updateSequenceNumber</code> being out of order is not considered
+						a failed submission.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rejectedremotelinks" class="tsd-anchor"></a>
+					<a name="rejectedRemoteLinks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> rejected<wbr>Remote<wbr>Links</h3>
 					<div class="tsd-signature tsd-kind-icon">rejected<wbr>Remote<wbr>Links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/submitRemoteLinks.ts#L22">agile/models/submitRemoteLinks.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/submitRemoteLinks.ts#L22">agile/models/submitRemoteLinks.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Details of Remote Links that have not been accepted for submission, usually due to a problem with the request data.</p>
 						</div>
-						<p>A Remote Link may be rejected if it was only associated with unknown issue keys, unknown service IDs, or
-						if the submitted data for the Remote Link does not match the required schema.</p>
-						<p>The object (if present) will be keyed by Remote Link ID and include any errors associated with that
-						Remote Link that have prevented it being submitted.</p>
+						<p>A Remote Link may be rejected if it was only associated with unknown issue keys, unknown service IDs, or if the
+						submitted data for the Remote Link does not match the required schema.</p>
+						<p>The object (if present) will be keyed by Remote Link ID and include any errors associated with that Remote Link
+						that have prevented it being submitted.</p>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -144,12 +144,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="unknownassociations" class="tsd-anchor"></a>
+					<a name="unknownAssociations" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unknown<wbr>Associations</h3>
 					<div class="tsd-signature tsd-kind-icon">unknown<wbr>Associations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/submitRemoteLinks.ts#L25">agile/models/submitRemoteLinks.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/submitRemoteLinks.ts#L24">agile/models/submitRemoteLinks.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +167,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/agile_models_submitremotelinks.html">agile/models/submit<wbr>Remote<wbr>Links</a>
+						<a href="../modules/agile_models_submitRemoteLinks.html">agile/models/submit<wbr>Remote<wbr>Links</a>
 					</li>
 				</ul>
 			</nav>
@@ -176,16 +176,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="agile_models_submitremotelinks.submitremotelinks.html" class="tsd-kind-icon">Submit<wbr>Remote<wbr>Links</a>
+						<a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html" class="tsd-kind-icon">Submit<wbr>Remote<wbr>Links</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_submitremotelinks.submitremotelinks.html#acceptedremotelinks" class="tsd-kind-icon">accepted<wbr>Remote<wbr>Links</a>
+								<a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html#acceptedRemoteLinks" class="tsd-kind-icon">accepted<wbr>Remote<wbr>Links</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_submitremotelinks.submitremotelinks.html#rejectedremotelinks" class="tsd-kind-icon">rejected<wbr>Remote<wbr>Links</a>
+								<a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html#rejectedRemoteLinks" class="tsd-kind-icon">rejected<wbr>Remote<wbr>Links</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_submitremotelinks.submitremotelinks.html#unknownassociations" class="tsd-kind-icon">unknown<wbr>Associations</a>
+								<a href="agile_models_submitRemoteLinks.SubmitRemoteLinks.html#unknownAssociations" class="tsd-kind-icon">unknown<wbr>Associations</a>
 							</li>
 						</ul>
 					</li>

@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/version2_parameters_createissuetype.html">version2/parameters/createIssueType</a>
+					<a href="../modules/version2_parameters_createIssueType.html">version2/parameters/createIssueType</a>
 				</li>
 				<li>
-					<a href="version2_parameters_createissuetype.createissuetype.html">CreateIssueType</a>
+					<a href="version2_parameters_createIssueType.CreateIssueType.html">CreateIssueType</a>
 				</li>
 			</ul>
 			<h1>Interface CreateIssueType</h1>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="version2_models_issuetypecreatebean.issuetypecreatebean.html" class="tsd-signature-type" data-tsd-kind="Interface">IssueTypeCreateBean</a>
+						<a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html" class="tsd-signature-type" data-tsd-kind="Interface">IssueTypeCreateBean</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">CreateIssueType</span>
@@ -88,9 +88,10 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createissuetype.createissuetype.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createissuetype.createissuetype.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createissuetype.createissuetype.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createIssueType.CreateIssueType.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createIssueType.CreateIssueType.html#hierarchyLevel" class="tsd-kind-icon">hierarchy<wbr>Level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createIssueType.CreateIssueType.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="version2_parameters_createIssueType.CreateIssueType.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,9 +104,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="version2_models_issuetypecreatebean.issuetypecreatebean.html">IssueTypeCreateBean</a>.<a href="version2_models_issuetypecreatebean.issuetypecreatebean.html#description">description</a></p>
+						<p>Inherited from <a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html">IssueTypeCreateBean</a>.<a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html#description">description</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/issueTypeCreateBean.ts#L5">version2/models/issueTypeCreateBean.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/issueTypeCreateBean.ts#L5">version2/models/issueTypeCreateBean.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -115,13 +116,31 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="hierarchyLevel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> hierarchy<wbr>Level</h3>
+					<div class="tsd-signature tsd-kind-icon">hierarchy<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html">IssueTypeCreateBean</a>.<a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html#hierarchyLevel">hierarchyLevel</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/issueTypeCreateBean.ts#L20">version2/models/issueTypeCreateBean.ts:20</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The hierarchy level of the issue type. Use:</p>
+						</div>
+						<p><code>-1</code> for Subtask. <code>0</code> for Base.</p>
+						<p>Defaults to <code>0</code>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="version2_models_issuetypecreatebean.issuetypecreatebean.html">IssueTypeCreateBean</a>.<a href="version2_models_issuetypecreatebean.issuetypecreatebean.html#name">name</a></p>
+						<p>Inherited from <a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html">IssueTypeCreateBean</a>.<a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/issueTypeCreateBean.ts#L3">version2/models/issueTypeCreateBean.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/issueTypeCreateBean.ts#L3">version2/models/issueTypeCreateBean.ts:3</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,15 +154,18 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="version2_models_issuetypecreatebean.issuetypecreatebean.html">IssueTypeCreateBean</a>.<a href="version2_models_issuetypecreatebean.issuetypecreatebean.html#type">type</a></p>
+						<p>Inherited from <a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html">IssueTypeCreateBean</a>.<a href="version2_models_issueTypeCreateBean.IssueTypeCreateBean.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/issueTypeCreateBean.ts#L7">version2/models/issueTypeCreateBean.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/issueTypeCreateBean.ts#L12">version2/models/issueTypeCreateBean.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether the issue type is <code>subtype</code> or <code>standard</code>. Defaults to <code>standard</code>.</p>
-						</div>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Deprecated. Use <code>hierarchyLevel</code> instead.</p>
+								<p>Whether the issue type is <code>subtype</code> or <code>standard</code>. Defaults to <code>standard</code>.</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -155,7 +177,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/version2_parameters_createissuetype.html">version2/parameters/create<wbr>Issue<wbr>Type</a>
+						<a href="../modules/version2_parameters_createIssueType.html">version2/parameters/create<wbr>Issue<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
@@ -164,16 +186,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="version2_parameters_createissuetype.createissuetype.html" class="tsd-kind-icon">Create<wbr>Issue<wbr>Type</a>
+						<a href="version2_parameters_createIssueType.CreateIssueType.html" class="tsd-kind-icon">Create<wbr>Issue<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="version2_parameters_createissuetype.createissuetype.html#description" class="tsd-kind-icon">description</a>
+								<a href="version2_parameters_createIssueType.CreateIssueType.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="version2_parameters_createissuetype.createissuetype.html#name" class="tsd-kind-icon">name</a>
+								<a href="version2_parameters_createIssueType.CreateIssueType.html#hierarchyLevel" class="tsd-kind-icon">hierarchy<wbr>Level</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="version2_parameters_createissuetype.createissuetype.html#type" class="tsd-kind-icon">type</a>
+								<a href="version2_parameters_createIssueType.CreateIssueType.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="version2_parameters_createIssueType.CreateIssueType.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/version2_models_workflowrules.html">version2/models/workflowRules</a>
+					<a href="../modules/version2_models_workflowRules.html">version2/models/workflowRules</a>
 				</li>
 				<li>
-					<a href="version2_models_workflowrules.workflowrules.html">WorkflowRules</a>
+					<a href="version2_models_workflowRules.WorkflowRules.html">WorkflowRules</a>
 				</li>
 			</ul>
 			<h1>Interface WorkflowRules</h1>
@@ -90,10 +90,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowrules.workflowrules.html#conditions" class="tsd-kind-icon">conditions</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowrules.workflowrules.html#conditionstree" class="tsd-kind-icon">conditions<wbr>Tree</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowrules.workflowrules.html#postfunctions" class="tsd-kind-icon">post<wbr>Functions</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowrules.workflowrules.html#validators" class="tsd-kind-icon">validators</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowRules.WorkflowRules.html#conditions" class="tsd-kind-icon">conditions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowRules.WorkflowRules.html#conditionsTree" class="tsd-kind-icon">conditions<wbr>Tree</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowRules.WorkflowRules.html#postFunctions" class="tsd-kind-icon">post<wbr>Functions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version2_models_workflowRules.WorkflowRules.html#validators" class="tsd-kind-icon">validators</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,36 +103,39 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="conditions" class="tsd-anchor"></a>
-					<h3>conditions</h3>
-					<div class="tsd-signature tsd-kind-icon">conditions<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowtransitionrule.workflowtransitionrule.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRule</a><span class="tsd-signature-symbol">[]</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> conditions</h3>
+					<div class="tsd-signature tsd-kind-icon">conditions<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowTransitionRule.WorkflowTransitionRule.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRule</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/workflowRules.ts#L7">version2/models/workflowRules.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/workflowRules.ts#L12">version2/models/workflowRules.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The workflow conditions.</p>
-						</div>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>The workflow conditions.
+								(<a href="https://community.developer.atlassian.com/t/deprecation-of-conditions-body-param/48884">Deprecated</a>)</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="conditionstree" class="tsd-anchor"></a>
+					<a name="conditionsTree" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> conditions<wbr>Tree</h3>
-					<div class="tsd-signature tsd-kind-icon">conditions<wbr>Tree<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowconditionbean.workflowconditionbean.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowConditionBean</a></div>
+					<div class="tsd-signature tsd-kind-icon">conditions<wbr>Tree<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowConditionBean.WorkflowConditionBean.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowConditionBean</a><span class="tsd-signature-symbol"> | </span><a href="version2_models_workflowCondition.WorkflowCondition.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowCondition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/workflowRules.ts#L8">version2/models/workflowRules.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/workflowRules.ts#L13">version2/models/workflowRules.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="postfunctions" class="tsd-anchor"></a>
-					<h3>post<wbr>Functions</h3>
-					<div class="tsd-signature tsd-kind-icon">post<wbr>Functions<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowtransitionrule.workflowtransitionrule.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRule</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="postFunctions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> post<wbr>Functions</h3>
+					<div class="tsd-signature tsd-kind-icon">post<wbr>Functions<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowTransitionRule.WorkflowTransitionRule.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRule</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/workflowRules.ts#L12">version2/models/workflowRules.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/workflowRules.ts#L17">version2/models/workflowRules.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -143,11 +146,11 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="validators" class="tsd-anchor"></a>
-					<h3>validators</h3>
-					<div class="tsd-signature tsd-kind-icon">validators<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowtransitionrule.workflowtransitionrule.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRule</a><span class="tsd-signature-symbol">[]</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> validators</h3>
+					<div class="tsd-signature tsd-kind-icon">validators<span class="tsd-signature-symbol">:</span> <a href="version2_models_workflowTransitionRule.WorkflowTransitionRule.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkflowTransitionRule</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version2/models/workflowRules.ts#L10">version2/models/workflowRules.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version2/models/workflowRules.ts#L15">version2/models/workflowRules.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -165,7 +168,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/version2_models_workflowrules.html">version2/models/workflow<wbr>Rules</a>
+						<a href="../modules/version2_models_workflowRules.html">version2/models/workflow<wbr>Rules</a>
 					</li>
 				</ul>
 			</nav>
@@ -174,19 +177,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="version2_models_workflowrules.workflowrules.html" class="tsd-kind-icon">Workflow<wbr>Rules</a>
+						<a href="version2_models_workflowRules.WorkflowRules.html" class="tsd-kind-icon">Workflow<wbr>Rules</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version2_models_workflowrules.workflowrules.html#conditions" class="tsd-kind-icon">conditions</a>
+								<a href="version2_models_workflowRules.WorkflowRules.html#conditions" class="tsd-kind-icon">conditions</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version2_models_workflowrules.workflowrules.html#conditionstree" class="tsd-kind-icon">conditions<wbr>Tree</a>
+								<a href="version2_models_workflowRules.WorkflowRules.html#conditionsTree" class="tsd-kind-icon">conditions<wbr>Tree</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version2_models_workflowrules.workflowrules.html#postfunctions" class="tsd-kind-icon">post<wbr>Functions</a>
+								<a href="version2_models_workflowRules.WorkflowRules.html#postFunctions" class="tsd-kind-icon">post<wbr>Functions</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version2_models_workflowrules.workflowrules.html#validators" class="tsd-kind-icon">validators</a>
+								<a href="version2_models_workflowRules.WorkflowRules.html#validators" class="tsd-kind-icon">validators</a>
 							</li>
 						</ul>
 					</li>

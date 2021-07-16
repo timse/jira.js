@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/agile_models_storedevelopmentinformation.html">agile/models/storeDevelopmentInformation</a>
+					<a href="../modules/agile_models_storeDevelopmentInformation.html">agile/models/storeDevelopmentInformation</a>
 				</li>
 				<li>
-					<a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html">StoreDevelopmentInformation</a>
+					<a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html">StoreDevelopmentInformation</a>
 				</li>
 			</ul>
 			<h1>Interface StoreDevelopmentInformation</h1>
@@ -90,9 +90,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html#accepteddevinfoentities" class="tsd-kind-icon">accepted<wbr>Devinfo<wbr>Entities</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html#faileddevinfoentities" class="tsd-kind-icon">failed<wbr>Devinfo<wbr>Entities</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html#unknownissuekeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html#acceptedDevinfoEntities" class="tsd-kind-icon">accepted<wbr>Devinfo<wbr>Entities</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html#failedDevinfoEntities" class="tsd-kind-icon">failed<wbr>Devinfo<wbr>Entities</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html#unknownIssueKeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,17 +101,18 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="accepteddevinfoentities" class="tsd-anchor"></a>
+					<a name="acceptedDevinfoEntities" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> accepted<wbr>Devinfo<wbr>Entities</h3>
 					<div class="tsd-signature tsd-kind-icon">accepted<wbr>Devinfo<wbr>Entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/storeDevelopmentInformation.ts#L5">agile/models/storeDevelopmentInformation.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/storeDevelopmentInformation.ts#L7">agile/models/storeDevelopmentInformation.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The IDs of devinfo entities that have been accepted for submission grouped by their repository IDs. Note that a devinfo entity that isn&#39;t updated due to it&#39;s updateSequenceId being out of order is not considered a failed submission.</p>
+							<p>The IDs of devinfo entities that have been accepted for submission grouped by their repository IDs. Note that a
+							devinfo entity that isn&#39;t updated due to it&#39;s updateSequenceId being out of order is not considered a failed submission.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -121,17 +122,19 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="faileddevinfoentities" class="tsd-anchor"></a>
+					<a name="failedDevinfoEntities" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> failed<wbr>Devinfo<wbr>Entities</h3>
 					<div class="tsd-signature tsd-kind-icon">failed<wbr>Devinfo<wbr>Entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/storeDevelopmentInformation.ts#L7">agile/models/storeDevelopmentInformation.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/storeDevelopmentInformation.ts#L13">agile/models/storeDevelopmentInformation.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>IDs of devinfo entities that have not been accepted for submission and caused error descriptions, usually due to a problem with the request data. The entities (if present) will be grouped by their repository id and type. Entity IDs are listed with errors associated with that devinfo entity that have prevented it being submitted.</p>
+							<p>IDs of devinfo entities that have not been accepted for submission and caused error descriptions, usually due to a
+								problem with the request data. The entities (if present) will be grouped by their repository id and type. Entity
+							IDs are listed with errors associated with that devinfo entity that have prevented it being submitted.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -141,17 +144,19 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="unknownissuekeys" class="tsd-anchor"></a>
+					<a name="unknownIssueKeys" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unknown<wbr>Issue<wbr>Keys</h3>
 					<div class="tsd-signature tsd-kind-icon">unknown<wbr>Issue<wbr>Keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/models/storeDevelopmentInformation.ts#L9">agile/models/storeDevelopmentInformation.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/models/storeDevelopmentInformation.ts#L19">agile/models/storeDevelopmentInformation.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Issue keys that are not known on this Jira instance (if any). These may be invalid keys (e.g. <code>UTF-8</code> is sometimes incorrectly identified as a Jira issue key), or they may be for projects that no longer exist. If a devinfo entity has been associated with issue keys other than those in this array it will still be stored against those valid keys.</p>
+							<p>Issue keys that are not known on this Jira instance (if any). These may be invalid keys (e.g. <code>UTF-8</code> is sometimes
+								incorrectly identified as a Jira issue key), or they may be for projects that no longer exist. If a devinfo entity
+							has been associated with issue keys other than those in this array it will still be stored against those valid keys.</p>
 						</div>
 					</div>
 				</section>
@@ -164,7 +169,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/agile_models_storedevelopmentinformation.html">agile/models/store<wbr>Development<wbr>Information</a>
+						<a href="../modules/agile_models_storeDevelopmentInformation.html">agile/models/store<wbr>Development<wbr>Information</a>
 					</li>
 				</ul>
 			</nav>
@@ -173,16 +178,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html" class="tsd-kind-icon">Store<wbr>Development<wbr>Information</a>
+						<a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html" class="tsd-kind-icon">Store<wbr>Development<wbr>Information</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html#accepteddevinfoentities" class="tsd-kind-icon">accepted<wbr>Devinfo<wbr>Entities</a>
+								<a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html#acceptedDevinfoEntities" class="tsd-kind-icon">accepted<wbr>Devinfo<wbr>Entities</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html#faileddevinfoentities" class="tsd-kind-icon">failed<wbr>Devinfo<wbr>Entities</a>
+								<a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html#failedDevinfoEntities" class="tsd-kind-icon">failed<wbr>Devinfo<wbr>Entities</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_models_storedevelopmentinformation.storedevelopmentinformation.html#unknownissuekeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a>
+								<a href="agile_models_storeDevelopmentInformation.StoreDevelopmentInformation.html#unknownIssueKeys" class="tsd-kind-icon">unknown<wbr>Issue<wbr>Keys</a>
 							</li>
 						</ul>
 					</li>

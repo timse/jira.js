@@ -58,7 +58,7 @@
 					<a href="../modules/version3_models_webhook.html">version3/models/webhook</a>
 				</li>
 				<li>
-					<a href="version3_models_webhook.webhook.html">Webhook</a>
+					<a href="version3_models_webhook.Webhook.html">Webhook</a>
 				</li>
 			</ul>
 			<h1>Interface Webhook</h1>
@@ -90,10 +90,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.webhook.html#events" class="tsd-kind-icon">events</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.webhook.html#expirationdate" class="tsd-kind-icon">expiration<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.webhook.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.webhook.html#jqlfilter" class="tsd-kind-icon">jql<wbr>Filter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.Webhook.html#events" class="tsd-kind-icon">events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.Webhook.html#expirationDate" class="tsd-kind-icon">expiration<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.Webhook.html#fieldIdsFilter" class="tsd-kind-icon">field<wbr>Ids<wbr>Filter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.Webhook.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.Webhook.html#issuePropertyKeysFilter" class="tsd-kind-icon">issue<wbr>Property<wbr>Keys<wbr>Filter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="version3_models_webhook.Webhook.html#jqlFilter" class="tsd-kind-icon">jql<wbr>Filter</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version3/models/webhook.ts#L8">version3/models/webhook.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version3/models/webhook.ts#L18">version3/models/webhook.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,14 +119,30 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="expirationdate" class="tsd-anchor"></a>
-					<h3>expiration<wbr>Date</h3>
+					<a name="expirationDate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> expiration<wbr>Date</h3>
 					<div class="tsd-signature tsd-kind-icon">expiration<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version3/models/webhook.ts#L9">version3/models/webhook.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version3/models/webhook.ts#L19">version3/models/webhook.ts:19</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fieldIdsFilter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> field<wbr>Ids<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">field<wbr>Ids<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version3/models/webhook.ts#L11">version3/models/webhook.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of field IDs. When the issue changelog contains any of the fields, the webhook <code>jira:issue_updated</code> is sent.
+							If this parameter is not present, the app is notified about all field updates.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="id" class="tsd-anchor"></a>
@@ -132,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version3/models/webhook.ts#L4">version3/models/webhook.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version3/models/webhook.ts#L4">version3/models/webhook.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,12 +160,28 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="jqlfilter" class="tsd-anchor"></a>
+					<a name="issuePropertyKeysFilter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> issue<wbr>Property<wbr>Keys<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">issue<wbr>Property<wbr>Keys<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version3/models/webhook.ts#L16">version3/models/webhook.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of issue property keys. A change of those issue properties triggers the <code>issue_property_set</code> or
+							<code>issue_property_deleted</code> webhooks. If this parameter is not present, the app is notified about all issue property updates.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="jqlFilter" class="tsd-anchor"></a>
 					<h3>jql<wbr>Filter</h3>
 					<div class="tsd-signature tsd-kind-icon">jql<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/version3/models/webhook.ts#L6">version3/models/webhook.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/version3/models/webhook.ts#L6">version3/models/webhook.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,19 +208,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="version3_models_webhook.webhook.html" class="tsd-kind-icon">Webhook</a>
+						<a href="version3_models_webhook.Webhook.html" class="tsd-kind-icon">Webhook</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version3_models_webhook.webhook.html#events" class="tsd-kind-icon">events</a>
+								<a href="version3_models_webhook.Webhook.html#events" class="tsd-kind-icon">events</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version3_models_webhook.webhook.html#expirationdate" class="tsd-kind-icon">expiration<wbr>Date</a>
+								<a href="version3_models_webhook.Webhook.html#expirationDate" class="tsd-kind-icon">expiration<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version3_models_webhook.webhook.html#id" class="tsd-kind-icon">id</a>
+								<a href="version3_models_webhook.Webhook.html#fieldIdsFilter" class="tsd-kind-icon">field<wbr>Ids<wbr>Filter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="version3_models_webhook.webhook.html#jqlfilter" class="tsd-kind-icon">jql<wbr>Filter</a>
+								<a href="version3_models_webhook.Webhook.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="version3_models_webhook.Webhook.html#issuePropertyKeysFilter" class="tsd-kind-icon">issue<wbr>Property<wbr>Keys<wbr>Filter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="version3_models_webhook.Webhook.html#jqlFilter" class="tsd-kind-icon">jql<wbr>Filter</a>
 							</li>
 						</ul>
 					</li>

@@ -55,10 +55,10 @@
 					<a href="../modules.html">Jira.js</a>
 				</li>
 				<li>
-					<a href="../modules/agile_parameters_submitremotelinks.html">agile/parameters/submitRemoteLinks</a>
+					<a href="../modules/agile_parameters_submitRemoteLinks.html">agile/parameters/submitRemoteLinks</a>
 				</li>
 				<li>
-					<a href="agile_parameters_submitremotelinks.submitremotelinks.html">SubmitRemoteLinks</a>
+					<a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html">SubmitRemoteLinks</a>
 				</li>
 			</ul>
 			<h1>Interface SubmitRemoteLinks</h1>
@@ -83,9 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitremotelinks.submitremotelinks.html#properties" class="tsd-kind-icon">properties</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitremotelinks.submitremotelinks.html#providermetadata" class="tsd-kind-icon">provider<wbr>Metadata</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitremotelinks.submitremotelinks.html#remotelinks" class="tsd-kind-icon">remote<wbr>Links</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html#properties" class="tsd-kind-icon">properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html#providerMetadata" class="tsd-kind-icon">provider<wbr>Metadata</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html#remoteLinks" class="tsd-kind-icon">remote<wbr>Links</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,17 +99,17 @@
 					<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitRemoteLinks.ts#L10">agile/parameters/submitRemoteLinks.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitRemoteLinks.ts#L11">agile/parameters/submitRemoteLinks.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Properties assigned to Remote Link data that can then be used for delete / query operations.</p>
 						</div>
-						<p>Examples might be an account or user ID that can then be used to clean up data if an account is removed from
-						the Provider system.</p>
-						<p>Properties are supplied as key/value pairs, a maximum of 5 properties can be supplied, and keys must not
-						contain &#39;:&#39; or start with &#39;_&#39;.</p>
+						<p>Examples might be an account or user ID that can then be used to clean up data if an account is removed from the
+						Provider system.</p>
+						<p>Properties are supplied as key/value pairs, a maximum of 5 properties can be supplied, and keys must not contain
+						&#39;:&#39; or start with &#39;_&#39;.</p>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -118,18 +118,18 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="providermetadata" class="tsd-anchor"></a>
+					<a name="providerMetadata" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> provider<wbr>Metadata</h3>
 					<div class="tsd-signature tsd-kind-icon">provider<wbr>Metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>product<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitRemoteLinks.ts#L86">agile/parameters/submitRemoteLinks.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitRemoteLinks.ts#L92">agile/parameters/submitRemoteLinks.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Information about the provider. This is useful for auditing, logging, debugging, and other internal uses. It is
-							not considered private information. Hence, it may not contain personally identifiable information.</p>
+							<p>Information about the provider. This is useful for auditing, logging, debugging, and other internal uses. It is not
+							considered private information. Hence, it may not contain personally identifiable information.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -147,12 +147,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="remotelinks" class="tsd-anchor"></a>
+					<a name="remoteLinks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> remote<wbr>Links</h3>
 					<div class="tsd-signature tsd-kind-icon">remote<wbr>Links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>actionIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>associations<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>attributeMap<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>displayName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lastUpdated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>schemaVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>status<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>appearance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>updateSequenceNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/9f3c97a7/src/agile/parameters/submitRemoteLinks.ts#L16">agile/parameters/submitRemoteLinks.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/MrRefactoring/jira.js/blob/85ecf40f/src/agile/parameters/submitRemoteLinks.ts#L18">agile/parameters/submitRemoteLinks.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,7 +172,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/agile_parameters_submitremotelinks.html">agile/parameters/submit<wbr>Remote<wbr>Links</a>
+						<a href="../modules/agile_parameters_submitRemoteLinks.html">agile/parameters/submit<wbr>Remote<wbr>Links</a>
 					</li>
 				</ul>
 			</nav>
@@ -181,16 +181,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="agile_parameters_submitremotelinks.submitremotelinks.html" class="tsd-kind-icon">Submit<wbr>Remote<wbr>Links</a>
+						<a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html" class="tsd-kind-icon">Submit<wbr>Remote<wbr>Links</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitremotelinks.submitremotelinks.html#properties" class="tsd-kind-icon">properties</a>
+								<a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html#properties" class="tsd-kind-icon">properties</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitremotelinks.submitremotelinks.html#providermetadata" class="tsd-kind-icon">provider<wbr>Metadata</a>
+								<a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html#providerMetadata" class="tsd-kind-icon">provider<wbr>Metadata</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="agile_parameters_submitremotelinks.submitremotelinks.html#remotelinks" class="tsd-kind-icon">remote<wbr>Links</a>
+								<a href="agile_parameters_submitRemoteLinks.SubmitRemoteLinks.html#remoteLinks" class="tsd-kind-icon">remote<wbr>Links</a>
 							</li>
 						</ul>
 					</li>
