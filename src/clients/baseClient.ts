@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
-import { Authentication, Telemetry, TelemetryClient } from 'telemetry.jira.js';
+import { Authentication } from 'telemetry.jira.js';
 import type { Client } from './client';
 import type { Callback } from '../callback';
 import type { Config } from '../config';
@@ -12,10 +12,8 @@ const ATLASSIAN_TOKEN_CHECK_NOCHECK_VALUE = 'no-check';
 
 export class BaseClient implements Client {
   private instance: AxiosInstance;
-  private telemetryClient: TelemetryClient;
 
   constructor(protected readonly config: Config) {
-    this.telemetryClient = new TelemetryClient(config.telemetry);
     this.instance = axios.create({
       paramsSerializer: this.paramSerializer.bind(this),
       ...config.baseRequestConfig,
@@ -73,30 +71,9 @@ export class BaseClient implements Client {
       .reduce((accumulator, [key, value]) => ({ ...accumulator, [key]: value }), {});
   }
 
-  async sendRequest<T>(requestConfig: RequestConfig, callback: never, telemetryData?: Partial<Telemetry>): Promise<T>;
-  async sendRequest<T>(requestConfig: RequestConfig, callback: Callback<T>, telemetryData?: Partial<Telemetry>): Promise<void>;
-  async sendRequest<T>(requestConfig: RequestConfig, callback: Callback<T> | never, telemetryData?: Partial<Telemetry>): Promise<void | T> {
-    const startDateTime = new Date();
-
-    const telemetry: Telemetry = {
-      authentication: this.authenticationType,
-      baseRequestConfigUsed: !!this.config.baseRequestConfig,
-      bodyExists: !!requestConfig.data,
-      callbackUsed: !!callback,
-      headersExists: !!requestConfig.headers,
-      libVersion: '2.5.1',
-      libVersionHash: 'd091fccc62e2d24ab101dbe01ce844f6',
-      methodName: telemetryData?.methodName || 'sendRequest',
-      onErrorMiddlewareUsed: !!this.config.middlewares?.onError,
-      onResponseMiddlewareUsed: !!this.config.middlewares?.onResponse,
-      queryExists: !!requestConfig.params,
-      requestEndTime: new Date(),
-      requestStartTime: startDateTime,
-      requestStatusCode: 0,
-      strict_GDPR_enabled: !!this.config.strictGDPR,
-      noCheckAtlassianToken: !!this.config.noCheckAtlassianToken,
-      ...telemetryData,
-    };
+  async sendRequest<T>(requestConfig: RequestConfig, callback: never): Promise<T>;
+  async sendRequest<T>(requestConfig: RequestConfig, callback: Callback<T>): Promise<void>;
+  async sendRequest<T>(requestConfig: RequestConfig, callback: Callback<T> | never): Promise<void | T> {
 
     try {
       const modifiedRequestConfig = {
@@ -120,8 +97,6 @@ export class BaseClient implements Client {
 
       this.config.middlewares?.onResponse?.(response.data);
 
-      telemetry.requestStatusCode = response.status;
-
       return responseHandler(response.data);
     } catch (e) {
       const callbackErrorHandler = callback && ((error: Config.Error) => callback(error));
@@ -133,13 +108,7 @@ export class BaseClient implements Client {
 
       this.config.middlewares?.onError?.(e);
 
-      telemetry.requestStatusCode = e.isAxiosError ? e.response?.status ?? 0 : 418;
-
       return errorHandler(e);
-    } finally {
-      telemetry.requestEndTime = new Date();
-
-      this.telemetryClient.sendTelemetry(telemetry);
     }
   }
 
